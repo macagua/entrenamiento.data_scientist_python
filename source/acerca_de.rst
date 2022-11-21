@@ -67,14 +67,14 @@ Mantenedores del entrenamiento
 
 El repositorio del entrenamiento está disponible en la siguiente dirección:
 
-   https://github.com/macagua/entrenamiento.frameworks_web_python/
+   https://github.com/macagua/entrenamiento.data_scientist_python/
 
 Es muy fácil entrar en la lista. Simplemente contacta a algunos de los siguientes
 mantenedores del repositorio, para acordar una reunión y formas de colaboración en
 mantener estos recursos de aprendizajes para este entrenamiento. Y obtenga el
 agradecimiento de todos.
 
-.. contributors:: macagua/entrenamiento.frameworks_web_python
+.. contributors:: macagua/entrenamiento.data_scientist_python
    :avatars:
    :limit: 1
    :exclude: dependabot[bot]
@@ -90,7 +90,7 @@ Colaboradores del entrenamiento
 La lista debajo incluye todos los colaboradores y autores con al menos 10 líneas en
 el tutorial. La lista completa de colaboradores está disponible en el repositorio.
 
-.. contributors:: macagua/entrenamiento.frameworks_web_python
+.. contributors:: macagua/entrenamiento.data_scientist_python
    :avatars:
    :exclude: dependabot[bot]
 
@@ -114,7 +114,7 @@ Contribuir
 Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
 este material, puedes reportarla o solicitarla en:
 
-* Consulte el `issue tracker <https://github.com/macagua/entrenamiento.frameworks_web_python/issues>`_ para obtener
+* Consulte el `issue tracker <https://github.com/macagua/entrenamiento.data_scientist_python/issues>`_ para obtener
   una lista de funciones que nos gustaría agregar en el futuro.
 
 * Siéntase libre de proponer nuevas funciones o informar errores, describiendo cómo desea que se comporte la
