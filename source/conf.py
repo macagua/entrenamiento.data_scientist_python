@@ -26,7 +26,7 @@ sys.path.append(os.path.abspath("sphinxext"))
 project_namecode = "entrenamiento.data_scientist_python"
 project_short_name = "data Scientist en Python - Nivel básico"
 project = project_short_name[0].capitalize() + project_short_name[1:24]
-project_name = project_namecode.replace(".", "")
+project_name = project_namecode.replace(".", "_")
 project_details = f"Entrenamiento de {project_short_name}"
 publisher = "Leonardo J. Caballero G."
 years = "2022"
