@@ -40,8 +40,9 @@ los siguientes comando:
 
   $ sudo apt update
   $ sudo apt install -y python3-dev python3-pip python-setuptools git
-  $ sudo apt install -y latexmk texlive-extra-utils
-  $ sudo apt install -y texlive-latex-base texlive-latex-recommended texlive-lang-spanish
+  $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
+                        texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
+                        texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
   $ sudo pip3 install virtualenv
 
 
