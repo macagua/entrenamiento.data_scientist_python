@@ -20,20 +20,22 @@ para ayudar a incrementar tanto la profundidad y amplitud en su conocimiento.
 
 Las lecturas están organizada como las lecciones y sus temas.
 
-.. todo::
-    TODO terminar de escribir esta sección.
-
 
 .. _lecturas_extras_leccion1:
 
 Lección 1 - Introducción al Data Scientist
 ------------------------------------------
 
+Anaconda
+........
 
-Vía rápida de programación en Python
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- `Anaconda Distribution <https://www.anaconda.com/products/distribution>`_.
 
-- `Ciencia de datos <https://es.wikipedia.org/wiki/Ciencia_de_datos>`_.
+- `Anaconda Distribution — Anaconda documentation <https://docs.anaconda.com/anaconda/>`_.
+
+- `Herramienta Conda <https://conda.io/projects/conda/en/latest/index.html>`_.
+
+- `Anaconda Cloud <https://anaconda.org/>`_.
 
 
 .. raw:: html
