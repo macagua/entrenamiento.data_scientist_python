@@ -70,6 +70,17 @@ Pandas
 - `Generate fake data for Spring PetClinic with Pandas and Faker <https://www.feststelltaste.de/generate-fake-data-for-spring-petclinic-with-pandas-and-faker/>`_.
 
 
+.. _lecturas_extras_leccion4:
+
+Lección 4 - Gráficos en dos y tres dimensiones
+----------------------------------------------
+
+Matplotlib
+..........
+
+- `Matplotlib <https://matplotlib.org/>`_.
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

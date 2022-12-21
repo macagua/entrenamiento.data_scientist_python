@@ -36,6 +36,7 @@ Repositorio de manuales y recursos del entrenamiento **"Data Scientist en** `Pyt
    leccion1/index
    leccion2/index
    leccion3/index
+   leccion4/index
 
 
 .. warning::
