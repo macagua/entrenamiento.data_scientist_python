@@ -356,6 +356,7 @@ latex_elements = {
     # 'figure_align': 'htbp',
     # Additional footer content (before the indices), default empty.
     # 'footer': 'Ing. Leonardo J. Caballero G.'
+    "extraclassoptions": "openany",
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
