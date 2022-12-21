@@ -123,8 +123,4 @@ Librería pyngrok
 - `Deploying your ML model using Streamlit and Ngrok <https://towardsdatascience.com/deploying-your-ml-model-using-streamlit-and-ngrok-c2eea3fd9763>`_.
 
 
-.. raw:: html
-   :file: ../_templates/partials/soporte_profesional.html
-
 .. disqus::
-
