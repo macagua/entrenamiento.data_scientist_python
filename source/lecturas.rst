@@ -87,6 +87,16 @@ Matplotlib
 - `Matplotlib <https://matplotlib.org/>`_.
 
 
+Librería plotly
+................
+
+- `Plotly Open Source Graphing Library for Python <https://plotly.com/python/>`_.
+
+- `Python Plotly tutorial <https://www.geeksforgeeks.org/python-plotly-tutorial/>`_.
+
+- `st.plotly_chart - Streamlit Docs <https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart>`_.
+
+
 .. _lecturas_extras_leccion5:
 
 Lección 5 - Reportes y Dashboard
@@ -99,16 +109,6 @@ Librería streamlit
 - `Streamlit - The fastest way to build and share data apps <https://streamlit.io/>`_.
 
 - `How to Build an Interactive Dashboard in Python Using Streamlit? <https://www.turing.com/kb/how-to-build-an-interactive-dashboard-in-python-using-streamlit>`_.
-
-
-Librería plotly
-................
-
-- `Plotly Open Source Graphing Library for Python <https://plotly.com/python/>`_.
-
-- `Python Plotly tutorial <https://www.geeksforgeeks.org/python-plotly-tutorial/>`_.
-
-- `st.plotly_chart - Streamlit Docs <https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart>`_.
 
 
 Librería pyngrok

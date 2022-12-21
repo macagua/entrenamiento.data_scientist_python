@@ -18,7 +18,6 @@ A continuación el temario de esta lección:
    :maxdepth: 2
 
    streamlit
-   plotly
    pyngrok
 
 ----

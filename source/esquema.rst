@@ -57,12 +57,11 @@ y ``requests``, explorando el resultado en un paquete Python en el sistema de ar
 Lección 4 - Generación de gráficos
 ----------------------------------
 
-**Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``);
-``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); la función iterador
-`range()`_; y los diversos tipos `iteradores()`_.
+**Descripción:** Comprender el uso de los módulos ``matplotlib`` y ``plotly`` para la
+generación de gráficos estáticos e interactivos con Python.
 
-**Práctica:** Creación a estructuras condicionales, repetitivas y funciones
-propias y explorar el resultado desde el interprete Python.
+**Práctica:** Uso de los módulos ``matplotlib`` y ``plotly`` para la generación de gráficos estáticos
+e interactivos con Python, hacer demostraciones desde su propia máquina y más.
 
 
 .. _esquema_entrenamiento_leccion5:
@@ -76,6 +75,3 @@ creación de Dashboard interactivos con Python.
 **Práctica:** Uso de los módulos ``streamlit`` y ``plotly`` para la creación de Dashboard interactivos
 y el uso del módulo ``pyngrok`` para usar un proxy inverso que abre conexiones seguras desde URL públicas
 a computador local, hacer demostraciones desde su propia máquina y más.
-
-.. _`range()`: https://entrenamiento-python-basico.readthedocs.io/es/3.7/leccion5/funciones_integradas.html#range
-.. _`iteradores()`: https://entrenamiento-python-basico.readthedocs.io/es/3.7/leccion4/iteradores.html
