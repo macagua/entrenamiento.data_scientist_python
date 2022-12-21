@@ -84,6 +84,7 @@ linkcheck_ignore = [
     r"http://whatever.herokuapp.com",
     r"http://example.com/news",
     r"http://example.com\d+/",
+    r"acerca_de.html#sobre-el-instructor",
 ]
 linkcheck_anchors = False
 linkcheck_timeout = 30
@@ -518,7 +519,7 @@ quizdown_config = {
 # -- Options for yasfb extension ---------------------------------------------
 
 # Set the Feed Base Url.
-feed_base_url = "https://entrenamiento-data-scientist-python.readthedocs.io/es/latest/"
+feed_base_url = "https://entrenamiento-data-scientist-python.readthedocs.io/"
 
 # Set the Feed Author Name.
 feed_author = "Leonardo Caballero"

@@ -34,5 +34,5 @@ Todas esta documentación es licencia por:
 
 .. seealso:: Ver :ref:`licencias` para información completa sobre los términos y licencia.
 
-.. _Fundación Python: https://www.python.org/psf/
-.. _Python Foundation: https://www.python.org/psf/
+.. _Fundación Python: https://www.python.org/psf-landing/
+.. _Python Foundation: https://www.python.org/psf-landing/

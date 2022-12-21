@@ -12,7 +12,7 @@ Repositorio de manuales y recursos del entrenamiento **"Data Scientist en** `Pyt
 
 .. warning::
    Si esta buscando los manuales y recursos del entrenamiento **Data Scientist en Python** visite el siguiente enlace:
-   `https://entrenamiento-data-scientist-python.readthedocs.io/es/latest/ <https://entrenamiento-data-scientist-python.readthedocs.io/es/latest/>`_.
+   `https://entrenamiento-data-scientist-python.readthedocs.io/ <https://entrenamiento-data-scientist-python.readthedocs.io/>`_.
 
 .. sidebar:: Sobre este entrenamiento
 
