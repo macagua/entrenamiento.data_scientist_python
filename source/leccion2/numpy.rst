@@ -238,8 +238,8 @@ cumplen una condición.
 -  ``a[condicion]`` : Devuelve una lista con los elementos del array ``a``
    que cumplen la condición ``condicion``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> a = np.array([[1, 2, 3], [4, 5, 6]])
        >>> print(a[(a % 2 == 0)])
@@ -300,8 +300,8 @@ el siguiente método:
 
 -  ``u.dot(v)``: Devuelve el producto escalar de los vectores ``u`` y ``v``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([1, 2, 3])
@@ -320,8 +320,8 @@ Para calcular el módulo de un vector se utiliza el siguiente método:
 
 -  ``norm(v)``: Devuelve el módulo del vector ``v``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([3, 4])
@@ -340,8 +340,8 @@ y método que para el producto escalar de vectores:
 -  ``a.dot(b)`` : Devuelve el producto matricial de las matrices ``a`` y ``b``
    siempre y cuando sus dimensiones sean compatibles.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 2, 3], [4, 5, 6]])
@@ -363,8 +363,8 @@ Para trasponer una matriz se utiliza el método
 
 -  ``a.T`` : Devuelve la matriz traspuesta de la matriz ``a``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 2, 3], [4, 5, 6]])
@@ -384,8 +384,8 @@ La traza de una matriz cuadrada se calcula con el siguiente método:
 -  ``a.trace()`` : Devuelve la traza (suma de la  diagonal principal) de
    la matriz cuadrada ``a``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
@@ -402,8 +402,8 @@ El determinante de una matriz cuadrada se calcula con la siguiente función:
 
 -  ``det(a)`` : Devuelve el determinante de la matriz cuadrada ``a``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 2], [3, 4]])
@@ -420,9 +420,8 @@ La inversa de una matriz se calcula con la siguiente función:
 
 -  ``inv(a)`` : Devuelve la matriz inversa de la matriz cuadrada ``a``.
 
-    .. code-block:: pycon
-        :linenos:
-
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 2], [3, 4]])
@@ -440,8 +439,8 @@ Los autovalores de una matriz cuadrada se calculan con la siguiente función:
 
 -  ``eigvals(a)`` : Devuelve los autovalores de la matriz cuadrada ``a``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 1, 0], [1, 2, 1], [0, 1, 1]])
@@ -459,8 +458,8 @@ Los autovectores de una matriz cuadrada se calculan con la siguiente función:
 -  ``eig(a)`` : Devuelve los autovalores y los autovectores asociados de la
    matriz cuadrada ``a``.
 
-    .. code-block:: pycon
-        :linenos:
+   .. code-block:: pycon
+       :linenos:
 
        >>> import numpy as np
        >>> a = np.array([[1, 1, 0], [1, 2, 1], [0, 1, 1]])
