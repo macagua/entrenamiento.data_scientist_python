@@ -81,6 +81,42 @@ Matplotlib
 - `Matplotlib <https://matplotlib.org/>`_.
 
 
+.. _lecturas_extras_leccion5:
+
+Lección 5 - Reportes y Dashboard
+--------------------------------
+
+
+Librería streamlit
+..................
+
+- `Streamlit - The fastest way to build and share data apps <https://streamlit.io/>`_.
+
+- `How to Build an Interactive Dashboard in Python Using Streamlit? <https://www.turing.com/kb/how-to-build-an-interactive-dashboard-in-python-using-streamlit>`_.
+
+
+Librería plotly
+................
+
+- `Plotly Open Source Graphing Library for Python <https://plotly.com/python/>`_.
+
+- `Python Plotly tutorial <https://www.geeksforgeeks.org/python-plotly-tutorial/>`_.
+
+- `st.plotly_chart - Streamlit Docs <https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart>`_.
+
+
+Librería pyngrok
+................
+
+- `ngrok - Online in One Line <https://ngrok.com/>`_.
+
+- `pyngrok · PyPI <https://pypi.org/project/pyngrok/>`_.
+
+- `How to create and launch a Streamlit app directly from Google Colab <https://faun.pub/how-to-launch-a-streamlit-app-directly-from-google-colab-8014165e0267>`_.
+
+- `Deploying your ML model using Streamlit and Ngrok <https://towardsdatascience.com/deploying-your-ml-model-using-streamlit-and-ngrok-c2eea3fd9763>`_.
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
