@@ -34,6 +34,7 @@ Repositorio de manuales y recursos del entrenamiento **"Data Scientist en** `Pyt
    :maxdepth: 2
 
    leccion1/index
+   leccion2/index
 
 
 .. warning::

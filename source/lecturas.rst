@@ -38,6 +38,23 @@ Anaconda
 - `Anaconda Cloud <https://anaconda.org/>`_.
 
 
+.. _lecturas_extras_leccion2:
+
+Lección 2 - Computación Científico
+----------------------------------
+
+Numpy
+.....
+
+- `NumPy <https://numpy.org/>`_.
+
+- `Tutorial de NumPy en Español <https://deepnote.com/@anthonymanotoa/Tutorial-de-NumPy-en-Espanol-180f7d51-b297-4aea-b61e-34ef867ca6fb>`_.
+
+- `La guía definitiva del paquete NumPy para computación científica en Python <https://www.freecodecamp.org/espanol/news/la-guia-definitiva-del-paquete-numpy-para-computacion-cientifica-en-python/>`_.
+
+- `Tutorial de Numpy <http://facundoq.github.io/courses/images/res/03_numpy.html>`_.
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
