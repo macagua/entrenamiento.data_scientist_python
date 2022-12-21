@@ -86,7 +86,7 @@ correctamente instalada la paquete. Con esto, ya tiene todo listo para continuar
 Práctica - Hello
 ----------------
 
-A continuación se presenta la ejecucion de una demostracion que incluye ``Streamlit``,
+A continuación se presenta la ejecución de una demostración que incluye ``Streamlit``,
 ejecutando el siguiente comando correspondiente a tu sistema operativo:
 
 .. tabs::
