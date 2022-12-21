@@ -23,8 +23,14 @@ Las lecturas están organizada como las lecciones y sus temas.
 
 .. _lecturas_extras_leccion1:
 
-Lección 1 - Introducción al Data Scientist
-------------------------------------------
+Lección 1 - Data Scientist con Python
+-------------------------------------
+
+Introducción al Data Scientist
+..............................
+
+- `Ciencia de datos <https://es.wikipedia.org/wiki/Ciencia_de_datos>`_.
+
 
 Anaconda
 ........
@@ -72,8 +78,8 @@ Pandas
 
 .. _lecturas_extras_leccion4:
 
-Lección 4 - Gráficos en dos y tres dimensiones
-----------------------------------------------
+Lección 4 - Generación de gráficos
+----------------------------------
 
 Matplotlib
 ..........

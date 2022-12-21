@@ -3,8 +3,8 @@
 
 .. _python_leccion1:
 
-Introducción al Data Scientist
-==============================
+Data Scientist con Python
+=========================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla ante, aliquet ac tristique vel,
 porta ut mi. Quisque elementum felis ut commodo scelerisque. Phasellus aliquet viverra est quis

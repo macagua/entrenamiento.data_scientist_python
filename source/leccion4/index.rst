@@ -1,7 +1,7 @@
 .. _python_leccion4:
 
-Gráficos en dos y tres dimensiones
-==================================
+Generación de gráficos
+======================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue urna
 a bibendum rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et
