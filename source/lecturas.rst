@@ -55,6 +55,21 @@ Numpy
 - `Tutorial de Numpy <http://facundoq.github.io/courses/images/res/03_numpy.html>`_.
 
 
+.. _lecturas_extras_leccion3:
+
+Lección 3 - Manipulación y análisis de datos
+--------------------------------------------
+
+Pandas
+......
+
+- `pandas - Python Data Analysis Library <https://pandas.pydata.org/>`_.
+
+- `JSON with Python Pandas <https://pythonbasics.org/pandas-json/>`_.
+
+- `Generate fake data for Spring PetClinic with Pandas and Faker <https://www.feststelltaste.de/generate-fake-data-for-spring-petclinic-with-pandas-and-faker/>`_.
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
