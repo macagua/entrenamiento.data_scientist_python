@@ -184,8 +184,8 @@ Otras funciones útiles que permiten generar arrays son:
 
 .. _python_pkg_numpy_obj_array_atributos:
 
-Atributos de un array
----------------------
+Atributos de array
+------------------
 
 Existen varios atributos y funciones que describen las características de un array.
 
@@ -228,8 +228,8 @@ por comas.
 
 .. _python_pkg_numpy_obj_array_filtrar_items:
 
-Filtrado de elementos de un array
----------------------------------
+Filtrado de elementos de array
+------------------------------
 
 Una característica muy útil de los arrays es que es
 muy fácil obtener otro array con los elementos que
@@ -285,9 +285,9 @@ potencia a nivel de elemento.
 Álgebra matricial
 -----------------
 
-``NumPy`` incorpora funciones para realizar las principales operaciones algebraicas
-con vectores y  matrices. La mayoría de los métodos algebráicos se agrupan en el
-submódulo ``linalg``.
+``NumPy`` incorpora funciones para realizar las principales operaciones
+algebraicas con vectores y  matrices. La mayoría de los métodos algebraicos
+se agrupan en el submódulo ``linalg``.
 
 
 .. _python_pkg_numpy_obj_array_producto_escalar:
