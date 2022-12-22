@@ -42,7 +42,7 @@ Anaconda
 
 - `Herramienta Conda <https://conda.io/projects/conda/en/latest/index.html>`_.
 
-- `Anaconda Cloud <https://anaconda.org/>`_.
+- `Anaconda Cloud <https://anaconda.org/account/login>`_.
 
 
 .. _lecturas_extras_leccion2:

@@ -110,7 +110,7 @@ siguiente paquetes disponibles en Anaconda:
    repositorio de Anaconda con el comando ``conda install``
 
 -  Miles de otros paquetes están disponibles en `Anaconda
-   Cloud <https://anaconda.org/>`__.
+   Cloud <https://anaconda.org/account/login>`__.
 
 -  Puede descargar otros paquetes usando el comando ``pip install`` que se
    instala con Anaconda. Los `paquetes
@@ -123,7 +123,7 @@ siguiente paquetes disponibles en Anaconda:
 -  También puede crear sus propios
    `paquetes personalizados <https://conda.io/projects/conda-build/en/latest/>`__
    utilizando el comando ``conda build`` y puede compartirlos con otros
-   usuarios subiéndolos a `Anaconda Cloud <https://anaconda.org/>`__, PyPi u otros
+   usuarios subiéndolos a `Anaconda Cloud <https://anaconda.org/account/login>`__, PyPi u otros
    repositorios.
 
 Usted puede instalar, eliminar o actualizar cualquier paquete de Anaconda/Python
