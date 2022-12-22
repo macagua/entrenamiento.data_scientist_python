@@ -26,6 +26,7 @@ Las lecturas están organizada como las lecciones y sus temas.
 Lección 1 - Data Scientist con Python
 -------------------------------------
 
+
 Introducción al Data Scientist
 ..............................
 
@@ -49,6 +50,7 @@ Anaconda
 Lección 2 - Computación Científico
 ----------------------------------
 
+
 Numpy
 .....
 
@@ -65,6 +67,7 @@ Numpy
 
 Lección 3 - Manipulación y análisis de datos
 --------------------------------------------
+
 
 Pandas
 ......
