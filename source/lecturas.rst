@@ -100,7 +100,13 @@ Librería plotly
 
 - `Plotly Open Source Graphing Library for Python <https://plotly.com/python/>`_.
 
-- `Python Plotly tutorial <https://www.geeksforgeeks.org/python-plotly-tutorial/>`_.
+- `Plotly Tutorial for Beginners <https://www.kaggle.com/code/kanncaa1/plotly-tutorial-for-beginners>`_.
+
+- `Leap from Matplotlib to Plotly: A Hands-On Tutorial for Beginners <https://towardsdatascience.com/leap-from-matplotlib-to-plotly-a-hands-on-tutorial-for-beginners-d208cd9e6522>`_.
+
+- `Plotly Python Graphing Tutorial <https://pythonbasics.org/plotly/>`_.
+
+- `Plotly Tutorial <https://www.tutorialspoint.com/plotly/index.htm>`_.
 
 - `st.plotly_chart - Streamlit Docs <https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart>`_.
 
