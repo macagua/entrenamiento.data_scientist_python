@@ -199,8 +199,8 @@ Existen varias propiedades o métodos para ver las características de una serie
 
 .. _python_pkg_pandas_series_acceso_items:
 
-Acceso a los elementos de una serie
------------------------------------
+Acceso a los elementos de serie
+-------------------------------
 
 El acceso a los elementos de un objeto del tipo Series puede ser a través de
 posiciones o través de índices (nombres).
@@ -246,8 +246,8 @@ Acceso por índice
 
 .. _python_pkg_pandas_series_resumen_descrip:
 
-Resumen descriptivo de una serie
---------------------------------
+Resumen descriptivo de serie
+----------------------------
 
 Las siguientes funciones permiten resumir varios aspectos de una serie:
 
@@ -743,31 +743,26 @@ Atributos de DataFrame
 Existen varias propiedades o métodos para ver las características de
 un DataFrame.
 
--  ``df.info()`` : Devuelve información (número de
-    filas, número de columnas, índices, tipo de las
-    columnas y memoria usado) sobre el DataFrame
-    ``df``.
+-  ``df.info()`` : Devuelve información (número de filas, número de columnas,
+   índices, tipo de las columnas y memoria usado) sobre el DataFrame ``df``.
 
--  ``df.shape`` : Devuelve una tupla con el número de
-    filas y columnas del DataFrame ``df``.
+-  ``df.shape`` : Devuelve una tupla con el número de filas y columnas del
+   DataFrame ``df``.
 
--  ``df.size`` : Devuelve el número de elementos del
-    DataFrame.
+-  ``df.size`` : Devuelve el número de elementos del DataFrame.
 
--  ``df.columns`` : Devuelve una lista con los nombres
-    de las columnas del DataFrame ``df``.
+-  ``df.columns`` : Devuelve una lista con los nombres de las columnas del
+   DataFrame ``df``.
 
--  ``df.index`` : Devuelve una lista con los nombres
-    de las filas del DataFrame ``df``.
+-  ``df.index`` : Devuelve una lista con los nombres de las filas del
+   DataFrame ``df``.
 
--  ``df.dtypes`` : Devuelve una serie con los tipos de
-    datos de las columnas del DataFrame ``df``.
+-  ``df.dtypes`` : Devuelve una serie con los tipos de datos de las columnas
+   del DataFrame ``df``.
 
--  ``df.head(n)`` : Devuelve las ``n`` primeras filas
-    del DataFrame ``df``.
+-  ``df.head(n)`` : Devuelve las ``n`` primeras filas del DataFrame ``df``.
 
--  ``df.tail(n)`` : Devuelve las ``n`` últimas filas
-    del DataFrame ``df``.
+-  ``df.tail(n)`` : Devuelve las ``n`` últimas filas del DataFrame ``df``.
 
 .. code-block:: pycon
     :linenos:
