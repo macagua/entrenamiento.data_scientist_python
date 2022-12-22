@@ -795,7 +795,7 @@ Integración con Pandas
 
 **Matplotlib** se integra a la perfección con la librería
 Pandas, permitiendo dibujar gráficos a partir de los
-datos de las series y DataFrames de Pandas.
+datos de las series y :ref:`DataFrames <python_pkg_pandas_dataframe>` de Pandas.
 
 -  ``df.plot(kind=tipo, x=columnax, y=columnay, ax=ejes)``: Dibuja un diagrama
    del tipo indicado por el parámetro ``kind`` en los ejes indicados en el parámetro
@@ -829,7 +829,7 @@ datos de las series y DataFrames de Pandas.
 
 
 Si no se indican los parámetros ``x`` e ``y`` se representa el índice
-de las filas en el eje x y una serie por cada columna del Dataframe.
+de las filas en el eje x y una serie por cada columna del :ref:`Dataframe <python_pkg_pandas_dataframe>`.
 Las columnas no numéricas se ignoran.
 
 .. code-block:: pycon
