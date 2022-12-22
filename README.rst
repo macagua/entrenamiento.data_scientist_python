@@ -16,8 +16,8 @@ Estructura general
 La estructura general de contenidos esta confirmada por los principales archivos:
 
 **source**
-  Describe los contenidos de los módulos *1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-  13, 14, 15* del entrenamiento. Además de otros temas complementarios de Python.
+  Describe los contenidos de los módulos *1, 2, 3, 4, 5* del entrenamiento.
+  Además de otros temas complementarios de Python.
 
 
 Obtener y compilar la documentación
@@ -83,8 +83,8 @@ en diversos formatos, actualmente se tiene bien soportado los siguientes:
 Formato HTML
 ------------
 
-Usted puede generar la documentación en HTML de los módulos *1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-11, 12, 13, 14, 15*; ejecute los siguientes comando:
+Usted puede generar la documentación en HTML de los módulos *1, 2, 3, 4, 5*; ejecute los
+siguientes comando:
 
 ::
 
@@ -97,8 +97,8 @@ con su navegador Web favorito (Mozilla Firefox, Google Chrome, etc).
 Formato PDF
 -----------
 
-Usted puede generar la documentación en PDF de los módulos *1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-11, 12, 13, 14, 15*; ejecute los siguientes comando:
+Usted puede generar la documentación en PDF de los módulos *1, 2, 3, 4, 5*; ejecute los
+siguientes comando:
 
 ::
 
