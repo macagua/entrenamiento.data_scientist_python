@@ -1165,8 +1165,11 @@ fechas. Para convertir estas cadenas al tipo
     serie que resulta de convertir las cadenas de la
     columna con el nombre ``columna`` en fechas del
     tipo ``datetime`` con el formado especificado en
-    ``formato``. ( `Ver librería
-    datetime <../datetime/>`__)
+    ``formato``.
+
+    .. tip::
+        Para más información consulte la documentación oficial de 
+        `datetime <https://docs.python.org/es/3.7/library/datetime.html>`_.
 
 .. code-block:: pycon
     :linenos:
@@ -1197,34 +1200,44 @@ columnas:
 -  ``df.count()`` : Devuelve una serie con el número
     de elementos que no son nulos ni ``NaN`` en cada
     columna del DataFrame ``df``.
+
 -  ``df.sum()`` : Devuelve una serie con la suma de
     los datos de las columnas del DataFrame ``df``
     cuando los datos son de un tipo numérico, o la
     concatenación de ellos cuando son del tipo cadena
     ``str``.
+
 -  ``df.cumsum()`` : Devuelve un DataFrame con la suma
     acumulada de los datos de las columnas del
     DataFrame ``df`` cuando los datos son de un tipo
     numérico.
+
 -  ``df.min()`` : Devuelve una serie con los menores
     de los datos de las columnas del DataFrame ``df``.
+
 -  ``df.max()`` : Devuelve una serie con los mayores
     de los datos de las columnas del DataFrame ``df``.
+
 -  ``df.mean()`` : Devuelve una serie con las medias
     de los datos de las columnas numéricas del
     DataFrame ``df``.
+
 -  ``df.var()`` : Devuelve una serie con las varianzas
     de los datos de las columnas numéricas del
     DataFrame ``df``.
+
 -  ``df.std()`` : Devuelve una serie con las
     desviaciones típicas de los datos de las columnas
     numéricas del DataFrame ``df``.
+
 -  ``df.cov()`` : Devuelve un DataFrame con las
     covarianzas de los datos de las columnas numéricas
     del DataFrame ``df``.
+
 -  ``df.corr()`` : Devuelve un DataFrame con los
     coeficientes de correlación de Pearson de los datos
     de las columnas numéricas del DataFrame ``df``.
+
 -  ``df.describe(include = tipo)`` : Devuelve un
     DataFrame con un resumen estadístico de las
     columnas del DataFrame ``df`` del tipo ``tipo``.
