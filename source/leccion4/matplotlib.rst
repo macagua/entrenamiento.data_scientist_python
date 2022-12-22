@@ -117,6 +117,7 @@ seguir los siguientes pasos:
     ``show()``.
 
 .. code-block:: pycon
+    :linenos:
 
     # Importar el módulo pyplot con el alias plt
     import matplotlib.pyplot as plt
@@ -142,12 +143,15 @@ seguir los siguientes pasos:
 Diagramas de dispersión o puntos
 --------------------------------
 
--  ``scatter(x, y)``: Dibuja un diagrama de puntos con
-    las coordenadas de la lista ``x`` en el eje X y las
-    coordenadas de la lista ``y`` en el eje Y.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter>`__
+-  ``scatter(x, y)``: Dibuja un diagrama de puntos con las coordenadas
+   de la lista ``x`` en el eje X y las coordenadas de la lista ``y`` en el eje Y.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.scatter <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -167,13 +171,16 @@ Diagramas de dispersión o puntos
 Diagramas de líneas
 -------------------
 
--  ``plot(x, y)``: Dibuja un polígono con los vértices
-    dados por las coordenadas de la lista ``x`` en el
-    eje X y las coordenadas de la lista ``y`` en el eje
-    Y.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot>`__
+-  ``plot(x, y)``: Dibuja un polígono con los vértices dados por las
+   coordenadas de la lista ``x`` en el eje X y las coordenadas de la
+   lista ``y`` en el eje Y.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.plot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -193,13 +200,16 @@ Diagramas de líneas
 Diagramas de areas
 ------------------
 
--  ``fill_between(x, y)``: Dibuja el area bajo el
-    polígono con los vértices dados por las coordenadas
-    de la lista ``x`` en el eje X y las coordenadas de
-    la lista ``y`` en el eje Y.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.fill_between.html#matplotlib.pyplot.fill_between>`__
+-  ``fill_between(x, y)``: Dibuja el area bajo el polígono con los vértices
+   dados por las coordenadas de la lista ``x`` en el eje X y las coordenadas
+   de la lista ``y`` en el eje Y.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.fill_between <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill_between.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -219,13 +229,16 @@ Diagramas de areas
 Diagramas de barras verticales
 ------------------------------
 
--  ``bar(x, y)``: Dibuja un diagrama de barras
-    verticales donde ``x`` es una lista con la posición
-    de las barras en el eje X, e ``y`` es una lista con
-    la altura de las barras en el eje Y.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html#matplotlib.pyplot.bar>`__
+-  ``bar(x, y)``: Dibuja un diagrama de barras verticales donde ``x``
+   es una lista con la posición de las barras en el eje X, e ``y`` es
+   una lista con la altura de las barras en el eje Y.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.bar <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -245,13 +258,16 @@ Diagramas de barras verticales
 Diagramas de barras horizontales
 --------------------------------
 
--  ``barh(x, y)``: Dibuja un diagrama de barras
-    horizontales donde ``x`` es una lista con la
-    posición de las barras en el eje Y, e ``y`` es una
-    lista con la longitud de las barras en el eje X.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh>`__
+-  ``barh(x, y)``: Dibuja un diagrama de barras horizontales donde ``x``
+   es una lista con la posición de las barras en el eje Y, e ``y`` es una
+   lista con la longitud de las barras en el eje X.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.barh <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -271,13 +287,16 @@ Diagramas de barras horizontales
 Histogramas
 -----------
 
--  ``hist(x, bins)``: Dibuja un histograma con las
-    frecuencias resultantes de agrupar los datos de la
-    lista ``x`` en las clases definidas por la lista
-    ``bins``.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist>`__
+-  ``hist(x, bins)``: Dibuja un histograma con las frecuencias resultantes
+   de agrupar los datos de la lista ``x`` en las clases definidas por la
+   lista ``bins``.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.hist <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import numpy as np
     import matplotlib.pyplot as plt
@@ -299,11 +318,14 @@ Histogramas
 Diagramas de sectores
 ---------------------
 
--  ``pie(x)``: Dibuja un diagrama de sectores con las
-    frecuencias de la lista ``x``.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.pie.html#matplotlib.pyplot.pie>`__
+-  ``pie(x)``: Dibuja un diagrama de sectores con las frecuencias de la lista ``x``.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.pie <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -323,11 +345,14 @@ Diagramas de sectores
 Diagramas de caja y bigotes
 ---------------------------
 
--  ``boxplot(x)``: Dibuja un diagrama de caja y
-    bigotes con los datos de la lista ``x``.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot>`__
+-  ``boxplot(x)``: Dibuja un diagrama de caja y bigotes con los datos de la lista ``x``.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.boxplot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -347,11 +372,15 @@ Diagramas de caja y bigotes
 Diagramas de violín
 -------------------
 
--  ``violinplot(x)``: Dibuja un diagrama de violín con
-    los datos de la lista ``x``.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.violinplot.html#matplotlib.pyplot.violinplot>`__
+-  ``violinplot(x)``: Dibuja un diagrama de violín con los datos
+   de la lista ``x``.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.violinplot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.violinplot.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -371,14 +400,16 @@ Diagramas de violín
 Diagramas de contorno
 ---------------------
 
--  ``contourf(x, y, z)``: Dibuja un diagrama de
-    contorno con las curvas de nivel de la superficie
-    dada por los puntos con las coordenadas de las
-    listas ``x``, ``y`` y ``z`` en los ejes X, Y y Z
-    respectivamente.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.contourf.html#matplotlib.pyplot.contourf>`__
+-  ``contourf(x, y, z)``: Dibuja un diagrama de contorno con las curvas
+   de nivel de la superficie dada por los puntos con las coordenadas de
+   las listas ``x``, ``y`` y ``z`` en los ejes X, Y y Z respectivamente.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.contourf <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -402,11 +433,15 @@ Diagramas de contorno
 Mapas de color
 --------------
 
--  ``imshow(x)``: Dibuja un mapa de color a partir de
-    una matriz (array bidimensiona) ``x``.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html#matplotlib.pyplot.imshow>`__
+-  ``imshow(x)``: Dibuja un mapa de color a partir de una matriz
+   (array bidimensiona) ``x``.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.imshow <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -422,14 +457,17 @@ Mapas de color
     Mapas de color
 
 
--  ``hist2d(x, y)``: Dibuja un mapa de color que
-    simula un histograma bidimensional, donde los
-    colores de los cuadrados dependen de las
-    frecuencias de las clases de la muestra dada por
-    las listas ``x`` e ``y``.
-    ` <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d>`__
+-  ``hist2d(x, y)``: Dibuja un mapa de color que simula un histograma
+   bidimensional, donde los colores de los cuadrados dependen de las
+   frecuencias de las clases de la muestra dada por las listas ``x``
+   e ``y``.
+
+   .. tip::
+    Para más información consulte la documentación oficial de 
+    `matplotlib.pyplot.hist2d <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist2d.html>`_.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -450,10 +488,9 @@ Mapas de color
 Cambiar el aspecto de los gráficos
 ----------------------------------
 
-Los gráficos creados con Matplotlib son
-personalizables y puede cambiarse el aspecto de casi
-todos sus elementos. Los elementos que suelen
-modificarse más a menudo son:
+Los gráficos creados con **Matplotlib** son personalizables y puede
+cambiarse el aspecto de casi todos sus elementos. Los elementos
+que suelen modificarse más a menudo son:
 
 -  Colores
 -  Marcadores de puntos
@@ -469,13 +506,12 @@ modificarse más a menudo son:
 Colores
 -------
 
-Para cambiar el color de los objetos se utiliza el
-parámetro ``color = nombre-color``, donde
-``nombre-color`` es una cadena con el nombre del color
-de entre los `colores
-disponibles <https://matplotlib.org/3.2.1/gallery/color/named_colors.html>`__.
+Para cambiar el color de los objetos se utiliza el parámetro
+``color = nombre-color``, donde ``nombre-color`` es una cadena
+con el nombre del color de entre los `colores disponibles <https://matplotlib.org/3.2.1/gallery/color/named_colors.html>`__.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -505,6 +541,7 @@ del marcador de entre los `marcadores
 disponibles <https://matplotlib.org/3.2.1/api/markers_api.html>`__
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -527,13 +564,13 @@ disponibles <https://matplotlib.org/3.2.1/api/markers_api.html>`__
 Líneas
 ------
 
-Para cambiar el estilo de las líneas se utiliza el
-parámetro ``linestyle = nombre-estilo`` donde
-``nombre-estilo`` es una cadena con el nombre del
-estilo de entre los `estilos
+Para cambiar el estilo de las líneas se utiliza el parámetro
+``linestyle = nombre-estilo`` donde ``nombre-estilo`` es una
+cadena con el nombre del estilo de entre los `estilos
 disponibles <https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/linestyles.html>`__
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -556,8 +593,7 @@ disponibles <https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/linesty
 Títulos
 -------
 
-Para añadir un título principal al gráfico se utiliza
-el siguiente método:
+Para añadir un título principal al gráfico se utiliza el siguiente método:
 
 -  ``ax.set_title(titulo, loc=alineacion, fontdict=fuente)``
     : Añade un título con el contenido de la cadena
@@ -570,6 +606,7 @@ el siguiente método:
     ``fontweight`` o el color ``color``).
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -596,38 +633,34 @@ Ejes
 Para cambiar el aspecto de los ejes se suelen utilizar
 los siguientes métodos:
 
--  ``ax.set_xlabel(titulo)`` : Añade un título con el
-    contenido de la cadena ``titulo`` al eje x de
-    ``ax``. Se puede personalizar la alineación y la
-    fuente con los mismos parámetros que para el título
-    principal.
--  ``ax.set_ylabel(titulo)`` : Añade un título con el
-    contenido de la cadena ``titulo`` al eje y de
-    ``ax``. Se puede personalizar la alineación y la
-    fuente con los mismos parámetros que para el título
-    principal.
--  ``ax.set_xlim([limite-inferior, limite-superior])``
-    : Establece los límites que se muestran en el eje x
-    de ``ax``.
--  ``ax.set_ylim([limite-inferior, limite-superior])``
-    : Establece los límites que se muestran en el eje y
-    de ``ax``.
--  ``ax.set_xticks(marcas)`` : Dibuja marcas en el eje
-    x de ``ax`` en las posiciones indicadas en la lista
-    ``marcas``.
--  ``ax.set_yticks(marcas)`` : Dibuja marcas en el eje
-    y de ``ax`` en las posiciones indicadas en la lista
-    ``marcas``.
--  ``ax.set_xscale(escala)`` : Establece la escala del
-    eje x de ``ax``, donde el parámetro ``escala``
-    puede ser ``'linear'`` (lineal) o ``'log'``
-    (logarítmica).
--  ``ax.set_yscale(escala)`` : Establece la escala del
-    eje y de ``ax``, donde el parámetro ``escala``
-    puede ser ``'linear'`` (lineal) o ``'log'``
-    (logarítmica).
+-  ``ax.set_xlabel(titulo)``: Añade un título con el contenido de la cadena
+   ``titulo`` al eje x de ``ax``. Se puede personalizar la alineación y la
+   fuente con los mismos parámetros que para el título principal.
+
+-  ``ax.set_ylabel(titulo)``: Añade un título con el contenido de la cadena
+   ``titulo`` al eje y de ``ax``. Se puede personalizar la alineación y la
+   fuente con los mismos parámetros que para el título principal.
+
+-  ``ax.set_xlim([limite-inferior, limite-superior])``: Establece los límites
+   que se muestran en el eje x de ``ax``.
+
+-  ``ax.set_ylim([limite-inferior, limite-superior])``: Establece los límites
+   que se muestran en el eje y de ``ax``.
+
+-  ``ax.set_xticks(marcas)``: Dibuja marcas en el eje x de ``ax`` en las posiciones
+   indicadas en la lista ``marcas``.
+
+-  ``ax.set_yticks(marcas)``: Dibuja marcas en el eje y de ``ax`` en las posiciones
+   indicadas en la lista ``marcas``.
+
+-  ``ax.set_xscale(escala)``: Establece la escala del eje x de ``ax``, donde el parámetro
+   ``escala`` puede ser ``'linear'`` (lineal) o ``'log'`` (logarítmica).
+
+-  ``ax.set_yscale(escala)``: Establece la escala del eje y de ``ax``, donde el parámetro
+   ``escala`` puede ser ``'linear'`` (lineal) o ``'log'`` (logarítmica).
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -654,26 +687,19 @@ los siguientes métodos:
 Leyenda
 -------
 
-Para añadir una leyenda a un gráfico se utiliza el
-siguiente método:
+Para añadir una leyenda a un gráfico se utiliza el siguiente método:
 
--  ``ax.legend(leyendas, loc = posición)`` : Dibuja un
-    leyenda en los ejes ``ax`` con los nombres
-    indicados en la lista ``leyendas``. El parámetro
-    ``loc`` indica la posición en la que se dibuja la
-    leyenda y puede ser ``'upper left'`` (arriba
-    izquierda), ``'upper center'`` (arriba centro),
-    ``'upper right'`` (arriba derecha),
-    ``'center left'`` (centro izquierda), ``'center'``
-    (centro), ``'center right'`` (centro derecha),
-    ``'lower left'`` (abajo izquierda),
-    ``'lower center'`` (abajo centro),
-    ``'lower right'`` (abajo derecha). Se puede omitir
-    la lista ``leyendas`` si se indica la leyenda de
-    cada serie en la función que la dibuja mediante el
-    parámetro ``label``.
+-  ``ax.legend(leyendas, loc = posición)``: Dibuja un leyenda en los ejes ``ax``
+   con los nombres indicados en la lista ``leyendas``. El parámetro ``loc`` indica
+   la posición en la que se dibuja la leyenda y puede ser ``'upper left'`` (arriba
+   izquierda), ``'upper center'`` (arriba centro), ``'upper right'`` (arriba derecha),
+   ``'center left'`` (centro izquierda), ``'center'`` (centro), ``'center right'``
+   (centro derecha), ``'lower left'`` (abajo izquierda), ``'lower center'`` (abajo centro),
+   ``'lower right'`` (abajo derecha). Se puede omitir la lista ``leyendas`` si se indica
+   la leyenda de cada serie en la función que la dibuja mediante el parámetro ``label``.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -697,16 +723,15 @@ siguiente método:
 Rejilla
 -------
 
-``ax.grid(axis=ejes, color=color, linestyle=estilo)``
-: Dibuja una rejilla en los ejes de ``ax``. El
-parámetro ``axis`` indica los ejes sobre los que se
-dibuja la regilla y puede ser ``'x'`` (eje x), ``'y'``
-(eje y) o ``'both'`` (ambos). Los parámetros ``color``
-y ``linestyle`` establecen el color y el estilo de las
-líneas de la rejilla, y pueden tomar los mismos
-valores vistos en los apartados de colores y líneas.
+``ax.grid(axis=ejes, color=color, linestyle=estilo)``: Dibuja una rejilla
+en los ejes de ``ax``. El  parámetro ``axis`` indica los ejes sobre los que
+se dibuja la regilla y puede ser ``'x'`` (eje x), ``'y'`` (eje y) o ``'both'``
+(ambos). Los parámetros ``color`` y ``linestyle`` establecen el color y el estilo
+de las líneas de la rejilla, y pueden tomar los mismos valores vistos en los
+apartados de colores y líneas.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -743,6 +768,7 @@ pueden pasar los parámetros ``sharex = True`` para el
 eje x o ``sharey = True`` para el eje y.
 
 .. code-block:: pycon
+    :linenos:
 
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots(2, 2, sharey = True)
@@ -767,27 +793,22 @@ eje x o ``sharey = True`` para el eje y.
 Integración con Pandas
 ----------------------
 
-Matplotlib se integra a la perfección con la librería
+**Matplotlib** se integra a la perfección con la librería
 Pandas, permitiendo dibujar gráficos a partir de los
 datos de las series y DataFrames de Pandas.
 
--  ``df.plot(kind=tipo, x=columnax, y=columnay, ax=ejes)``
-    : Dibuja un diagrama del tipo indicado por el
-    parámetro ``kind`` en los ejes indicados en el
-    parámetro ``ax``, representando en el eje x la
-    columna del parámetro ``x`` y en el eje y la
-    columna del parámetro ``y``. El parámetro ``kind``
-    puede tomar como argumentos ``'line'`` (lineas),
-    ``'scatter'`` (puntos), ``'bar'`` (barras
-    verticales), ``'barh'`` (barras horizontales),
-    ``'hist'`` (histograma), ``'box'`` (cajas),
-    ``'density'`` (densidad), ``'area'`` (area) o
-    ``'pie'`` (sectores). Es posible pasar otros
-    parámetros para indicar el color, el marcador o el
-    estilo de línea como se vió en los apartados
-    anteriores.
+-  ``df.plot(kind=tipo, x=columnax, y=columnay, ax=ejes)``: Dibuja un diagrama
+   del tipo indicado por el parámetro ``kind`` en los ejes indicados en el parámetro
+   ``ax``, representando en el eje x la columna del parámetro ``x`` y en el eje y la
+   columna del parámetro ``y``. El parámetro ``kind`` puede tomar como argumentos
+   ``'line'`` (lineas), ``'scatter'`` (puntos), ``'bar'`` (barras verticales),
+   ``'barh'`` (barras horizontales), ``'hist'`` (histograma), ``'box'`` (cajas),
+   ``'density'`` (densidad), ``'area'`` (area) o ``'pie'`` (sectores). Es posible
+   pasar otros parámetros para indicar el color, el marcador o el estilo de línea como
+   se vió en los apartados anteriores.
 
 .. code-block:: pycon
+    :linenos:
 
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -807,12 +828,12 @@ datos de las series y DataFrames de Pandas.
     Integración con Pandas
 
 
-Si no se indican los parámetros ``x`` e ``y`` se
-representa el índice de las filas en el eje x y una
-serie por cada columna del Dataframe. Las columnas no
-numéricas se ignoran.
+Si no se indican los parámetros ``x`` e ``y`` se representa el índice
+de las filas en el eje x y una serie por cada columna del Dataframe.
+Las columnas no numéricas se ignoran.
 
 .. code-block:: pycon
+    :linenos:
 
     import pandas as pd
     import matplotlib.pyplot as plt
