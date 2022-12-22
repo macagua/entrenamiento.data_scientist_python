@@ -124,14 +124,14 @@ Creación de series
 
 .. _python_pkg_pandas_series_lista_creacion:
 
-Creación de serie desde lista
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear serie desde lista
+^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``Series(data=lista, index=indices, dtype=tipo)`` : Devuelve un objeto
    de tipo Series con los datos de la lista ``lista``, las filas especificados
    en la lista ``indices`` y el tipo de datos indicado en ``tipo``. Si no se
    pasa la lista de índices se utilizan como índices los enteros del 0 al $n-1$,
-    done $n$ es el tamaño de la serie. Si no se pasa el tipo de dato se infiere.
+   done $n$ es el tamaño de la serie. Si no se pasa el tipo de dato se infiere.
 
 .. code-block:: pycon
     :linenos:
@@ -151,8 +151,8 @@ Creación de serie desde lista
 
 .. _python_pkg_pandas_series_dict_creacion:
 
-Creación de serie desde diccionario
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear serie desde diccionario
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``Series(data=diccionario, index=indices)``: Devuelve un objeto de
    tipo Series con los valores del diccionario ``diccionario`` y las
@@ -523,8 +523,8 @@ Creación de DataFrame
 
 .. _python_pkg_pandas_dataframe_creacion_from_dicts_lists:
 
-Creación de DataFrame desde diccionario de listas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear DataFrame desde diccionario de listas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para crear un DataFrame a partir de un diccionario cuyas claves son los nombres
 de las columnas y los valores son listas con los datos de las columnas se utiliza
@@ -568,8 +568,8 @@ Los valores asociados a las claves del diccionario deben ser listas del mismo ta
 
 .. _python_pkg_pandas_dataframe_creacion_from_list_lists:
 
-Creación de DataFrame desde lista de listas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear DataFrame desde lista de listas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para crear un DataFrame a partir de una lista de listas con los datos de las
 columnas se utiliza el siguiente método:
@@ -602,8 +602,8 @@ se rellenan con valores ``NaN``.
 
 .. _python_pkg_pandas_dataframe_creacion_from_list_dicts:
 
-Creación de DataFrame desde lista de diccionarios
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear DataFrame desde lista de diccionarios
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Para crear un DataFrame a partir de una lista de diccionarios con los datos de las
@@ -640,8 +640,8 @@ aparecen en el diccionario se rellenan con valores ``NaN``.
 
 .. _python_pkg_pandas_dataframe_creacion_from_array:
 
-Creación de DataFrame desde array
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear DataFrame desde array
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para crear un DataFrame a partir de un array de :ref:`NumPy <python_pkg_numpy>`
 se utiliza el siguiente método:
@@ -670,8 +670,8 @@ se utiliza el siguiente método:
 
 .. _python_pkg_pandas_dataframe_creacion_from_hoja_calculo:
 
-Creación de DataFrame desde fichero hoja de calculo
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Crear DataFrame desde hoja de calculo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dependiendo del tipo de fichero (CSV o Excel), existen distintas funciones para importar
 un DataFrame desde un fichero.
