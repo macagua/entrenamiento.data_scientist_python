@@ -4,8 +4,8 @@
 Entrenamiento "Data Scientist en Python"
 ========================================
 
-Repositorio de manuales y recursos del entrenamiento "*Data Scientist en *
-`Python 3.7`_" realizado por Leonardo J. Caballero G.
+Repositorio de manuales y recursos del entrenamiento "Data Scientist en `Python 3.7`_"
+realizado por Leonardo J. Caballero G.
 
 .. contents :: :local:
 
