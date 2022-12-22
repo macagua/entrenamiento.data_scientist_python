@@ -81,10 +81,15 @@ Pandas
 Lección 4 - Generación de gráficos
 ----------------------------------
 
-Matplotlib
-..........
+
+Librería Matplotlib
+...................
 
 - `Matplotlib <https://matplotlib.org/>`_.
+
+- `La librería Matplotlib <https://aprendeconalf.es/docencia/python/manual/matplotlib/>`_.
+
+- `Tutorial de matplotlib <https://interactivechaos.com/es/manual/tutorial-de-matplotlib/tutorial-de-matplotlib>`_.
 
 
 Librería plotly
