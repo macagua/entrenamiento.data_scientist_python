@@ -20,7 +20,7 @@ y que permiten trabajar con ellos de forma muy eficiente.
 Las principales características de esta librería son:
 
 -  Define nuevas estructuras de datos basadas en los arrays de la librería
-   NumPy pero con nuevas funcionalidades.
+   :ref:`NumPy <python_pkg_numpy>` pero con nuevas funcionalidades.
 
 -  Permite leer y escribir fácilmente ficheros en formato CSV, Excel y bases
    de datos SQL.
@@ -74,8 +74,9 @@ el siguiente comando correspondiente a tu sistema operativo:
           > python -c "import pandas ; print(pandas.__version__)"
 
 
-Si muestra el numero de la versión instalada de ``pandas``, tiene
-correctamente instalada la paquete. Con esto, ya tiene todo listo para continuar.
+Si muestra el numero de la versión instalada de ``pandas``, tiene correctamente
+instalada la paquete. Con esto, ya tiene todo listo para continuar.
+
 
 .. _python_pkg_pandas_tipos_datos:
 
@@ -91,8 +92,8 @@ diferentes:
 
 -  Panel: Estructura de tres dimensiones (cubos).
 
-Estas estructuras se construyen a partir de arrays de
-la librería NumPy, añadiendo nuevas funcionalidades.
+Estas estructuras se construyen a partir de arrays de la librería
+:ref:`NumPy <python_pkg_numpy>`, añadiendo nuevas funcionalidades.
 
 
 .. _python_pkg_pandas_series:
@@ -123,17 +124,14 @@ Creación de series
 
 .. _python_pkg_pandas_series_lista_creacion:
 
-Creación de una serie a partir de una lista
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de serie desde lista
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``Series(data=lista, index=indices, dtype=tipo)`` :
-    Devuelve un objeto de tipo Series con los datos de
-    la lista ``lista``, las filas especificados en la
-    lista ``indices`` y el tipo de datos indicado en
-    ``tipo``. Si no se pasa la lista de índices se
-    utilizan como índices los enteros del 0 al $n-1$,
-    done $n$ es el tamaño de la serie. Si no se pasa el
-    tipo de dato se infiere.
+-  ``Series(data=lista, index=indices, dtype=tipo)`` : Devuelve un objeto
+   de tipo Series con los datos de la lista ``lista``, las filas especificados
+   en la lista ``indices`` y el tipo de datos indicado en ``tipo``. Si no se
+   pasa la lista de índices se utilizan como índices los enteros del 0 al $n-1$,
+    done $n$ es el tamaño de la serie. Si no se pasa el tipo de dato se infiere.
 
 .. code-block:: pycon
     :linenos:
@@ -153,15 +151,13 @@ Creación de una serie a partir de una lista
 
 .. _python_pkg_pandas_series_dict_creacion:
 
-Creación de una serie a partir de un diccionario
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de serie desde diccionario
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``Series(data=diccionario, index=indices)``:
-    Devuelve un objeto de tipo Series con los valores
-    del diccionario ``diccionario`` y las filas
-    especificados en la lista ``indices``. Si no se
-    pasa la lista de índices se utilizan como índices
-    las claves del diccionario.
+-  ``Series(data=diccionario, index=indices)``: Devuelve un objeto de
+   tipo Series con los valores del diccionario ``diccionario`` y las
+   filas especificados en la lista ``indices``. Si no se pasa la lista
+   de índices se utilizan como índices las claves del diccionario.
 
 .. code-block:: pycon
     :linenos:
@@ -174,13 +170,13 @@ Creación de una serie a partir de un diccionario
     Programación    8.5
     dtype: float64
 
+
 .. _python_pkg_pandas_series_attrs:
 
-Atributos de una serie
-----------------------
+Atributos de serie
+------------------
 
-Existen varias propiedades o métodos para ver las
-características de una serie.
+Existen varias propiedades o métodos para ver las características de una serie.
 
 -  ``s.size`` : Devuelve el número de elementos de la serie ``s``.
 
@@ -208,6 +204,7 @@ Acceso a los elementos de una serie
 
 El acceso a los elementos de un objeto del tipo Series puede ser a través de
 posiciones o través de índices (nombres).
+
 
 .. _python_pkg_pandas_series_acceso_posicion:
 
@@ -252,8 +249,7 @@ Acceso por índice
 Resumen descriptivo de una serie
 --------------------------------
 
-Las siguientes funciones permiten resumir varios
-aspectos de una serie:
+Las siguientes funciones permiten resumir varios aspectos de una serie:
 
 -  ``s.count()`` : Devuelve el número de elementos que no son nulos ni
    ``NaN`` en la serie ``s``.
@@ -343,8 +339,8 @@ aspectos de una serie:
 
 .. _python_pkg_pandas_series_aplicar_oper:
 
-Aplicar operaciones a una serie
--------------------------------
+Aplicar operaciones a serie
+---------------------------
 
 Los operadores binarios (``+``, ``*``, ``/``, etc.) pueden utilizarse con una serie,
 y devuelven otra serie con el resultado de aplicar la operación a cada elemento de la
@@ -377,8 +373,8 @@ serie.
 
 .. _python_pkg_pandas_series_aplicar_func:
 
-Aplicar funciones a una serie
------------------------------
+Aplicar funciones a serie
+-------------------------
 
 También es posible aplicar una función a cada elemento de la serie mediante el siguiente método:
 
@@ -407,8 +403,8 @@ También es posible aplicar una función a cada elemento de la serie mediante el
 
 .. _python_pkg_pandas_series_filtrar:
 
-Filtrar una serie
------------------
+Filtrar serie
+-------------
 
 Para filtrar una serie y quedarse con los valores que cumplen una determinada
 condición se utiliza el siguiente método:
@@ -431,21 +427,18 @@ condición se utiliza el siguiente método:
 
 .. _python_pkg_pandas_series_ordenar:
 
-Ordenar una serie
------------------
+Ordenar serie
+-------------
 
 Para ordenar una serie se utilizan los siguientes métodos:
 
--  ``s.sort_values(ascending=booleano``) : Devuelve la
-   serie que resulta de ordenar los valores la serie
-   ``s``. Si argumento del parámetro ``ascending`` es
-   ``True`` el orden es creciente y si es ``False``
-   decreciente.
+-  ``s.sort_values(ascending=booleano``) : Devuelve la serie que resulta
+   de ordenar los valores la serie ``s``. Si argumento del parámetro ``ascending``
+   es ``True`` el orden es creciente y si es ``False`` decreciente.
 
--  ``df.sort_index(ascending=booleano``) : Devuelve la
-   serie que resulta de ordenar el índice de la serie
-   ``s``. Si el argumento del parámetro ``ascending``
-   es ``True`` el orden es creciente y si es ``False``
+-  ``df.sort_index(ascending=booleano``) : Devuelve la serie que resulta
+   de ordenar el índice de la serie ``s``. Si el argumento del parámetro
+   ``ascending`` es ``True`` el orden es creciente y si es ``False``
    decreciente.
 
 .. code-block:: pycon
@@ -465,17 +458,15 @@ Para ordenar una serie se utilizan los siguientes métodos:
     dtype: float64
 
 
-.. _python_pkg_pandas_series_elim_dados_desc:
+.. _python_pkg_pandas_series_elim_datos_desc:
 
-Eliminar los dados desconocidos en una serie
---------------------------------------------
+Eliminar los datos desconocidos en serie
+----------------------------------------
 
-Los datos desconocidos representan en Pandas por
-``NaN`` y los nulos por ``None``. Tanto unos como
-otros suelen ser un problema a la hora de realizar
-algunos análisis de datos, por lo que es habitual
-eliminarlos. Para eliminarlos de una serie se utiliza
-el siguiente método:
+Los datos desconocidos representan en Pandas por ``NaN`` y los nulos por
+``None``. Tanto unos como otros suelen ser un problema a la hora de realizar
+algunos análisis de datos, por lo que es habitual eliminarlos. Para eliminarlos
+de una serie se utiliza el siguiente método:
 
 -  ``s.dropna()`` : Elimina los datos desconocidos o nulos de la serie ``s``.
 
@@ -503,24 +494,20 @@ el siguiente método:
 
 .. _python_pkg_pandas_dataframe:
 
-La clase de objetos DataFrame
------------------------------
+Clase de objetos DataFrame
+--------------------------
 
-Un objeto del tipo DataFrame define un conjunto de
-datos estructurado en forma de tabla donde cada
-columna es un objeto de tipo Series, es decir, todos
-los datos de una misma columna son del mismo tipo, y
-las filas son registros que pueden contender datos de
-distintos tipos.
+Un objeto del tipo ``DataFrame`` define un conjunto de datos estructurado en forma
+de tabla donde cada columna es un objeto de tipo Series, es decir, todos los
+datos de una misma columna son del mismo tipo, y las filas son registros que
+pueden contender datos de distintos tipos.
 
-Un DataFrame contiene dos índices, uno para las filas
-y otro para las columnas, y se puede acceder a sus
-elementos mediante los nombres de las filas y las
+Un ``DataFrame`` contiene dos índices, uno para las filas y otro para las columnas,
+y se puede acceder a sus elementos mediante los nombres de las filas y las
 columnas.
 
-**Ejemplo**. El siguiente DataFrame contiene
-información sobre los alumnos de un curso. Cada fila
-corresponde a un alumno y cada columna a una variable.
+**Ejemplo**. El siguiente ``DataFrame`` contiene información sobre los alumnos
+de un curso. Cada fila corresponde a un alumno y cada columna a una variable.
 
 .. figure:: ../_static/images/pandas_dataframe.png
     :align: center
@@ -531,37 +518,29 @@ corresponde a un alumno y cada columna a una variable.
 
 .. _python_pkg_pandas_dataframe_creacion:
 
-Creación de un DataFrame
-------------------------
+Creación de DataFrame
+---------------------
 
 .. _python_pkg_pandas_dataframe_creacion_from_dicts_lists:
 
-Creación de un DataFrame a partir de un diccionario de listas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de DataFrame desde diccionario de listas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para crear un DataFrame a partir de un diccionario cuyas claves son los nombres
 de las columnas y los valores son listas con los datos de las columnas se utiliza
 el método:
 
--  ``DataFrame(data=diccionario, index=filas, columns=columnas, dtype=tipos)``
-    : Devuelve un objeto del tipo DataFrame cuyas
-    columnas son las listas contenidas en los valores
-    del diccionario ``diccionario``, los nombres de
-    filas indicados en la lista ``filas``, los nombres
-    de columnas indicados en la lista ``columnas`` y
-    los tipos indicados en la lista ``tipos``. La lista
-    ``filas`` tiene que tener el mismo tamaño que las
-    listas del diccionario, mientras que las listas
-    ``columnas`` y ``tipos`` tienen que tener el mismo
-    tamaño que el diccionario. Si no se pasa la lista
-    de filas se utilizan como nombres los enteros
-    empezando en 0. Si no se pasa la lista de columnas
-    se utilizan como nombres las claves del
-    diccionario. Si no se pasa la lista de tipos, se
-    infiere.
+-  ``DataFrame(data=diccionario, index=filas, columns=columnas, dtype=tipos)``: Devuelve
+   un objeto del tipo DataFrame cuyas columnas son las listas contenidas en los valores
+   del diccionario ``diccionario``, los nombres de filas indicados en la lista ``filas``,
+   los nombres de columnas indicados en la lista ``columnas`` y los tipos indicados en la
+   lista ``tipos``. La lista ``filas`` tiene que tener el mismo tamaño que las listas del
+   diccionario, mientras que las listas ``columnas`` y ``tipos`` tienen que tener el mismo
+   tamaño que el diccionario. Si no se pasa la lista de filas se utilizan como nombres los
+   enteros empezando en 0. Si no se pasa la lista de columnas se utilizan como nombres las
+   claves del diccionario. Si no se pasa la lista de tipos, se infiere.
 
-Los valores asociados a las claves del diccionario
-deben ser listas del mismo tamaño.
+Los valores asociados a las claves del diccionario deben ser listas del mismo tamaño.
 
 .. code-block:: pycon
     :linenos:
@@ -589,29 +568,23 @@ deben ser listas del mismo tamaño.
 
 .. _python_pkg_pandas_dataframe_creacion_from_list_lists:
 
-Creación de un DataFrame a partir de una lista de listas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de DataFrame desde lista de listas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para crear un DataFrame a partir de una lista de listas con los datos de las
 columnas se utiliza el siguiente método:
 
--  ``DataFrame(data=listas, index=filas, columns=columnas, dtype=tipos)``
-    : Devuelve un objeto del tipo DataFrame cuyas
-    columnas son los valores de las listas de la lista
-    ``listas``, los nombres de filas indicados en la
-    lista ``filas``, los nombres de columnas indicados
-    en la lista ``columnas`` y los tipos indicados en
-    la lista ``tipos``. La lista ``filas``, tiene que
-    tener el mismo tamaño que la lista ``listas``
-    mientras que las listas ``columnas`` y ``tipos``
-    tienen que tener el mismo tamaño que las listas
-    anidadas en ``listas``. Si no se pasa la lista de
-    filas o de columnas se utilizan enteros empezando
-    en 0. Si no se pasa la lista de tipos, se infiere.
+-  ``DataFrame(data=listas, index=filas, columns=columnas, dtype=tipos)``: Devuelve
+   un objeto del tipo DataFrame cuyas columnas son los valores de las listas de la
+   lista ``listas``, los nombres de filas indicados en la lista ``filas``, los nombres
+   de columnas indicados en la lista ``columnas`` y los tipos indicados en la lista
+   ``tipos``. La lista ``filas``, tiene que tener el mismo tamaño que la lista ``listas``
+   mientras que las listas ``columnas`` y ``tipos`` tienen que tener el mismo tamaño
+   que las listas anidadas en ``listas``. Si no se pasa la lista de filas o de columnas
+   se utilizan enteros empezando en 0. Si no se pasa la lista de tipos, se infiere.
 
-Si las listas anidadas en ``listas`` no tienen el
-mismo tamaño, las listas menores se rellenan con
-valores ``NaN``.
+Si las listas anidadas en ``listas`` no tienen el mismo tamaño, las listas menores
+se rellenan con valores ``NaN``.
 
 .. code-block:: pycon
     :linenos:
@@ -629,31 +602,24 @@ valores ``NaN``.
 
 .. _python_pkg_pandas_dataframe_creacion_from_list_dicts:
 
-Creación de un DataFrame a partir de una lista de diccionarios
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de DataFrame desde lista de diccionarios
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Para crear un DataFrame a partir de una lista de
-diccionarios con los datos de las filas, se utiliza el
-siguiente método:
+Para crear un DataFrame a partir de una lista de diccionarios con los datos de las
+filas, se utiliza el siguiente método:
 
 -  ``DataFrame(data=diccionarios, index=filas, columns=columnas, dtype=tipos)``
-    : Devuelve un objeto del tipo DataFrame cuyas filas
-    contienen los valores de los diccionarios de la
-    lista ``diccionarios``, los nombres de filas
-    indicados en la lista ``filas``, los nombres de
-    columnas indicados en la lista ``columnas`` y los
-    tipos indicados en la lista ``tipos``. La lista
-    ``filas`` tiene que tener el mismo tamaño que la
-    lista ``lista``. Si no se pasa la lista de filas se
-    utilizan enteros empezando en 0. Si no se pasa la
-    lista de columnas se utilizan las claves de los
-    diccionarios. Si no se pasa la lista de tipos, se
-    infiere.
+   : Devuelve un objeto del tipo DataFrame cuyas filas contienen los valores de
+   los diccionarios de la lista ``diccionarios``, los nombres de filas indicados
+   en la lista ``filas``, los nombres de columnas indicados en la lista ``columnas``
+   y los tipos indicados en la lista ``tipos``. La lista ``filas`` tiene que tener
+   el mismo tamaño que la lista ``lista``. Si no se pasa la lista de filas se utilizan
+   enteros empezando en 0. Si no se pasa la lista de columnas se utilizan las claves
+   de los diccionarios. Si no se pasa la lista de tipos, se infiere.
 
-Si los diccionarios no tienen las mismas claves, las
-claves que no aparecen en el diccionario se rellenan
-con valores ``NaN``.
+Si los diccionarios no tienen las mismas claves, las claves que no
+aparecen en el diccionario se rellenan con valores ``NaN``.
 
 .. code-block:: pycon
     :linenos:
@@ -674,26 +640,20 @@ con valores ``NaN``.
 
 .. _python_pkg_pandas_dataframe_creacion_from_array:
 
-Creación de un DataFrame a partir de un array
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de DataFrame desde array
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Para crear un DataFrame a partir de un array de NumPy
+Para crear un DataFrame a partir de un array de :ref:`NumPy <python_pkg_numpy>`
 se utiliza el siguiente método:
 
--  ``DataFrame(data=array, index=filas, columns=columnas, dtype=tipo)``
-    : Devuelde un objeto del tipo DataFrame cuyas filas
-    y columnas son las del array ``array``, los nombres
-    de filas indicados en la lista ``filas``, los
-    nombres de columnas indicados en la lista
-    ``columnas`` y el tipo indicado en ``tipo``. La
-    lista ``filas`` tiene que tener el mismo tamaño que
-    el número de filas del array y la lista
-    ``columnas`` el mismo tamaño que el número de
-    columnas del array. Si no se pasa la lista de filas
-    se utilizan enteros empezando en 0. Si no se pasa
-    la lista de columnas se utilizan las claves de los
-    diccionarios. Si no se pasa la lista de tipos, se
-    infiere.
+-  ``DataFrame(data=array, index=filas, columns=columnas, dtype=tipo)``: Devuelve
+   un objeto del tipo DataFrame cuyas filas y columnas son las del array ``array``,
+   los nombres de filas indicados en la lista ``filas``, los nombres de columnas
+   indicados en la lista ``columnas`` y el tipo indicado en ``tipo``. La lista ``filas``
+   tiene que tener el mismo tamaño que el número de filas del array y la lista ``columnas``
+   el mismo tamaño que el número de columnas del array. Si no se pasa la lista de filas
+   se utilizan enteros empezando en 0. Si no se pasa la lista de columnas se utilizan
+   las claves de los diccionarios. Si no se pasa la lista de tipos, se infiere.
 
 .. code-block:: pycon
     :linenos:
@@ -708,35 +668,30 @@ se utiliza el siguiente método:
     3  0.236936 -0.431673 -0.177379
 
 
-.. _python_pkg_pandas_dataframe_creacion_from_csv_excel_file:
+.. _python_pkg_pandas_dataframe_creacion_from_hoja_calculo:
 
-Creación de un DataFrame a partir de un fichero CSV o Excel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creación de DataFrame desde fichero hoja de calculo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dependiendo del tipo de fichero, existen distintas funciones para importar
+Dependiendo del tipo de fichero (CSV o Excel), existen distintas funciones para importar
 un DataFrame desde un fichero.
 
 -  ``read_csv(fichero.csv, sep=separador, header=n, index_col=m, na_values=no-validos, decimal=separador-decimal)``
-    : Devuelve un objeto del tipo DataFrame con los
-    datos del fichero CSV ``fichero.csv`` usando como
-    separador de los datos la cadena ``separador``.
-    Como nombres de columnas se utiliza los valores de
-    la fila ``n`` y como nombres de filas los valores
-    de la columna ``m``. Si no se indica ``m`` se
-    utilizan como nombres de filas los enteros
-    empezando en 0. Los valores incluidos en la lista
-    ``no-validos`` se convierten en ``NaN``. Para los
-    datos numéricos se utiliza como separador de
-    decimales el carácter indicado en
-    ``separador-decimal``.
+   : Devuelve un objeto del tipo DataFrame con los datos del fichero CSV
+   ``fichero.csv`` usando como separador de los datos la cadena ``separador``.
+   Como nombres de columnas se utiliza los valores de la fila ``n`` y como nombres
+   de filas los valores de la columna ``m``. Si no se indica ``m`` se utilizan como
+   nombres de filas los enteros empezando en 0. Los valores incluidos en la lista
+   ``no-validos`` se convierten en ``NaN``. Para los datos numéricos se utiliza como
+   separador de decimales el carácter indicado en ``separador-decimal``.
 
 -  ``read_excel(fichero.xlsx, sheet_name=hoja, header=n, index_col=m, na_values=no-validos, decimal=separador-decimal)``
-    : Devuelve un objeto del tipo DataFrame con los  datos de la hoja de cálculo ``hoja``
-    del fichero Excel ``fichero.xlsx``. Como nombres de columnas se utiliza los valores de
-    la fila ``n`` y como nombres de filas los valores de la columna ``m``. Si no se indica
-    ``m`` se utilizan como nombres de filas los  enteros empezando en 0. Los valores incluidos
-    en la lista ``no-validos`` se convierten en ``NaN``. Para los datos numéricos se utiliza
-    como separador de decimales el carácter indicado en ``separador-decimal``.
+   : Devuelve un objeto del tipo DataFrame con los  datos de la hoja de cálculo ``hoja``
+   del fichero Excel ``fichero.xlsx``. Como nombres de columnas se utiliza los valores de
+   la fila ``n`` y como nombres de filas los valores de la columna ``m``. Si no se indica
+   ``m`` se utilizan como nombres de filas los  enteros empezando en 0. Los valores incluidos
+   en la lista ``no-validos`` se convierten en ``NaN``. Para los datos numéricos se utiliza
+   como separador de decimales el carácter indicado en ``separador-decimal``.
 
     .. code-block:: pycon
         :linenos:
@@ -765,33 +720,28 @@ Exportación de ficheros
 También existen funciones para exportar un DataFrame a un fichero con
 diferentes formatos.
 
--  ``df.to_csv(fichero.csv, sep=separador, columns=booleano, index=booleano)``
-    : Exporta el DataFrame ``df`` al fichero
-    ``fichero.csv`` en formato CSV usando como
-    separador de los datos la cadena ``separador``. Si
-    se pasa ``True`` al parámetro ``columns`` se
-    exporta también la fila con los nombres de columnas
-    y si se pasa ``True`` al parámetro ``index`` se
-    exporta también la columna con los nombres de las
-    filas.
+-  ``df.to_csv(fichero.csv, sep=separador, columns=booleano, index=booleano)``: 
+   Exporta el DataFrame ``df`` al fichero ``fichero.csv`` en formato CSV usando
+   como separador de los datos la cadena ``separador``. Si se pasa ``True`` al
+   parámetro ``columns`` se exporta también la fila con los nombres de columnas
+   y si se pasa ``True`` al parámetro ``index`` se exporta también la columna
+   con los nombres de las filas.
 
--  ``df.to_excel(fichero.xlsx, sheet_name = hoja, columns=booleano, index=booleano)``
-    : Exporta el DataFrame ``df`` a la hoja de cálculo
-    ``hoja`` del fichero ``fichero.xlsx`` en formato
-    Excel. Si se pasa ``True`` al parámetro ``columns``
-    se exporta también la fila con los nombres de
-    columnas y si se pasa ``True`` al parámetro
-    ``index`` se exporta también la columna con los
-    nombres de las filas.
+-  ``df.to_excel(fichero.xlsx, sheet_name = hoja, columns=booleano, index=booleano)``: 
+   Exporta el DataFrame ``df`` a la hoja de cálculo ``hoja`` del fichero
+   ``fichero.xlsx`` en formato Excel. Si se pasa ``True`` al parámetro
+   ``columns`` se exporta también la fila con los nombres de columnas
+   y si se pasa ``True`` al parámetro ``index`` se exporta también la
+   columna con los nombres de las filas.
 
 
 .. _python_pkg_pandas_dataframe_attrs:
 
-Atributos de un DataFrame
--------------------------
+Atributos de DataFrame
+----------------------
 
-Existen varias propiedades o métodos para ver las
-características de un DataFrame.
+Existen varias propiedades o métodos para ver las características de
+un DataFrame.
 
 -  ``df.info()`` : Devuelve información (número de
     filas, número de columnas, índices, tipo de las
@@ -863,15 +813,14 @@ características de un DataFrame.
 Renombrar los nombres de las filas y columnas
 ---------------------------------------------
 
-Para cambiar el nombre de las filas y las columnas de
-un DataFrame se utiliza el siguiente método:
+Para cambiar el nombre de las filas y las columnas de un DataFrame
+se utiliza el siguiente método:
 
--  ``df.rename(columns=columnas, index=filas)``:
-    Devuelve el DataFrame que resulta de renombrar las
-    columnas indicadas en las claves del diccionario
-    ``columnas`` con sus valores y las filas indicadas
-    en las claves del diccionario ``filas`` con sus
-    valores en el DataFrame ``df``.
+-  ``df.rename(columns=columnas, index=filas)``: Devuelve el
+   DataFrame que resulta de renombrar las columnas indicadas
+   en las claves del diccionario ``columnas`` con sus valores
+   y las filas indicadas en las claves del diccionario ``filas``
+   con sus valores en el DataFrame ``df``.
 
 .. code-block:: pycon
     :linenos:
@@ -897,21 +846,18 @@ un DataFrame se utiliza el siguiente método:
 
 .. _python_pkg_pandas_dataframe_cambiar_indice:
 
-Cambiar el índice de un DataFrame
----------------------------------
+Cambiar el índice de DataFrame
+------------------------------
 
-Aunque el índice de un DataFrame suele fijarse en la
-creación del mismo, en ocasiones puede ser necesario
-cambiar el índice una vez creado el DataFrame. Para
-ello se utiliza el siguiente método:
+Aunque el índice de un DataFrame suele fijarse en la creación del mismo,
+en ocasiones puede ser necesario cambiar el índice una vez creado el DataFrame.
+Para ello se utiliza el siguiente método:
 
--  ``df.set_index(keys = columnas, verify_integrity = bool)``:
-    Devuelve el DataFrame que resulta de eliminar las
-    columnas de la lista ``columnas`` y convertirlas en
-    el nuevo índice. El parámetro ``verify_integrity``
-    recibe un booleano (``False`` por defecto) y
-    realiza una comprobación para evitar duplicados en
-    la clave cuando recibe ``True``.
+-  ``df.set_index(keys = columnas, verify_integrity = bool)``: Devuelve el
+   DataFrame que resulta de eliminar las columnas de la lista ``columnas``
+   y convertirlas en el nuevo índice. El parámetro ``verify_integrity``
+   recibe un booleano (``False`` por defecto) y realiza una comprobación
+   para evitar duplicados en la clave cuando recibe ``True``.
 
 .. code-block:: pycon
     :linenos:
@@ -933,21 +879,18 @@ ello se utiliza el siguiente método:
 
 .. _python_pkg_pandas_dataframe_reindexar:
 
-Reindexar un DataFrame
-----------------------
+Reindexar DataFrame
+-------------------
 
-Para reordenar los índices de las filas y las columnas
-de un DataFrame, así como añadir o eliminar índices,
-se utiliza el siguiente método:
+Para reordenar los índices de las filas y las columnas de un DataFrame, así como
+añadir o eliminar índices, se utiliza el siguiente método:
 
--  ``df.reindex(index=filas, columns=columnas, fill_value=relleno)``
-    : Devuelve el DataFrame que resulta de tomar del
-    DataFrame ``df`` las filas con nombres en la lista
-    ``filas`` y las columnas con nombres en la lista
-    ``columnas``. Si alguno de los nombres indicados en
-    ``filas`` o ``columnas`` no existía en el DataFrame
-    ``df``, se crean filan o columnas nuevas rellenas
-    con el valor ``relleno``.
+-  ``df.reindex(index=filas, columns=columnas, fill_value=relleno)`` : Devuelve
+   el DataFrame que resulta de tomar del DataFrame ``df`` las filas con nombres
+   en la lista ``filas`` y las columnas con nombres en la lista ``columnas``.
+   Si alguno de los nombres indicados en ``filas`` o ``columnas`` no existía
+   en el DataFrame ``df``, se crean filan o columnas nuevas rellenas con el valor
+   ``relleno``.
 
 .. code-block:: pycon
     :linenos:
@@ -965,29 +908,26 @@ se utiliza el siguiente método:
 
 .. _python_pkg_pandas_dataframe_acceso_items:
 
-Acceso a los elementos de un DataFrame
---------------------------------------
+Acceso a los elementos de DataFrame
+-----------------------------------
 
-El acceso a los datos de un DataFrame se puede hacer a
-través de posiciones o través de los nombres de las
-filas y columnas.
+El acceso a los datos de un DataFrame se puede hacer a través de posiciones
+o través de los nombres de las filas y columnas.
 
 .. _python_pkg_pandas_dataframe_acceso_items_by_positions:
 
 Accesos mediante posiciones
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``df.iloc[i, j]`` : Devuelve el elemento que se
-    encuentra en la fila ``i`` y la columna ``j`` del
-    DataFrame ``df``. Pueden indicarse secuencias de
-    índices para obtener partes del DataFrame.
+-  ``df.iloc[i, j]`` : Devuelve el elemento que se encuentra en la fila
+   ``i`` y la columna ``j`` del DataFrame ``df``. Pueden indicarse secuencias
+   de índices para obtener partes del DataFrame.
 
--  ``df.iloc[filas, columnas]`` : Devuelve un
-    DataFrame con los elementos de las filas de la
-    lista ``filas`` y de las columnas de la lista
-    ``columnas``.
+-  ``df.iloc[filas, columnas]`` : Devuelve un DataFrame con los elementos
+   de las filas de la lista ``filas`` y de las columnas de la lista ``columnas``.
 
--  ``df.iloc[i]`` : Devuelve una serie con los elementos de la fila ``i`` del DataFrame ``df``.
+-  ``df.iloc[i]`` : Devuelve una serie con los elementos de la fila ``i`` del
+   DataFrame ``df``.
 
 .. code-block:: pycon
     :linenos:
@@ -1052,30 +992,26 @@ nombres de la lista ``columnas`` del DataFrame ``df``.
 
 .. _python_pkg_pandas_dataframe_opers_colums:
 
-Operaciones con las columnas de un DataFrame
---------------------------------------------
+Operaciones con columnas de DataFrame
+-------------------------------------
 
 .. _python_pkg_pandas_dataframe_opers_colums_agregar:
 
-Añadir columnas a un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Añadir columnas a DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-El procedimiento para añadir una nueva columna a un
-DataFrame es similar al de añadir un nuevo par a un
-diccionario, pero pasando los valores de la columna en
-una lista o serie.
+El procedimiento para añadir una nueva columna a un DataFrame es
+similar al de añadir un nuevo par a un diccionario, pero pasando
+los valores de la columna en una lista o serie.
 
--  ``d[nombre] = lista``: Añade al DataFrame ``df``
-    una nueva columna con el nombre ``nombre`` y los
-    valores de la lista ``lista``. La lista debe tener
-    el mismo tamaño que el número de filas de ``df``.
+-  ``d[nombre] = lista``: Añade al DataFrame ``df`` una nueva columna
+   con el nombre ``nombre`` y los valores de la lista ``lista``. La lista
+   debe tener el mismo tamaño que el número de filas de ``df``.
 
--  ``d[nombre] = serie``: Añade al DataFrame ``df``
-    una nueva columna con el nombre ``nombre`` y los
-    valores de la serie ``serie``. Si el tamaño de la
-    serie es menor que el número de filas de ``df`` se
-    rellena con valores ``NaN`` mientras que si es
-    mayor se recorta.
+-  ``d[nombre] = serie``: Añade al DataFrame ``df`` una nueva columna
+   con el nombre ``nombre`` y los valores de la serie ``serie``. Si el
+   tamaño de la serie es menor que el número de filas de ``df`` se rellena
+   con valores ``NaN`` mientras que si es mayor se recorta.
 
 .. code-block:: pycon
     :linenos:
@@ -1101,9 +1037,9 @@ una lista o serie.
 Operaciones sobre columnas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Puesto que los datos de una misma columna de un
-DataFrame son del mismo tipo, es fácil aplicar la
-misma operación a todos los elementos de la columna.
+Puesto que los datos de una misma columna de un DataFrame son del
+mismo tipo, es fácil aplicar la misma operación a todos los elementos
+de la columna.
 
 .. code-block:: pycon
     :linenos:
@@ -1130,13 +1066,12 @@ misma operación a todos los elementos de la columna.
 Aplicar funciones a columnas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Para aplicar funciones a todos los elementos de una
-columna se utiliza el siguiente método:
+Para aplicar funciones a todos los elementos de una columna se utiliza
+el siguiente método:
 
--  ``df[columna].apply(f)`` : Devuelve una serie con
-    los valores que resulta de aplicar la función ``f``
-    a los elementos de la columna con nombre
-    ``columna`` del DataFrame ``df``.
+-  ``df[columna].apply(f)`` : Devuelve una serie con los valores que
+   resulta de aplicar la función ``f`` a los elementos de la columna
+   con nombre ``columna`` del DataFrame ``df``.
 
 .. code-block:: pycon
     :linenos:
@@ -1157,15 +1092,13 @@ columna se utiliza el siguiente método:
 Convertir una columna al tipo datetime
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A menudo una columna contiene cadenas que representan
-fechas. Para convertir estas cadenas al tipo
-``datetime`` se utiliza el siguiente método:
+A menudo una columna contiene cadenas que representan fechas. Para
+convertir estas cadenas al tipo ``datetime`` se utiliza el siguiente
+método:
 
--  ``to_datetime(columna, formato)``: Devuelve la
-    serie que resulta de convertir las cadenas de la
-    columna con el nombre ``columna`` en fechas del
-    tipo ``datetime`` con el formado especificado en
-    ``formato``.
+-  ``to_datetime(columna, formato)``: Devuelve la  serie que resulta de
+   convertir las cadenas de la columna con el nombre ``columna`` en fechas
+   del tipo ``datetime`` con el formado especificado en ``formato``.
 
     .. tip::
         Para más información consulte la documentación oficial de 
@@ -1190,64 +1123,50 @@ fechas. Para convertir estas cadenas al tipo
 
 .. _python_pkg_pandas_dataframe_resumen_descriptivo:
 
-Resumen descriptivo de un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Resumen descriptivo de DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Al igual que para las series, los siguientes métodos
 permiten resumir la información de un DataFrame por
 columnas:
 
--  ``df.count()`` : Devuelve una serie con el número
-    de elementos que no son nulos ni ``NaN`` en cada
-    columna del DataFrame ``df``.
+-  ``df.count()`` : Devuelve una serie con el número de elementos que no
+   son nulos ni ``NaN`` en cada columna del DataFrame ``df``.
 
--  ``df.sum()`` : Devuelve una serie con la suma de
-    los datos de las columnas del DataFrame ``df``
-    cuando los datos son de un tipo numérico, o la
-    concatenación de ellos cuando son del tipo cadena
-    ``str``.
+-  ``df.sum()`` : Devuelve una serie con la suma de los datos de las columnas
+   del DataFrame ``df`` cuando los datos son de un tipo numérico, o la concatenación
+   de ellos cuando son del tipo cadena ``str``.
 
--  ``df.cumsum()`` : Devuelve un DataFrame con la suma
-    acumulada de los datos de las columnas del
-    DataFrame ``df`` cuando los datos son de un tipo
-    numérico.
+-  ``df.cumsum()`` : Devuelve un DataFrame con la suma acumulada de los datos de las
+   columnas del DataFrame ``df`` cuando los datos son de un tipo numérico.
 
--  ``df.min()`` : Devuelve una serie con los menores
-    de los datos de las columnas del DataFrame ``df``.
+-  ``df.min()`` : Devuelve una serie con los menores de los datos de las columnas del
+   DataFrame ``df``.
 
--  ``df.max()`` : Devuelve una serie con los mayores
-    de los datos de las columnas del DataFrame ``df``.
+-  ``df.max()`` : Devuelve una serie con los mayores de los datos de las columnas del
+   DataFrame ``df``.
 
--  ``df.mean()`` : Devuelve una serie con las medias
-    de los datos de las columnas numéricas del
-    DataFrame ``df``.
+-  ``df.mean()`` : Devuelve una serie con las medias de los datos de las columnas numéricas
+   del DataFrame ``df``.
 
--  ``df.var()`` : Devuelve una serie con las varianzas
-    de los datos de las columnas numéricas del
-    DataFrame ``df``.
+-  ``df.var()`` : Devuelve una serie con las varianzas de los datos de las columnas numéricas
+   del DataFrame ``df``.
 
--  ``df.std()`` : Devuelve una serie con las
-    desviaciones típicas de los datos de las columnas
-    numéricas del DataFrame ``df``.
+-  ``df.std()`` : Devuelve una serie con las desviaciones típicas de los datos de las columnas
+   numéricas del DataFrame ``df``.
 
--  ``df.cov()`` : Devuelve un DataFrame con las
-    covarianzas de los datos de las columnas numéricas
-    del DataFrame ``df``.
+-  ``df.cov()`` : Devuelve un DataFrame con las covarianzas de los datos de las columnas
+   numéricas del DataFrame ``df``.
 
--  ``df.corr()`` : Devuelve un DataFrame con los
-    coeficientes de correlación de Pearson de los datos
-    de las columnas numéricas del DataFrame ``df``.
+-  ``df.corr()`` : Devuelve un DataFrame con los coeficientes de correlación de Pearson
+   de los datos de las columnas numéricas del DataFrame ``df``.
 
--  ``df.describe(include = tipo)`` : Devuelve un
-    DataFrame con un resumen estadístico de las
-    columnas del DataFrame ``df`` del tipo ``tipo``.
-    Para los datos numéricos (``number``) se calcula la
-    media, la desviación típica, el mínimo, el máximo y
-    los cuartiles. Para los datos no numéricos
-    (``object``) se calcula el número de valores, el
-    número de valores distintos, la moda y su
-    frecuencia. Si no se indica el tipo solo se
-    consideran las columnas numéricas.
+-  ``df.describe(include = tipo)`` : Devuelve un DataFrame con un resumen estadístico de
+   las columnas del DataFrame ``df`` del tipo ``tipo``.
+   Para los datos numéricos (``number``) se calcula la media, la desviación típica, el mínimo,
+   el máximo y los cuartiles. Para los datos no numéricos (``object``) se calcula el número
+   de valores, el número de valores distintos, la moda y su frecuencia. Si no se indica el
+   tipo solo se consideran las columnas numéricas.
 
 .. code-block:: pycon
     :linenos:
@@ -1296,17 +1215,15 @@ columnas:
 
 .. _python_pkg_pandas_dataframe_eliminar_columnas:
 
-Eliminar columnas de un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Eliminar columnas de DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para eliminar columnas de un DataFrame se utilizan los siguientes métodos:
 
--  ``del d[nombre]`` : Elimina la columna con nombre
-    ``nombre`` del DataFrame ``df``.
+-  ``del d[nombre]`` : Elimina la columna con nombre ``nombre`` del DataFrame ``df``.
 
--  ``df.pop(nombre)`` : Elimina la columna con nombre
-    ``nombre`` del DataFrame ``df`` y la devuelve como
-    una serie.
+-  ``df.pop(nombre)`` : Elimina la columna con nombre ``nombre`` del DataFrame ``df``
+   y la devuelve como una serie.
 
 .. code-block:: pycon
     :linenos:
@@ -1331,25 +1248,22 @@ Para eliminar columnas de un DataFrame se utilizan los siguientes métodos:
 
 .. _python_pkg_pandas_dataframe_oper_filas:
 
-Operaciones con las filas de un DataFrame
------------------------------------------
+Operaciones con las filas de DataFrame
+--------------------------------------
 
 .. _python_pkg_pandas_dataframe_agregar_fila:
 
-Añadir una fila a un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Añadir una fila a DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para añadir una fila a un DataFrame se utiliza el siguiente método:
 
--  ``df.append(serie, ignore_index=True)`` : Devuelve
-    el DataFrame que resulta de añadir una fila al
-    DataFrame ``df`` con los valores de la serie
-    ``serie``. Los nombres del índice de la serie deben
-    corresponderse con los nombres de las columnas de
-    ``df``. Si no se pasa el parámetro ``ignore_index``
-    entonces debe pasarse el parámetro ``name`` a la
-    serie, donde su argumento será el nombre de la
-    nueva fila.
+-  ``df.append(serie, ignore_index=True)`` : Devuelve el DataFrame que resulta de
+   añadir una fila al DataFrame ``df`` con los valores de la serie ``serie``. Los
+   nombres del índice de la serie deben corresponderse con los nombres de las
+   columnas de ``df``. Si no se pasa el parámetro ``ignore_index`` entonces debe
+   pasarse el parámetro ``name`` a la serie, donde su argumento será el nombre de
+   la nueva fila.
 
 .. code-block:: pycon
     :linenos:
@@ -1375,15 +1289,13 @@ Para añadir una fila a un DataFrame se utiliza el siguiente método:
 
 .. _python_pkg_pandas_dataframe_eliminar_fila:
 
-Eliminar filas de un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Eliminar filas de DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para eliminar filas de un DataFrame se utilizan el siguiente método:
 
--  ``df.drop(filas)`` : Devuelve el DataFrame que
-    resulta de eliminar las filas con los nombres
-    indicados en la lista ``filas`` del DataFrame
-    ``df``.
+-  ``df.drop(filas)`` : Devuelve el DataFrame que resulta de eliminar las filas
+   con los nombres indicados en la lista ``filas`` del DataFrame ``df``.
 
 .. code-block:: pycon
     :linenos:
@@ -1402,19 +1314,16 @@ Para eliminar filas de un DataFrame se utilizan el siguiente método:
 
 .. _python_pkg_pandas_dataframe_filtrar_filas:
 
-Filtrar las filas de un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Filtrar las filas de DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Una operación bastante común con un DataFrame es
-obtener las filas que cumplen una determinada
-condición.
+Una operación bastante común con un DataFrame es obtener las filas que cumplen
+una determinada condición.
 
--  ``df[condicion]`` : Devuelve un DataFrame con las
-    filas del DataFrame ``df`` que se corresponden con
-    el valor ``True`` de la lista booleana
-    ``condicion``. ``condicion`` debe ser una lista de
-    valores booleanos de la misma longitud que el
-    número de filas del DataFrame.
+-  ``df[condicion]`` : Devuelve un DataFrame con las filas del DataFrame ``df``
+   que se corresponden con el valor ``True`` de la lista booleana ``condicion``.
+   ``condicion`` debe ser una lista de valores booleanos de la misma longitud que
+   el número de filas del DataFrame.
 
 .. code-block:: pycon
     :linenos:
@@ -1430,26 +1339,21 @@ condición.
 
 .. _python_pkg_pandas_dataframe_ordenar:
 
-Ordenar un DataFrame
-^^^^^^^^^^^^^^^^^^^^
+Ordenar DataFrame
+^^^^^^^^^^^^^^^^^
 
-Para ordenar un DataFrame de acuerdo a los valores de
-una determinada columna se utilizan los siguientes
-métodos:
+Para ordenar un DataFrame de acuerdo a los valores de una determinada columna
+se utilizan los siguientes métodos:
 
--  ``df.sort_values(columna, ascending=booleano``) :
-    Devuelve el DataFrame que resulta de ordenar las
-    filas del DataFrame ``df`` según los valores del la
-    columna con nombre ``columna``. Si argumento del
-    parámetro ``ascending`` es ``True`` el orden es
-    creciente y si es ``False`` decreciente.
+-  ``df.sort_values(columna, ascending=booleano``) : Devuelve el DataFrame que
+   resulta de ordenar las filas del DataFrame ``df`` según los valores del la
+   columna con nombre ``columna``. Si argumento del parámetro ``ascending`` es
+   ``True`` el orden es creciente y si es ``False`` decreciente.
 
--  ``df.sort_index(ascending=booleano``) : Devuelve el
-    DataFrame que resulta de ordenar las filas del
-    DataFrame ``df`` según los nombres de las filas. Si
-    el argumento del parámetro ``ascending`` es
-    ``True`` el orden es creciente y si es ``False``
-    decreciente.
+-  ``df.sort_index(ascending=booleano``) : Devuelve el DataFrame que resulta de
+   ordenar las filas del DataFrame ``df`` según los nombres de las filas. Si el
+   argumento del parámetro ``ascending`` es ``True`` el orden es creciente y si
+   es ``False`` decreciente.
 
 .. code-block:: pycon
     :linenos:
@@ -1466,22 +1370,18 @@ métodos:
     13             Carolina Rubio Moreno    20    M   61.0    1.77       194.0
     ...
 
-.. _python_pkg_pandas_obj_eliminar_filas_dados_desconocidos:
+.. _python_pkg_pandas_obj_eliminar_filas_datos_desconocidos:
 
-Eliminar las filas con dados desconocidos en un DataFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Eliminar las filas con datos desconocidos en DataFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Para eliminar las filas de un DataFrame que contienen
-datos desconocidos ``NaN`` o nulos ``None`` se utiliza
-el siguiente método:
+Para eliminar las filas de un DataFrame que contienen datos desconocidos ``NaN``
+o nulos ``None`` se utiliza el siguiente método:
 
--  ``s.dropna(subset=columnas)`` : Devuelve el
-    DataFrame que resulta de eliminar las filas que
-    contienen algún dato desconocido o nulo en las
-    columnas de la lista ``columna`` del DataFrame
-    ``df``. Si no se pasa un argumento al parámetro
-    ``subset`` se aplica a todas las columnas del
-    DataFrame.
+-  ``s.dropna(subset=columnas)`` : Devuelve el DataFrame que resulta de eliminar
+   las filas que contienen algún dato desconocido o nulo en las columnas de la lista
+   ``columna`` del DataFrame ``df``. Si no se pasa un argumento al parámetro ``subset``
+   se aplica a todas las columnas del DataFrame.
 
 .. code-block:: pycon
     :linenos:
@@ -1500,13 +1400,12 @@ el siguiente método:
 
 .. _python_pkg_pandas_dataframe_agrupar:
 
-Agrupación de un DataFrame
---------------------------
+Agrupación de DataFrame
+-----------------------
 
-En muchas aplicaciones es útil agrupar los datos de un
-DataFrame de acuerdo a los valores de una o varias
-columnas (categorías), como por ejemplo el sexo o el
-país.
+En muchas aplicaciones es útil agrupar los datos de un DataFrame de acuerdo
+a los valores de una o varias columnas (categorías), como por ejemplo el
+sexo o el país.
 
 .. figure:: ../_static/images/pandas_grupos.png
     :align: center
@@ -1517,18 +1416,16 @@ país.
 
 .. _python_pkg_pandas_dataframe_dividir_en_grupos:
 
-Dividir un DataFrame en grupos
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Dividir DataFrame en grupos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para dividir un DataFrame en grupos se utiliza el siguiente método:
 
--  ``df.groupby(columnas).groups`` : Devuelve un
-    diccionario con cuyas claves son las tuplas que
-    resultan de todas las combinaciones de los valores
-    de las columnas con nombres en la lista
-    ``columnas``, y valores las listas de los nombres
-    de las filas que contienen esos valores en las
-    correspondientes columnas del DataFrame ``df``.
+-  ``df.groupby(columnas).groups`` : Devuelve un diccionario con cuyas claves
+   son las tuplas que resultan de todas las combinaciones de los valores de las
+   columnas con nombres en la lista ``columnas``, y valores las listas de los
+   nombres de las filas que contienen esos valores en las correspondientes
+   columnas del DataFrame ``df``.
 
 .. code-block:: pycon
     :linenos:
@@ -1544,12 +1441,10 @@ Para dividir un DataFrame en grupos se utiliza el siguiente método:
 
 Para obtener un grupo concreto se utiliza el siguiente método:
 
--  ``df.groupby(columnas).get_group(valores)`` :
-    Devuelve un DataFrame con las filas del DataFrame
-    ``df`` que cumplen que las columnas de la lista
-    ``columnas`` presentan los valores de la tupla
-    ``valores``. La lista ``columnas`` y la tupla
-    ``valores`` deben tener el mismo tamaño.
+-  ``df.groupby(columnas).get_group(valores)`` : Devuelve un DataFrame con las filas
+   del DataFrame ``df`` que cumplen que las columnas de la lista ``columnas`` presentan
+   los valores de la tupla ``valores``. La lista ``columnas`` y la tupla ``valores``
+   deben tener el mismo tamaño.
 
 .. code-block:: pycon
     :linenos:
@@ -1573,26 +1468,27 @@ Para obtener un grupo concreto se utiliza el siguiente método:
 Aplicar una función de agregación por grupos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Una vez dividido el DataFame en grupos, es posible
-aplicar funciones de agregación a cada grupo mediante
-el siguiente método:
+Una vez dividido el DataFame en grupos, es posible aplicar funciones de agregación
+a cada grupo mediante el siguiente método:
 
--  ``df.groupby(columnas).agg(funciones)`` : Devuelve
-    un DataFrame con el resultado de aplicar las
-    funciones de agregación de la lista ``funciones`` a
-    cada uno de los DataFrames que resultan de dividir
-    el DataFrame según las columnas de la lista
-    ``columnas``.
+-  ``df.groupby(columnas).agg(funciones)`` : Devuelve un DataFrame con el resultado
+   de aplicar las funciones de agregación de la lista ``funciones`` a cada uno de
+   los DataFrames que resultan de dividir el DataFrame según las columnas de la
+   lista ``columnas``.
 
-Una función de agregación toma como argumento una
-lista y devuelve una único valor. Algunas de las
-funciones de agregación más comunes son:
+Una función de agregación toma como argumento una lista y devuelve una único valor.
+Algunas de las funciones de agregación más comunes son:
 
 -  ``np.min`` : Devuelve el mínimo de una lista de valores.
+
 -  ``np.max`` : Devuelve el máximo de una lista de valores.
+
 -  ``np.count_nonzero`` : Devuelve el número de valores no nulos de una lista de valores.
+
 -  ``np.sum`` : Devuelve la suma de una lista de valores.
+
 -  ``np.mean`` : Devuelve la media de una lista de valores.
+
 -  ``np.std`` : Devuelve la desviación típica de una lista de valores.
 
 .. code-block:: pycon
@@ -1610,14 +1506,12 @@ funciones de agregación más comunes son:
 
 .. _python_pkg_pandas_dataframe_reestructurar:
 
-Reestructurar un DataFrame
---------------------------
+Reestructurar DataFrame
+-----------------------
 
-A menudo la disposición de los datos en un DataFrame
-no es la adecuada para su tratamiento y es necesario
-reestructurar el DataFrame. Los datos que contiene un
-DataFrame pueden organizarse en dos formatos: ancho y
-largo.
+A menudo la disposición de los datos en un DataFrame no es la adecuada para
+su tratamiento y es necesario reestructurar el DataFrame. Los datos que
+contiene un DataFrame pueden organizarse en dos formatos: ancho y largo.
 
 .. figure:: ../_static/images/pandas_dataframe_formatos.png
     :align: center
@@ -1628,25 +1522,21 @@ largo.
 
 .. _python_pkg_pandas_dataframe_convertir_formato_largo:
 
-Convertir un DataFrame a formato largo
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Convertir DataFrame a formato largo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Para convertir un DataFrame de formato ancho a formato
-largo (columnas a filas) se utiliza el siguiente
-método:
+Para convertir un DataFrame de formato ancho a formato largo (columnas a filas)
+se utiliza el siguiente método:
 
--  ``df.melt(id_vars=id-columnas, value_vars=columnas, var_name=nombre-columnas, var_value=nombre-valores)``
-    : Devuelve el DataFrame que resulta de convertir el
-    DataFrame ``df`` de formato ancho a formato largo.
-    Todas las columnas de lista ``columnas`` se
-    reestructuran en dos nuevas columnas con nombres
-    ``nombre-columnas`` y ``nombre-valores`` que
-    contienen los nombres de las columnas originales y
-    sus valores, respectivamente. Las columnas en la
-    lista ``id-columnas`` se mantienen sin
-    reestructurar. Si no se pasa la lista ``columnas``
-    entonces se reestructuran todas las columnas
-    excepto las columnas de la lista ``id-columnas``.
+-  ``df.melt(id_vars=id-columnas, value_vars=columnas, var_name=nombre-columnas, var_value=nombre-valores)`` :
+   Devuelve el DataFrame que resulta de convertir el DataFrame ``df`` de formato
+   ancho a formato largo.
+   Todas las columnas de lista ``columnas`` se reestructuran en dos nuevas columnas
+   con nombres ``nombre-columnas`` y ``nombre-valores`` que contienen los nombres de
+   las columnas originales y sus valores, respectivamente. Las columnas en la lista
+   ``id-columnas`` se mantienen sin reestructurar.
+   Si no se pasa la lista ``columnas`` entonces se reestructuran todas las columnas
+   excepto las columnas de la lista ``id-columnas``.
 
 .. code-block:: pycon
     :linenos:
@@ -1676,23 +1566,20 @@ método:
 
 .. _python_pkg_pandas_dataframe_convertir_formato_ancho:
 
-Convertir un DataFrame a formato ancho
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Convertir DataFrame a formato ancho
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Para convertir un DataFrame de formato largo a formato
-ancho (filas a columnas) se utiliza el siguiente
-método:
+Para convertir un DataFrame de formato largo a formato ancho (filas a columnas)
+se utiliza el siguiente método:
 
--  ``df.pivot(index=filas, columns=columna, values=valores)``
-    : Devuelve el DataFrame que resulta de convertir el
-    DataFrame ``df`` de formato largo a formato ancho.
-    Se crean tantas columnas nuevas como valores
-    distintos haya en la columna ``columna``. Los
-    nombres de estas nuevas columnas son los valores de
-    la columna ``columna`` mientras que sus valores se
-    toman de la columna ``valores``. Los nombres del
-    índice del nuevo DataFrame se toman de los valores
-    de la columna ``filas``.
+-  ``df.pivot(index=filas, columns=columna, values=valores)`` : Devuelve el
+   DataFrame que resulta de convertir el DataFrame ``df`` de formato largo a
+   formato ancho.
+   Se crean tantas columnas nuevas como valores distintos haya en la columna
+   ``columna``. Los nombres de estas nuevas columnas son los valores de la
+   columna ``columna`` mientras que sus valores se toman de la columna ``valores``.
+   Los nombres del índice del nuevo DataFrame se toman de los valores de la
+   columna ``filas``.
 
 .. code-block:: pycon
     :linenos:
@@ -1711,11 +1598,12 @@ método:
 Combinar varios DataFrames
 --------------------------
 
-Dos o más DataFrames pueden combinarse en otro
-DataFrame. La combinación puede ser de varias formas:
+Dos o más DataFrames pueden combinarse en otro DataFrame. La combinación
+puede ser de varias formas:
 
 -  **Concatenación**: Combinación de varios DataFrames
     concatenando sus filas o columnas.
+
 -  **Mezcla**: Combinación de varios DataFrames usando
     columnas o índices comunes.
 
@@ -1724,11 +1612,10 @@ DataFrame. La combinación puede ser de varias formas:
 Concatenación de DataFrames
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  **Concatenación de filas**. Las filas de los
-    DataFrames se concatenan unas a continuación de las
-    otras para formar el nuevo DataFrame. Para ello es
-    necesario que los DataFrames que se combinen tengan
-    el mismo índice de columnas.
+-  **Concatenación de filas**. Las filas de los DataFrames se
+    concatenan unas a continuación de las otras para formar el
+    nuevo DataFrame. Para ello es necesario que los DataFrames
+    que se combinen tengan el mismo índice de columnas.
 
     .. figure:: ../_static/images/pandas_dataframe_concatenacion_filas.png
         :align: center
@@ -1737,11 +1624,10 @@ Concatenación de DataFrames
         Concatenación de DataFrames por filas
 
 
--  **Concatenación de columnas**. Las columnas de los
-    DataFrames se concatenan unas a continuación de las
-    otras para formar el nuevo DataFrame. Para ello es
-    necesario que los DataFrames que se combinen tengan
-    el mismo índice de filas.
+-  **Concatenación de columnas**. Las columnas de los DataFrames se
+   concatenan unas a continuación de las otras para formar el nuevo
+   DataFrame. Para ello es necesario que los DataFrames que se combinen
+   tengan el mismo índice de filas.
 
     .. figure:: ../_static/images/pandas_dataframe_concatenacion_columnas.png
         :align: center
@@ -1750,24 +1636,19 @@ Concatenación de DataFrames
         Concatenación de DataFrames por columnas
 
 
-Para concatenar dos o más DataFrames se utiliza el
-siguiente método:
+Para concatenar dos o más DataFrames se utiliza el siguiente método:
 
--  ``df.concat(dataframes, axis = eje)``: Devuelve el
-    DataFrame que resulta de concatenar los DataFrames
-    de la lista ``dataframes``. Si ``eje`` es 0 (valor
-    por defecto) la concatenación se realiza por filas,
-    y si ``eje`` es 1 se realiza por columnas.
+-  ``df.concat(dataframes, axis = eje)``: Devuelve el DataFrame
+   que resulta de concatenar los DataFrames de la lista ``dataframes``.
+   Si ``eje`` es 0 (valor por defecto) la concatenación se realiza por
+   filas, y si ``eje`` es 1 se realiza por columnas.
 
-Si los DataFrames que se concatenan por filas no
-tienen el mismo índice de columnas, el DataFrame
-resultante incluirá todas las columnas existentes en
-los DataFrames y rellenará con valores ``NaN`` los
-datos no disponibles. Si los DataFrames que se
-concatenan por columnas no tienen el mismo índice de
-filas, el DataFrame resultante incluirá todas las
-filas existentes en los DataFrames y rellenará con
-valores ``NaN`` los datos no disponibles.
+Si los DataFrames que se concatenan por filas no tienen el mismo índice
+de columnas, el DataFrame resultante incluirá todas las columnas existentes
+en los DataFrames y rellenará con valores ``NaN`` los datos no disponibles.
+Si los DataFrames que se concatenan por columnas no tienen el mismo índice
+de filas, el DataFrame resultante incluirá todas las filas existentes en los
+DataFrames y rellenará con valores ``NaN`` los datos no disponibles.
 
 .. code-block:: pycon
     :linenos:
@@ -1811,19 +1692,16 @@ valores ``NaN`` los datos no disponibles.
 Mezcla de DataFrames
 ^^^^^^^^^^^^^^^^^^^^
 
-La mezcla de DataFrames permite integrar filas de dos
-DataFrames que contienen información en común en una o
-varias columnas o índices que se conocen como *clave*.
+La mezcla de DataFrames permite integrar filas de dos DataFrames que
+contienen información en común en una o varias columnas o índices que
+se conocen como *clave*.
 
-Para mezclar dos DataFrames se utiliza el siguiente
-método:
+Para mezclar dos DataFrames se utiliza el siguiente método:
 
--  ``df.merge(df1, df2, on = clave, how = tipo)``:
-    Devuelve el DataFrame que resulta de mezclar el
-    DataFrame ``df2`` con el DataFrame ``df1``, usando
-    como claves las columnas de la lista ``clave`` y
-    siguiendo el método de mezcla indicado por
-    ``tipo``.
+-  ``df.merge(df1, df2, on = clave, how = tipo)``: Devuelve el DataFrame
+   que resulta de mezclar el DataFrame ``df2`` con el DataFrame ``df1``,
+   usando como claves las columnas de la lista ``clave`` y siguiendo el
+   método de mezcla indicado por ``tipo``.
 
 El tipo de mezcla puede ser
 
