@@ -494,8 +494,8 @@ de una serie se utiliza el siguiente método:
 
 .. _python_pkg_pandas_dataframe:
 
-Clase de objetos DataFrame
---------------------------
+Clase DataFrame
+---------------
 
 Un objeto del tipo ``DataFrame`` define un conjunto de datos estructurado en forma
 de tabla donde cada columna es un objeto de tipo Series, es decir, todos los
