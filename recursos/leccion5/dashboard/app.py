@@ -1,5 +1,5 @@
 # @Email:  leonardocaballero@gmail.com
-# @Website:  https://pythonandvba.com
+# @Website:  https://entrenamiento-data-scientist-python.readthedocs.io/
 # @Github:  https://github.com/macagua
 # @Project:  Tablero de Ventas con Streamlit
 
