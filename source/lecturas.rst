@@ -51,8 +51,8 @@ Lección 2 - Computación Científico
 ----------------------------------
 
 
-Numpy
-.....
+Librería Numpy
+..............
 
 - `NumPy <https://numpy.org/>`_.
 
@@ -69,8 +69,8 @@ Lección 3 - Manipulación y análisis de datos
 --------------------------------------------
 
 
-Pandas
-......
+Librería Pandas
+...............
 
 - `pandas - Python Data Analysis Library <https://pandas.pydata.org/>`_.
 
