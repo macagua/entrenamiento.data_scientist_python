@@ -199,7 +199,7 @@ A continuación se presenta y explica el uso de cada archivo para esta proyecto:
 
 *Archivo app.py*
 
-Modulo de principal del programa.
+Módulo de principal del programa.
 
 .. literalinclude:: ../../recursos/leccion5/hello_word/app.py
     :language: python
@@ -284,7 +284,7 @@ A continuación se presenta y explica el uso de cada archivo para esta proyecto:
 
 *Archivo app.py*
 
-Modulo de principal del programa.
+Módulo de principal del programa.
 
 .. literalinclude:: ../../recursos/leccion5/dashboard/app.py
     :language: python
