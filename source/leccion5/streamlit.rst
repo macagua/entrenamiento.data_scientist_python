@@ -104,13 +104,89 @@ ejecutando el siguiente comando correspondiente a tu sistema operativo:
           > streamlit hello
 
 
+El anterior comando al ejecutar debe mostrar el siguiente mensaje:
+
+.. code-block:: console
+
+    Welcome to Streamlit. Check out our demo in your browser.
+
+    Local URL: http://localhost:8501
+    Network URL: http://172.28.94.109:8501
+
+    Ready to create your own Python apps super quickly?
+    Head over to https://docs.streamlit.io
+
+    May you create awesome apps!
+
+``Local URL``
+    Dirección local de tu PC donde ejecuta esta demostración, valor por
+    defecto es **http://localhost:8501**
+
+``Network URL``
+    Dirección de la red local de tu PC donde donde puede compartir la forma
+    como accede a esta demostración.
+
+Abra el navegador web en la dirección local definida en el valor ``Local URL``:
+
+.. figure:: ../_static/images/streamlit_hello_index.png
+    :align: center
+    :width: 60%
+
+    Streamlit Hello - Welcome to Streamlit! 👋
+
+----
+
+.. figure:: ../_static/images/streamlit_hello_animation_demo.png
+    :align: center
+    :width: 60%
+
+    Streamlit Hello - Animation Demo
+
+Esta aplicación muestra cómo puede usar Streamlit para crear animaciones
+geniales. Muestra un fractal animado basado en el conjunto de Julia. Utilice
+el control deslizante para ajustar diferentes parámetros.
+
+----
+
+.. figure:: ../_static/images/streamlit_hello_plotting_demo.png
+    :align: center
+    :width: 60%
+
+    Streamlit Hello - Plotting Demo
+
+Esta demostración ilustra una combinación de Plotting y animación con Streamlit.
+En este ejemplo se genera un montón de números aleatorios en un bucle durante
+unos 5 segundos.
+
+----
+
+.. figure:: ../_static/images/streamlit_hello_mapping_demo.png
+    :align: center
+    :width: 60%
+
+    Streamlit Hello - Mapping Demo
+
+Esta demostración muestra cómo usar st.pydeck_chart para mostrar datos geoespaciales.
+
+
+----
+
+.. figure:: ../_static/images/streamlit_hello_dataframe_demo.png
+    :align: center
+    :width: 60%
+
+    Streamlit Hello - DataFrame Demo
+
+Esta demostración muestra cómo usar st.write para visualizar Pandas DataFrames.
+(Datos cortesía de `UN Data Explorer <http://data.un.org/Explorer.aspx>`_).
+
 .. _python_pkg_streamlit_hello_word:
 
 Práctica - Hello World
 ----------------------
 
-A continuación se presenta una práctica del famoso Hello World usando
-con ``Streamlit``, a continuación la estructura de proyecto llamado ``hello_word``:
+A continuación se presenta una práctica del famoso `Hello World`_ usando con ``Streamlit``,
+a continuación la estructura de proyecto llamado ``hello_word``:
 
 .. code-block:: console
 
@@ -139,6 +215,50 @@ Archivo de `requirements.txt`_ de la herramienta de gestión de paquetes `pip`_.
     :linenos:
     :lines: 1-1
 
+A continuación se presenta la ejecución de una demostración personalizada de `Hello World`_,
+ejecutando los siguientes comandos correspondiente a tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: Linux
+
+      .. code-block:: console
+
+          $ pip install -r hello_word/requirements.txt
+          $ streamlit run hello_word/app.py
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          > pip install -r hello_word/requirements.txt
+          > streamlit run hello_word/app.py
+
+
+El anterior comando al ejecutar debe mostrar el siguiente mensaje:
+
+.. code-block:: console
+
+    You can now view your Streamlit app in your browser.
+
+    Local URL: http://localhost:8501
+    Network URL: http://172.28.94.109:8501
+
+``Local URL``
+    Dirección local de tu PC donde ejecuta esta demostración, valor por
+    defecto es **http://localhost:8501**
+
+``Network URL``
+    Dirección de la red local de tu PC donde donde puede compartir la forma
+    como accede a esta demostración.
+
+Abra el navegador web en la dirección local definida en el valor ``Local URL``:
+
+.. figure:: ../_static/images/streamlit_hello_world.png
+    :align: center
+    :width: 60%
+
+    Streamlit - Hello World
 
 
 .. _python_pkg_streamlit_dashboard:
@@ -201,6 +321,52 @@ creación de los datos iniciales.
 
     Archivo de Excel ventas_supermercado.xlsx
 
+A continuación se presenta la ejecución de una demostración personalizada de ``Tablero de Ventas``,
+ejecutando los siguientes comandos correspondiente a tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: Linux
+
+      .. code-block:: console
+
+          $ pip install -r dashboard/requirements.txt
+          $ streamlit run dashboard/app.py
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          > pip install -r dashboard/requirements.txt
+          > streamlit run dashboard/app.py
+
+
+El anterior comando al ejecutar debe mostrar el siguiente mensaje:
+
+.. code-block:: console
+
+    You can now view your Streamlit app in your browser.
+
+    Local URL: http://localhost:8501
+    Network URL: http://172.28.94.109:8501
+
+``Local URL``
+    Dirección local de tu PC donde ejecuta esta demostración, valor por
+    defecto es **http://localhost:8501**
+
+``Network URL``
+    Dirección de la red local de tu PC donde donde puede compartir la forma
+    como accede a esta demostración.
+
+Abra el navegador web en la dirección local definida en el valor ``Local URL``:
+
+.. figure:: ../_static/images/streamlit_tablero_ventas.png
+    :align: center
+    :width: 60%
+
+    Streamlit - Tablero de Ventas
+
+
 .. todo::
     TODO Terminar de escribir esta sección.
 
@@ -221,3 +387,4 @@ creación de los datos iniciales.
 .. _`streamlit`: https://pypi.org/project/streamlit/
 .. _`requirements.txt`: https://pip.pypa.io/en/stable/reference/requirements-file-format/
 .. _`pip`: https://pip.pypa.io/en/stable/
+.. _`Hello World`: https://es.wikipedia.org/wiki/Hola_mundo
