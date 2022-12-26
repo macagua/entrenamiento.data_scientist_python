@@ -13,7 +13,7 @@ Acerca de esta iniciativa
 Acerca del entrenamiento
 ========================
 
-Este entrenamiento fue realizado en sus inicios  por Leonardo J. Caballero G., el cual iba dirigido a
+Este entrenamiento fue realizado en sus inicios por Leonardo J. Caballero G., el cual iba dirigido a
 personas novatas en la programación o novatos en el lenguajes de programación Python.
 
 

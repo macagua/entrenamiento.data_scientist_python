@@ -10,6 +10,7 @@ Data Scientist en Python
 Repositorio de manuales y recursos del entrenamiento **"Data Scientist en** `Python 3.7`_ -
 **Nivel básico"**.
 
+
 .. warning::
    Si esta buscando los manuales y recursos del entrenamiento **Data Scientist en Python** visite el siguiente enlace:
    `https://entrenamiento-data-scientist-python.readthedocs.io/ <https://entrenamiento-data-scientist-python.readthedocs.io/>`_.
