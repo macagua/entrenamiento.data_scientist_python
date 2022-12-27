@@ -23,6 +23,13 @@ Tablero de ventas: https://www.salesdashboard.pythonandvba.com/
 
 ## Autores
 
+### Autor de personalizaciones
+
+- Leonardo Caballero
+- Sitio web: https://entrenamiento-data-scientist-python.readthedocs.io/
+
+### Autores originales
+
 - Sven from Coding Is Fun
 - Canal YouTube: https://youtube.com/c/CodingIsFun
 - Sitio web: https://pythonandvba.com
