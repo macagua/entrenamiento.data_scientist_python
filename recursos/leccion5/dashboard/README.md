@@ -36,4 +36,4 @@ Tablero de ventas: https://www.salesdashboard.pythonandvba.com/
 
 ## Realimentación
 
-Si tiene algún comentario, comuníquese conmigo en contact@pythonandvba.com
+Si tiene algún comentario, comuníquese conmigo en leonardocaballero@gmail.com
