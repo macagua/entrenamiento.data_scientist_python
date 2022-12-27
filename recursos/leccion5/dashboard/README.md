@@ -1,36 +1,32 @@
 
-# Interactive Dashboard with Python – Streamlit
+# Tablero interactivo con Python – Streamlit
 
-Sales Dashboard built in Python and the Streamlit library to visualize Excel data.
+Tablero de ventas integrado en Python y la librería ``Streamlit``
+para visualizar datos de Excel.
 
-## Run the app
+## Ejecute la aplicación
 ```Powershell
-# vanilla terminal
+# terminal limpio
 streamlit run app.py
 
-# quit
-ctrl-c
+# salir
+Ctrl-C
 ```
 
 ## Demo
-Sales Dashboard: https://www.salesdashboard.pythonandvba.com/
+Tablero de ventas: https://www.salesdashboard.pythonandvba.com/
 
-## Screenshot
+## Captura de pantalla
 
-![Dashboar Screenshot](https://content.screencast.com/users/jubbel3/folders/Snagit/media/64b4d64a-4e59-4bec-9f16-771eb1a99005/08.18.2021-19.50.jpg)
+![Captura de pantalla de Tablero de ventas](https://content.screencast.com/users/jubbel3/folders/Snagit/media/64b4d64a-4e59-4bec-9f16-771eb1a99005/08.18.2021-19.50.jpg)
 
 
-## Author
+## Autores
 
 - Sven from Coding Is Fun
-- YouTube: https://youtube.com/c/CodingIsFun
-- Website: https://pythonandvba.com
+- Canal YouTube: https://youtube.com/c/CodingIsFun
+- Sitio web: https://pythonandvba.com
 
+## Realimentación
 
-
-## Feedback
-
-If you have any feedback, please reach out to me at contact@pythonandvba.com
-
-
-![Logo](https://www.pythonandvba.com/banner-img)
+Si tiene algún comentario, comuníquese conmigo en contact@pythonandvba.com
