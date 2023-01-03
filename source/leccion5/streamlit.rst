@@ -260,6 +260,8 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
     Streamlit - Hello World
 
+De esta forma tiene una práctica real de crear un mensaje Hello World y usado la
+librería Streamlit.
 
 .. _python_pkg_streamlit_dashboard:
 
@@ -366,6 +368,8 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
     Streamlit - Tablero de Ventas
 
+De esta forma tiene una práctica real de crear un Tablero de Ventas, usando fuente
+de datos desde una hoja de calculo de Excel y usado la librería Streamlit.
 
 .. _python_pkg_streamlit_sqlite_crud:
 
@@ -565,7 +569,9 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
     :align: center
     :width: 60%
 
-    Streamlit - SQLite CRUD - Home
+    Streamlit - SQLite CRUD - Home View
+
+----
 
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_view.png
     :align: center
@@ -573,11 +579,15 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
     Streamlit - SQLite CRUD - View Posts
 
+----
+
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_search.png
     :align: center
     :width: 60%
 
     Streamlit - SQLite CRUD - Search by title or author
+
+----
 
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_add.png
     :align: center
@@ -585,11 +595,15 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
     Streamlit - SQLite CRUD - Add Posts
 
+----
+
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_manage.png
     :align: center
     :width: 60%
 
     Streamlit - SQLite CRUD - Manage Blog
+
+----
 
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_delete.png
     :align: center
@@ -597,11 +611,15 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
     Streamlit - SQLite CRUD - Delete Posts
 
+----
+
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_metrics_author_bar_plot.png
     :align: center
     :width: 60%
 
     Streamlit - SQLite CRUD - Generate Bar Plot Author Stats Metrics Graphic
+
+----
 
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_metrics_author_pie_plot.png
     :align: center
@@ -609,11 +627,15 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
     Streamlit - SQLite CRUD - Generate Pie Plot Author Stats Metrics Graphic
 
+----
+
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_wordcloud.png
     :align: center
     :width: 60%
 
     Streamlit - SQLite CRUD - Generate Word Cloud Graphic
+
+----
 
 .. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_barhorizontalplot.png
     :align: center
@@ -629,14 +651,16 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
         Streamlit - SQLite CRUD - Update Posts
 
+    ----
+
     .. figure:: ../_static/images/streamlit_sqlite_crud_blog_about.png
         :align: center
         :width: 60%
 
         Streamlit - SQLite CRUD - About
 
-.. todo::
-    TODO Terminar de escribir esta sección.
+De esta forma tiene una práctica real de crear un CRUD, usando fuente de datos
+una base de datos SQLite y usado la librería Streamlit.
 
 ----
 
