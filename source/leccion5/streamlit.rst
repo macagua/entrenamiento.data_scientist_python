@@ -404,7 +404,7 @@ Módulo de principal del programa.
 .. literalinclude:: ../../recursos/leccion5/sqlite_crud/app.py
     :language: python
     :linenos:
-    :lines: 1-504
+    :lines: 1-516
 
 *Archivo db_initial.py*
 
@@ -413,7 +413,7 @@ Módulo que agregar datos iniciales de la publicación de la entrada del blog.
 .. literalinclude:: ../../recursos/leccion5/sqlite_crud/db_initial.py
     :language: python
     :linenos:
-    :lines: 1-86
+    :lines: 1-87
 
 *Archivo db.py*
 
@@ -422,7 +422,7 @@ Módulo de funciones de la base de datos SQLite.
 .. literalinclude:: ../../recursos/leccion5/sqlite_crud/db.py
     :language: python
     :linenos:
-    :lines: 1-74
+    :lines: 1-75
 
 *Archivo .env.example*
 
