@@ -18,16 +18,6 @@ HOME_ENTRIES_HTML_TPL = """
 </div>
 """
 
-# ENTRY_TITLE_HTML_TPL = """
-# <div style="background-color:#464e5f;padding:10px;border-radius:10px;margin:10px;">
-#   <h4 style="color:white;text-align:center;">{title}</h4>
-#   <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="vertical-align:middle;float:left;width:50px;height:50px;border-radius:50%;"/>
-#   <h5 style="color:white;">Author: {author}</h5>
-#   <br/>
-#   <p style="color:black;text-align:justify">{content}...</p>
-# </div>
-# """
-
 ### "View Posts / Search..." Item(s) Menu ########################################
 ENTRY_DETAILS_HTML_TPL = """
 <div style="background-color:{div_bg_color};padding:10px;border-radius:5px;margin:10px;">

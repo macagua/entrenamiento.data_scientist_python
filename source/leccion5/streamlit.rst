@@ -440,7 +440,7 @@ Módulo de plantillas de diseño Streamlit.
 .. literalinclude:: ../../recursos/leccion5/sqlite_crud/layouts.py
     :language: python
     :linenos:
-    :lines: 1-62
+    :lines: 1-52
 
 *Archivo requirements.txt*
 
