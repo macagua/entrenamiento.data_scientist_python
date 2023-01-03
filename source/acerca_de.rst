@@ -94,9 +94,6 @@ el tutorial. La lista completa de colaboradores está disponible en el repositor
    :avatars:
    :exclude: dependabot[bot]
 
-.. todo::
-    TODO corregir alineación de avatar de los colaboradores.
-
 Es muy fácil entrar en la lista. Simplemente escriba un artículo o proponga cambios
 en el repositorio del entrenamiento. Y obtenga el agradecimiento de todos.
 
@@ -111,7 +108,7 @@ Contribuir
 
 ¡Gracias por considerar contribuir a esta documentación!
 
-Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
+Conseguiste algún error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
 este material, puedes reportarla o solicitarla en:
 
 * Consulte el `issue tracker <https://github.com/macagua/entrenamiento.data_scientist_python/issues>`_ para obtener
