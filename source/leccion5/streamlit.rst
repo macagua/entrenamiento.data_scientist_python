@@ -367,6 +367,274 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
     Streamlit - Tablero de Ventas
 
 
+.. _python_pkg_streamlit_sqlite_crud:
+
+Práctica - SQLite CRUD
+----------------------
+
+A continuación se presenta una práctica de un simple ``Blog`` que hace las operaciones
+de manipulación CRUD para generar analítica de las entradas del Blog con ``Streamlit``,
+a continuación la estructura de proyecto llamado ``sqlite_crud``:
+
+.. code-block:: console
+
+    sqlite_crud/
+    ├── app.py
+    ├── db_initial.py
+    ├── db.py
+    ├── .env.example
+    ├── __init__.py
+    ├── layouts.py
+    ├── requirements.txt
+    ├── settings.py
+    ├── simple_blog.sqlite3
+    └── .streamlit
+        └── config.toml
+
+A continuación se presenta y explica el uso de cada archivo para esta proyecto:
+
+*Archivo app.py*
+
+Módulo de principal del programa.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/app.py
+    :language: python
+    :linenos:
+    :lines: 1-504
+
+*Archivo db_initial.py*
+
+Módulo que agregar datos iniciales de la publicación de la entrada del blog.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/db_initial.py
+    :language: python
+    :linenos:
+    :lines: 1-86
+
+*Archivo db.py*
+
+Módulo de funciones de la base de datos SQLite.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/db.py
+    :language: python
+    :linenos:
+    :lines: 1-74
+
+*Archivo .env.example*
+
+Archivo plantilla `dotenv`_ del paquete adicional `python-dotenv`_.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/.env.example
+    :language: text
+    :linenos:
+    :lines: 1-22
+
+*Archivo layouts.py*
+
+Módulo de plantillas de diseño Streamlit.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/layouts.py
+    :language: python
+    :linenos:
+    :lines: 1-62
+
+*Archivo requirements.txt*
+
+Archivo de `requirements.txt`_ de la herramienta de gestión de paquetes `pip`_.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/requirements.txt
+    :language: text
+    :linenos:
+    :lines: 1-7
+
+*Archivo settings.py*
+
+Módulo de configuración de "Simple Blog"
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/settings.py
+    :language: python
+    :linenos:
+    :lines: 1-65
+
+*Archivo simple_blog.sqlite3*
+
+Archivo de la hoja de calculo de ``SQLite`` llamado :file:`simple_blog.sqlite3`
+la cual no se incluye ya que cada vez que se inicia el programa :file:`app.py`, para
+cuidar la creación de los datos iniciales.
+
+*Archivo .streamlit/config.toml*
+
+Archivo de configuración de proyecto Streamlit.
+
+.. literalinclude:: ../../recursos/leccion5/sqlite_crud/.streamlit/config.toml
+    :language: python
+    :linenos:
+    :lines: 1-19
+
+.. comments:
+
+    .. figure:: ../_static/images/streamlit_ventas_supermercado_xlsx.png
+        :align: center
+        :width: 60%
+
+        Archivo de SQLite simple_blog.sqlite3
+
+A continuación se presenta la ejecución de una demostración de ``Simple Blog``,
+ejecutando los siguientes comandos correspondiente a tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: Linux
+
+      Antes de ejecutar debes instalar sus dependencias, con el siguiente comando:
+
+      .. code-block:: console
+
+          $ pip install -r requirements.txt
+
+      Ademas debe instalar y editar el archivo ``.env``, con el siguiente comando:
+
+      .. code-block:: console
+
+          $ cp .env.example .env
+          $ nano .env
+
+      .. tip::
+        El archivo ``.env`` se definen las configuraciones de conexión a la base de datos,
+        puede modificarlo cambiar valores de la conexión.
+
+      .. tip::
+        Para ejecutar el código fuente de esta practica debe invocar primero al modulo :file:`db_initial.py`,
+        abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
+        y ejecute el siguiente comando:
+
+      .. code-block:: console
+
+          $ python db_initial.py
+
+      El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+      .. code-block:: console
+
+          INFO:root:Database creation 'simple_blog.sqlite3' was successful!
+          INFO:root:Connection to database 'simple_blog.sqlite3' was established successfully!
+          INFO:root:The table was created successfully!
+          INFO:root:The cursor for create database table was closed successfully!
+          INFO:root:¡3 record(s) was(were) successfully added to the table!
+          INFO:root:The cursor for data initial of blog entry posts was closed successfully!
+          INFO:root:Disconnect to database 'simple_blog.sqlite3' was closed successfully!
+
+      .. tip::
+        Para ejecutar el código fuente de esta practica debe invocar al modulo :file:`app.py`,
+        abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
+        y ejecute el siguiente comando:
+
+      .. code-block:: console
+
+          $ streamlit run app.py
+
+      El anterior comando al ejecutar debe mostrar el siguiente mensaje:
+
+      .. code-block:: console
+
+          You can now view your Streamlit app in your browser.
+
+          Local URL: http://localhost:8501
+          Network URL: http://172.28.94.109:8501
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          > pip install -r sqlite_crud/requirements.txt
+          > python sqlite_crud/db_initial.py
+          > streamlit run sqlite_crud/app.py
+
+.. note::
+    ``Local URL``
+        Dirección local de tu PC donde ejecuta esta demostración, valor por
+        defecto es **http://localhost:8501**
+
+    ``Network URL``
+        Dirección de la red local de tu PC donde donde puede compartir la forma
+        como accede a esta demostración.
+
+Abra el navegador web en la dirección local definida en el valor ``Local URL``:
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_index.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Home
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_view.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - View Posts
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_search.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Search by title or author
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_add.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Add Posts
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_manage.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Manage Blog
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_delete.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Delete Posts
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_metrics_author_bar_plot.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Generate Bar Plot Author Stats Metrics Graphic
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_metrics_author_pie_plot.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Generate Pie Plot Author Stats Metrics Graphic
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_wordcloud.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Generate Word Cloud Graphic
+
+.. figure:: ../_static/images/streamlit_sqlite_crud_blog_graphic_barhorizontalplot.png
+    :align: center
+    :width: 60%
+
+    Streamlit - SQLite CRUD - Generate Bar Horizontal Plot Graphic
+
+.. comments:
+
+    .. figure:: ../_static/images/streamlit_sqlite_crud_blog_update.png
+        :align: center
+        :width: 60%
+
+        Streamlit - SQLite CRUD - Update Posts
+
+    .. figure:: ../_static/images/streamlit_sqlite_crud_blog_about.png
+        :align: center
+        :width: 60%
+
+        Streamlit - SQLite CRUD - About
+
 .. todo::
     TODO Terminar de escribir esta sección.
 
@@ -387,4 +655,6 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 .. _`streamlit`: https://pypi.org/project/streamlit/
 .. _`requirements.txt`: https://pip.pypa.io/en/stable/reference/requirements-file-format/
 .. _`pip`: https://pip.pypa.io/en/stable/
+.. _`dotenv`: https://dev.to/emma_donery/python-dotenv-keep-your-secrets-safe-4ocn
+.. _`python-dotenv`: https://pypi.org/project/python-dotenv/
 .. _`Hello World`: https://es.wikipedia.org/wiki/Hola_mundo
