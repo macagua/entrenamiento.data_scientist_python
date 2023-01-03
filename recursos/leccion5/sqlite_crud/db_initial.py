@@ -66,11 +66,12 @@ def add_data_initial(db_connection, sql_script, sql_script_values):
                 cursor.rowcount
             )
         )
-        cursor.close()
-        logging.info("The cursor for data initial of blog entry posts was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"The add of record(s) in the table failed! {error}")
     finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for data initial of blog entry posts was closed successfully!")
         if db_connection:
             db_connection.close()
             logging.info("Disconnect to database 'simple_blog.sqlite3' was closed successfully!")

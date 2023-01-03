@@ -64,11 +64,12 @@ def create_table(db_connection, sql_script):
         cursor.execute(sql_script)
         db_connection.commit()
         logging.info("The table was created successfully!")
-        cursor.close()
-        logging.info("The cursor for create database table was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Table creation failed! {error}")
-    # finally:
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for create database table was closed successfully!")
     #     if db_connection:
     #         db_connection.close()
     #         logging.info("The database connection was closed successfully!")

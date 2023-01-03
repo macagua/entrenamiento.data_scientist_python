@@ -70,10 +70,12 @@ def add_data(db_connection, sql_script, author, title, content, postdate):
                 cursor.rowcount
             )
         )
-        cursor.close()
-        logging.info("The cursor for add a Blog entry was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Query for record(s) in table failed! {error}")
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for add a Blog entry was closed successfully!")
 
 
 def view_all_articles(db_connection, sql_script):
@@ -93,10 +95,12 @@ def view_all_articles(db_connection, sql_script):
         cursor.execute(sql_script)
         records = cursor.fetchall()
         logging.info("The query to the table was successful!")
-        cursor.close()
-        logging.info("The cursor for view all Blog articles was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Query for record(s) in table failed! {error}")
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for view all Blog articles was closed successfully!")
     return records
 
 
@@ -117,10 +121,12 @@ def view_all_article_titles(db_connection, sql_script):
         cursor.execute(sql_script)
         records = cursor.fetchall()
         logging.info("The query to the table was successful!")
-        cursor.close()
-        logging.info("The cursor for view all titles Blog articles was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Query for record(s) in table failed! {error}")
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for view all titles Blog articles was closed successfully!")
     return records
 
 
@@ -141,10 +147,12 @@ def get_blog_by_title(db_connection, title):
         cursor.execute(f'SELECT * FROM articles WHERE title="{title}"')
         records = cursor.fetchall()
         logging.info("The query to the table by title was successful!")
-        cursor.close()
-        logging.info("The cursor for get the title of Blog article was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Query for record(s) in table failed! {error}")
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for get the title of Blog article was closed successfully!")
     return records
 
 
@@ -165,10 +173,12 @@ def get_blog_by_author(db_connection, author):
         cursor.execute(f'SELECT * FROM articles WHERE author="{author}"')
         records = cursor.fetchall()
         logging.info("The query to the table by author was successful!")
-        cursor.close()
-        logging.info("The cursor for get all Blog articles by author was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Query for record(s) in table failed! {error}")
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for get all Blog articles by author was closed successfully!")
     return records
 
 
@@ -198,10 +208,12 @@ def delete_data(db_connection, title):
         cursor.execute(f'DELETE FROM articles WHERE title="{title}"')
         db_connection.commit()
         logging.info("The selected record was successfully deleted!")
-        cursor.close()
-        logging.info("The cursor for delete the blog article was closed successfully!")
     except sqlite3.Error as error:
         logging.error(f"Delete record(s) in table failed! {error}")
+    finally:
+        if cursor:
+            cursor.close()
+            logging.info("The cursor for delete the blog article was closed successfully!")
 
 
 def render_about(*_) -> None:
