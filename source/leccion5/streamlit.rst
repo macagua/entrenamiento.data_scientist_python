@@ -548,11 +548,61 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
    .. group-tab:: Windows
 
+      Antes de ejecutar debes instalar sus dependencias, con el siguiente comando:
+
       .. code-block:: console
 
-          > pip install -r sqlite_crud/requirements.txt
-          > python sqlite_crud/db_initial.py
-          > streamlit run sqlite_crud/app.py
+          > pip install -r requirements.txt
+
+      Ademas debe instalar y editar el archivo ``.env``, con el siguiente comando:
+
+      .. code-block:: console
+
+          > COPY .env.example .env
+          > notepad.exe .env
+
+      .. tip::
+        El archivo ``.env`` se definen las configuraciones de conexión a la base de datos,
+        puede modificarlo cambiar valores de la conexión.
+
+      .. tip::
+        Para ejecutar el código fuente de esta practica debe invocar primero al modulo :file:`db_initial.py`,
+        abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
+        y ejecute el siguiente comando:
+
+      .. code-block:: console
+
+          > python db_initial.py
+
+      El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+      .. code-block:: console
+
+          INFO:root:Database creation 'simple_blog.sqlite3' was successful!
+          INFO:root:Connection to database 'simple_blog.sqlite3' was established successfully!
+          INFO:root:The table was created successfully!
+          INFO:root:The cursor for create database table was closed successfully!
+          INFO:root:¡3 record(s) was(were) successfully added to the table!
+          INFO:root:The cursor for data initial of blog entry posts was closed successfully!
+          INFO:root:Disconnect to database 'simple_blog.sqlite3' was closed successfully!
+
+      .. tip::
+        Para ejecutar el código fuente de esta practica debe invocar al modulo :file:`app.py`,
+        abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
+        y ejecute el siguiente comando:
+
+      .. code-block:: console
+
+          > streamlit run app.py
+
+      El anterior comando al ejecutar debe mostrar el siguiente mensaje:
+
+      .. code-block:: console
+
+          You can now view your Streamlit app in your browser.
+
+          Local URL: http://localhost:8501
+          Network URL: http://172.28.94.109:8501
 
 .. note::
     ``Local URL``
