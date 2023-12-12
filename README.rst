@@ -4,7 +4,7 @@
 Entrenamiento "Data Scientist en Python"
 ========================================
 
-Repositorio de manuales y recursos del entrenamiento "Data Scientist en `Python 3.7`_"
+Repositorio de manuales y recursos del entrenamiento "Data Scientist en `Python 3`_"
 realizado por Leonardo J. Caballero G.
 
 .. contents :: :local:
@@ -39,7 +39,7 @@ los siguientes comando:
 ::
 
   $ sudo apt update
-  $ sudo apt install -y python3-dev python3-pip python-setuptools git
+  $ sudo apt install -y python3-dev python3-pip python3-setuptools git
   $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
                         texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
                         texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
@@ -139,6 +139,6 @@ Una copia de esta licencia en formato de texto se incluye en este paquete dentro
 directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Español
 (LICENSE.es.rst).
 
-.. _`Python 3.7`: https://docs.python.org/es/3.7/
+.. _`Python 3`: https://docs.python.org/es/3.11/
 .. _`entrenamiento.data_scientist_python`: https://github.com/macagua/entrenamiento.data_scientist_python
 .. _`ticket de soporte`: https://github.com/macagua/entrenamiento.data_scientist_python/issues/new

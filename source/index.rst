@@ -7,7 +7,7 @@
 Data Scientist en Python
 ========================
 
-Repositorio de manuales y recursos del entrenamiento **"Data Scientist en** `Python 3.7`_ -
+Repositorio de manuales y recursos del entrenamiento **"Data Scientist en** `Python 3`_ -
 **Nivel básico"**.
 
 
@@ -69,4 +69,4 @@ Búsqueda
 
 * :ref:`search`
 
-.. _`Python 3.7`: https://docs.python.org/es/3.7/
+.. _`Python 3`: https://docs.python.org/es/3.11/

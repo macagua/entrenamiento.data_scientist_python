@@ -7,8 +7,8 @@ Glosario
 
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): :email:`leonardoc@plone.org`
-:Compatible con: Python 3.7.x
-:Fecha: 16 de Noviembre de 2022
+:Compatible con: Python 3.11.x
+:Fecha: 12 de Diciembre de 2023
 
 A continuación una serie de términos usados en las tecnologías Python.
 

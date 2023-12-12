@@ -159,9 +159,9 @@ Linux, después elija cualquiera de los siguientes métodos:
 
     $ python
 
-   Python 3.7.3 (default, Mar 27 2019, 22:11:17)
-   [GCC 7.3.0] :: Anaconda, Inc. on linux
+   Python 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)] on win32
    Type "help", "copyright", "credits" or "license" for more information.
+   >>>
 
 Si Anaconda está instalado y funcionando, la información de
 la versión que muestra cuando se inicia incluirá «Anaconda».
