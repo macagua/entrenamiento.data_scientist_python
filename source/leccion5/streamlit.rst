@@ -80,6 +80,8 @@ el siguiente comando correspondiente a tu sistema operativo:
 Si muestra el numero de la versión instalada de ``streamlit``, tiene
 correctamente instalada la paquete. Con esto, ya tiene todo listo para continuar.
 
+---
+
 
 .. _python_pkg_streamlit_hello:
 
@@ -180,6 +182,8 @@ Esta demostración muestra cómo usar st.pydeck_chart para mostrar datos geoespa
 Esta demostración muestra cómo usar st.write para visualizar Pandas DataFrames.
 (Datos cortesía de `UN Data Explorer <http://data.un.org/Explorer.aspx>`_).
 
+---
+
 .. _python_pkg_streamlit_hello_word:
 
 Práctica - Hello World
@@ -262,6 +266,8 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
 De esta forma tiene una práctica real de crear un mensaje Hello World y usado la
 librería Streamlit.
+
+---
 
 .. _python_pkg_streamlit_dashboard:
 
@@ -370,6 +376,8 @@ Abra el navegador web en la dirección local definida en el valor ``Local URL``:
 
 De esta forma tiene una práctica real de crear un Tablero de Ventas, usando fuente
 de datos desde una hoja de calculo de Excel y usado la librería Streamlit.
+
+---
 
 .. _python_pkg_streamlit_sqlite_crud:
 
