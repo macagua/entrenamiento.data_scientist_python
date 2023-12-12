@@ -36,9 +36,9 @@ Introducción al Data Scientist
 Anaconda
 ........
 
-- `Anaconda Distribution <https://www.anaconda.com/products/distribution>`_.
+- `Anaconda Distribution <https://www.anaconda.com/download>`_.
 
-- `Anaconda Distribution — Anaconda documentation <https://docs.anaconda.com/anaconda/>`_.
+- `Anaconda Distribution — Anaconda documentation <https://docs.anaconda.com/free/anaconda/>`_.
 
 - `Herramienta Conda <https://conda.io/projects/conda/en/latest/index.html>`_.
 

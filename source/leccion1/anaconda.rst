@@ -18,7 +18,7 @@ más confiable para la ciencia de datos*, es un administrador
 de paquetes, un administrador de entorno, una distribución
 de ciencia de datos Python/R y una colección de `más de
 1,500+ paquetes de código
-abierto <https://docs.anaconda.com/anaconda/packages/pkg-docs/>`__.
+abierto <https://docs.anaconda.com/free/anaconda/reference/packages/pkg-docs/>`__.
 
 Ofrece una de la forma más fácil de realizar la ciencia de
 datos y el aprendizaje automático de Python/R en los
@@ -102,7 +102,7 @@ Siga y respondas las preguntas realizadas por el instalador
 a continuación. Al finalizar la instalación dispone lo
 siguiente paquetes disponibles en Anaconda:
 
--  Más de `200 paquetes <https://docs.anaconda.com/anaconda/packages/pkg-docs/>`__
+-  Más de `200 paquetes <https://docs.anaconda.com/free/anaconda/reference/packages/pkg-docs/>`__
    se instalan automáticamente con Anaconda.
 
 -  Más de 2000 paquetes de código abierto adicionales
@@ -216,7 +216,7 @@ consulte la `documentación
 disponible <https://conda.io/projects/conda/en/latest/index.html>`__.
 
 `Anaconda
-Navigator <https://docs.anaconda.com/navigator/>`__,
+Navigator <https://docs.anaconda.com/free/navigator/>`__,
 es una interfaz gráfica de usuario (GUI) de escritorio
 incluida en la distribución de Anaconda® que le permite
 iniciar aplicaciones y administrar fácilmente los
@@ -311,7 +311,7 @@ correctamente.
 
    Para más entender su funcionamiento de la distribución
    Anaconda debe leer la `guía del
-   usuario <https://docs.anaconda.com/anaconda/user-guide/>`__.
+   usuario <https://docs.anaconda.com/free/anaconda/getting-started/>`__.
 
 
 
