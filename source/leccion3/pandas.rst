@@ -180,7 +180,7 @@ Existen varias propiedades o métodos para ver las características de una serie
 
 -  ``s.size`` : Devuelve el número de elementos de la serie ``s``.
 
--  ``s.index`` : Devuelve una lista con los nombres de las filas del DataFrame ``s``.
+-  ``s.index`` : Devuelve una :ref:`lista <python_list>` con los nombres de las filas del DataFrame ``s``.
 
 -  ``s.dtype`` : Devuelve el tipo de datos de los elementos de la serie ``s``.
 
@@ -216,7 +216,7 @@ Se realiza de forma similar a como se accede a los elementos de un array.
 -  ``s[i]`` : Devuelve el elemento que ocupa la posición ``i+1`` en la serie ``s``.
 
 -  ``s[posiciones]``: Devuelve otra serie con los elementos que ocupan las posiciones
-   de la lista ``posiciones``.
+   de la :ref:`lista <python_list>` ``posiciones``.
 
 
 .. _python_pkg_pandas_series_acceso_indice:
@@ -227,7 +227,7 @@ Acceso por índice
 -  ``s[nombre]`` : Devuelve el elemento con el nombre ``nombre`` en el índice.
 
 -  ``s[nombres]`` : Devuelve otra serie con los elementos correspondientes a
-   los nombres indicadas en la lista ``nombres`` en el índice.
+   los nombres indicadas en la :ref:`lista <python_list>` ``nombres`` en el índice.
 
 .. code-block:: pycon
     :linenos:
@@ -410,8 +410,8 @@ Para filtrar una serie y quedarse con los valores que cumplen una determinada
 condición se utiliza el siguiente método:
 
 -  ``s[condicion]`` : Devuelve una serie con los elementos de la serie
-   ``s`` que se corresponden con el valor ``True`` de la lista booleana
-   ``condicion``. ``condicion`` debe ser una lista de valores booleanos
+   ``s`` que se corresponden con el valor ``True`` de la :ref:`lista <python_list>` booleana
+   ``condicion``. ``condicion`` debe ser una :ref:`lista <python_list>` de valores booleanos
    de la misma longitud que la serie.
 
 .. code-block:: pycon
@@ -606,12 +606,12 @@ Crear DataFrame desde lista de diccionarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Para crear un DataFrame a partir de una lista de diccionarios con los datos de las
+Para crear un DataFrame a partir de una :ref:`lista <python_list>` de diccionarios con los datos de las
 filas, se utiliza el siguiente método:
 
 -  ``DataFrame(data=diccionarios, index=filas, columns=columnas, dtype=tipos)``
    : Devuelve un objeto del tipo DataFrame cuyas filas contienen los valores de
-   los diccionarios de la lista ``diccionarios``, los nombres de filas indicados
+   los diccionarios de la :ref:`lista <python_list>` ``diccionarios``, los nombres de filas indicados
    en la lista ``filas``, los nombres de columnas indicados en la lista ``columnas``
    y los tipos indicados en la lista ``tipos``. La lista ``filas`` tiene que tener
    el mismo tamaño que la lista ``lista``. Si no se pasa la lista de filas se utilizan
@@ -690,7 +690,7 @@ un DataFrame desde un fichero.
    del fichero Excel ``fichero.xlsx``. Como nombres de columnas se utiliza los valores de
    la fila ``n`` y como nombres de filas los valores de la columna ``m``. Si no se indica
    ``m`` se utilizan como nombres de filas los  enteros empezando en 0. Los valores incluidos
-   en la lista ``no-validos`` se convierten en ``NaN``. Para los datos numéricos se utiliza
+   en la :ref:`lista <python_list>` ``no-validos`` se convierten en ``NaN``. Para los datos numéricos se utiliza
    como separador de decimales el carácter indicado en ``separador-decimal``.
 
     .. code-block:: pycon
@@ -699,7 +699,7 @@ un DataFrame desde un fichero.
         >>> import pandas as pd
         >>> # Importación del fichero datos-colesteroles.csv
         >>> df = pd.read_csv(
-        ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesteroles.csv",
+        ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv",
         ...     sep=";",
         ...     decimal=",",
         ... )
@@ -751,10 +751,10 @@ un DataFrame.
 
 -  ``df.size`` : Devuelve el número de elementos del DataFrame.
 
--  ``df.columns`` : Devuelve una lista con los nombres de las columnas del
+-  ``df.columns`` : Devuelve una :ref:`lista <python_list>` con los nombres de las columnas del
    DataFrame ``df``.
 
--  ``df.index`` : Devuelve una lista con los nombres de las filas del
+-  ``df.index`` : Devuelve una :ref:`lista <python_list>` con los nombres de las filas del
    DataFrame ``df``.
 
 -  ``df.dtypes`` : Devuelve una serie con los tipos de datos de las columnas
@@ -769,7 +769,7 @@ un DataFrame.
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> df.info()
     <class 'pandas.core.frame.DataFrame'>
@@ -822,7 +822,7 @@ se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(
     ...     df.rename(
@@ -859,7 +859,7 @@ Para ello se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.set_index("nombre").head())
                                 edad sexo  peso  altura  colesterol
@@ -892,7 +892,7 @@ añadir o eliminar índices, se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.reindex(index=[4, 3, 1], columns=["nombre", "tensión", "colesterol"]))
                     nombre  tensión  colesterol
@@ -929,7 +929,7 @@ Accesos mediante posiciones
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.iloc[1, 3])
     65
@@ -948,10 +948,10 @@ Acceso a los elementos mediante nombres
     la columna de con nombre ``columna`` del DataFrame
     ``df``.
 
-``df.loc[filas, columnas]`` : Devuelve un DataFrame
-con los elemento que se encuentra en las filas con los
-nombres de la lista ``filas`` y las columnas con los
-nombres de la lista ``columnas`` del DataFrame ``df``.
+-  ``df.loc[filas, columnas]`` : Devuelve un DataFrame
+    con los elemento que se encuentra en las filas con los
+    nombres de la lista ``filas`` y las columnas con los
+    nombres de la lista ``columnas`` del DataFrame ``df``.
 
 -  ``df[columna]`` : Devuelve una serie con los
     elementos de la columna de nombre ``columna`` del
@@ -968,7 +968,7 @@ nombres de la lista ``columnas`` del DataFrame ``df``.
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.loc[2, "colesterol"])
     191
@@ -997,7 +997,7 @@ Añadir columnas a DataFrame
 
 El procedimiento para añadir una nueva columna a un DataFrame es
 similar al de añadir un nuevo par a un diccionario, pero pasando
-los valores de la columna en una lista o serie.
+los valores de la columna en una :ref:`lista <python_list>` o serie.
 
 -  ``d[nombre] = lista``: Añade al DataFrame ``df`` una nueva columna
    con el nombre ``nombre`` y los valores de la lista ``lista``. La lista
@@ -1013,7 +1013,7 @@ los valores de la columna en una lista o serie.
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> df["diabetes"] = pd.Series([False, False, True, False, True])
     >>> print(df)
@@ -1041,7 +1041,7 @@ de la columna.
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df["altura"] * 100)
     0     179
@@ -1074,7 +1074,7 @@ el siguiente método:
     >>> import pandas as pd
     >>> from math import log
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df["altura"].apply(log))
     0     0.582216
@@ -1168,7 +1168,7 @@ columnas:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>>df.edad.count()  # Tamaño muestral
     14
@@ -1225,7 +1225,7 @@ Para eliminar columnas de un DataFrame se utilizan los siguientes métodos:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> edad = df.pop("edad")
     >>> print(df)
@@ -1265,7 +1265,7 @@ Para añadir una fila a un DataFrame se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> df = df.append(
     ...     pd.Series(
@@ -1297,7 +1297,7 @@ Para eliminar filas de un DataFrame se utilizan el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.drop([1, 3]))
                                 nombre  edad sexo   peso  altura  colesterol
@@ -1317,7 +1317,7 @@ una determinada condición.
 
 -  ``df[condicion]`` : Devuelve un DataFrame con las filas del DataFrame ``df``
    que se corresponden con el valor ``True`` de la lista booleana ``condicion``.
-   ``condicion`` debe ser una lista de valores booleanos de la misma longitud que
+   ``condicion`` debe ser una :ref:`lista <python_list>` de valores booleanos de la misma longitud que
    el número de filas del DataFrame.
 
 .. code-block:: pycon
@@ -1325,7 +1325,7 @@ una determinada condición.
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df[(df["sexo"] == "H") & (df["colesterol"] > 260)])
                         nombre  edad sexo    peso  altura    colesterol
@@ -1355,7 +1355,7 @@ se utilizan los siguientes métodos:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.sort_values("colesterol"))
                                 nombre  edad sexo   peso  altura  colesterol
@@ -1383,7 +1383,7 @@ o nulos ``None`` se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.dropna())
                                 nombre  edad sexo   peso  altura  colesterol
@@ -1427,7 +1427,7 @@ Para dividir un DataFrame en grupos se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.groupby("sexo").groups)
     {'H': Int64Index([0, 2, 5, 6, 8, 9, 11, 12], dtype='int64'), 'M': Int64Index([1, 3, 4, 7, 10, 13], dtype='int64')}
@@ -1446,7 +1446,7 @@ Para obtener un grupo concreto se utiliza el siguiente método:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.groupby("sexo").get_group("M"))
                         nombre  edad sexo    peso   altura    colesterol
@@ -1471,27 +1471,27 @@ a cada grupo mediante el siguiente método:
    los DataFrames que resultan de dividir el DataFrame según las columnas de la
    lista ``columnas``.
 
-Una función de agregación toma como argumento una lista y devuelve una único valor.
+Una función de agregación toma como argumento una :ref:`lista <python_list>` y devuelve una único valor.
 Algunas de las funciones de agregación más comunes son:
 
--  ``np.min`` : Devuelve el mínimo de una lista de valores.
+-  ``np.min`` : Devuelve el mínimo de una :ref:`lista <python_list>` de valores.
 
--  ``np.max`` : Devuelve el máximo de una lista de valores.
+-  ``np.max`` : Devuelve el máximo de una :ref:`lista <python_list>` de valores.
 
--  ``np.count_nonzero`` : Devuelve el número de valores no nulos de una lista de valores.
+-  ``np.count_nonzero`` : Devuelve el número de valores no nulos de una :ref:`lista <python_list>` de valores.
 
--  ``np.sum`` : Devuelve la suma de una lista de valores.
+-  ``np.sum`` : Devuelve la suma de una :ref:`lista <python_list>` de valores.
 
--  ``np.mean`` : Devuelve la media de una lista de valores.
+-  ``np.mean`` : Devuelve la media de una :ref:`lista <python_list>` de valores.
 
--  ``np.std`` : Devuelve la desviación típica de una lista de valores.
+-  ``np.std`` : Devuelve la desviación típica de una :ref:`lista <python_list>` de valores.
 
 .. code-block:: pycon
     :linenos:
 
     >>> import pandas as pd
     >>> df = pd.read_csv(
-    ...     "https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv"
+    ...     "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
     ... )
     >>> print(df.groupby("sexo").agg(np.mean))
             edad       peso    altura  colesterol
