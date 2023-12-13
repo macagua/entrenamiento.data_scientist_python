@@ -38,9 +38,9 @@ author = "Leonardo J. Caballero G."
 # built documents.
 #
 # The short X.Y version.
-version = "3.7"
+version = "3.11"
 # The full version, including alpha/beta/rc tags.
-release = "3.7.3"
+release = "3.11.5"
 
 
 # -- General configuration ---------------------------------------------------
@@ -480,6 +480,10 @@ epub_exclude_files = ["search.html"]
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
     "python3": ("https://docs.python.org/3.11/", None),
+    "entrenamiento-python-basico": ("https://entrenamiento-python-basico.readthedocs.io/es/3.7/", None),
+    "entrenamiento-python-intermedio": ("https://entrenamiento-python-intermedio.readthedocs.io/es/latest/", None),
+    "entrenamiento-python-avanzado": ("https://entrenamiento-python-avanzado.readthedocs.io/es/latest/", None),
+    "entrenamiento-frameworks-web-python": ("https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/", None),
 }
 intersphinx_timeout = 120
 
