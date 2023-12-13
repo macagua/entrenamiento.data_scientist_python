@@ -32,6 +32,12 @@ Introducción al Data Scientist
 
 - `Ciencia de datos <https://es.wikipedia.org/wiki/Ciencia_de_datos>`_.
 
+- `Ciencia de Datos con Python - Taller de Python - GitHub Pages <https://aulasoftwarelibre.github.io/taller-de-python/ia/>`_.
+
+- `¿Qué es Python? - Explicación del lenguaje Python - AWS <https://aws.amazon.com/es/what-is/python/>`_.
+
+- `Ciencia de datos con Python: guía básica para principiantes <https://www.tokioschool.com/noticias/ciencia-datos-python/>`_.
+
 
 Anaconda
 ........

@@ -3,14 +3,24 @@
 
 .. _python_data_scientist:
 
-Introducción al Data Scientist
-==============================
+Introducción a la ciencia de datos
+==================================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla ante, aliquet ac tristique vel,
-porta ut mi. Quisque elementum felis ut commodo scelerisque. Phasellus aliquet viverra est quis
-convallis. Sed in nulla eget justo lobortis laoreet. Quisque nec velit maximus lorem euismod
-accumsan. Cras sit amet finibus nunc, sed pellentesque leo. Maecenas iaculis posuere dui, quis
-pellentesque risus. Vestibulum sagittis sed turpis at efficitur.
+De ingles, *Data Scientist*, la ciencia de datos es un campo interdisciplinario que
+utiliza métodos científicos, procesos y sistemas para extraer conocimiento o un mejor
+entendimiento de los datos en sus diferentes formas, ya sea estructurados o no estructurados.
+Algunas de las características de la Ciencia de datos son:
+
+- Combina técnicas de estadística, matemáticas, computación e inteligencia artificial
+  para analizar y procesar los datos.
+
+- Busca resolver problemas complejos y generar valor a partir de los datos, mediante
+  el uso de técnicas de aprendizaje automático, minería de datos, análisis predictivo
+  y visualización de datos.
+
+- Requiere habilidades de programación, comunicación, creatividad, pensamiento crítico
+  y trabajo en equipo.
+
 
 .. seealso::
 

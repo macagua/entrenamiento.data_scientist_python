@@ -72,7 +72,7 @@ Anaconda, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+    $ wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 
 Así de esta forma esta listo para ejecutar el instalador de
 la distribución Anaconda, en la sección siguiente se
@@ -88,7 +88,7 @@ comando:
 
 .. code-block:: console
 
-    $ chmod 755  Anaconda3-2022.10-Linux-x86_64.sh
+    $ chmod 755 ./Anaconda3-2023.09-0-Linux-x86_64.sh
 
 Entonces luego de otorgar permisos de ejecución ya esta
 listo para iniciar el instalador de la distribución
@@ -96,7 +96,7 @@ Anaconda, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ ./Anaconda3-2019.07-Linux-x86_64.sh
+    $ ./Anaconda3-2023.09-0-Linux-x86_64.sh
 
 Siga y respondas las preguntas realizadas por el instalador
 a continuación. Al finalizar la instalación dispone lo
