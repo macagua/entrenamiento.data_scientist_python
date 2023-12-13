@@ -205,7 +205,7 @@ A continuación se presenta y explica el uso de cada archivo para esta proyecto:
 
 Módulo de principal del programa.
 
-.. literalinclude:: ../../recursos/leccion5/hello_word/app.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/hello_word/app.py
     :language: python
     :linenos:
     :lines: 1-3
@@ -214,7 +214,7 @@ Módulo de principal del programa.
 
 Archivo de `requirements.txt`_ de la herramienta de gestión de paquetes `pip`_.
 
-.. literalinclude:: ../../recursos/leccion5/hello_word/requirements.txt
+.. literalinclude:: ../../recursos/leccion5/streamlit/hello_word/requirements.txt
     :language: text
     :linenos:
     :lines: 1-1
@@ -294,7 +294,7 @@ A continuación se presenta y explica el uso de cada archivo para esta proyecto:
 
 Módulo de principal del programa.
 
-.. literalinclude:: ../../recursos/leccion5/dashboard/app.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/dashboard/app.py
     :language: python
     :linenos:
     :lines: 1-137
@@ -303,7 +303,7 @@ Módulo de principal del programa.
 
 Archivo de configuración de proyecto Streamlit.
 
-.. literalinclude:: ../../recursos/leccion5/dashboard/.streamlit/config.toml
+.. literalinclude:: ../../recursos/leccion5/streamlit/dashboard/.streamlit/config.toml
     :language: python
     :linenos:
     :lines: 1-16
@@ -312,7 +312,7 @@ Archivo de configuración de proyecto Streamlit.
 
 Archivo de `requirements.txt`_ de la herramienta de gestión de paquetes `pip`_.
 
-.. literalinclude:: ../../recursos/leccion5/dashboard/requirements.txt
+.. literalinclude:: ../../recursos/leccion5/streamlit/dashboard/requirements.txt
     :language: text
     :linenos:
     :lines: 1-4
@@ -409,7 +409,7 @@ A continuación se presenta y explica el uso de cada archivo para esta proyecto:
 
 Módulo de principal del programa.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/app.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/app.py
     :language: python
     :linenos:
     :lines: 1-516
@@ -418,7 +418,7 @@ Módulo de principal del programa.
 
 Módulo que agregar datos iniciales de la publicación de la entrada del blog.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/db_initial.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/db_initial.py
     :language: python
     :linenos:
     :lines: 1-87
@@ -427,7 +427,7 @@ Módulo que agregar datos iniciales de la publicación de la entrada del blog.
 
 Módulo de funciones de la base de datos SQLite.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/db.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/db.py
     :language: python
     :linenos:
     :lines: 1-75
@@ -436,7 +436,7 @@ Módulo de funciones de la base de datos SQLite.
 
 Archivo plantilla `dotenv`_ del paquete adicional `python-dotenv`_.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/.env.example
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/.env.example
     :language: text
     :linenos:
     :lines: 1-22
@@ -445,7 +445,7 @@ Archivo plantilla `dotenv`_ del paquete adicional `python-dotenv`_.
 
 Módulo de plantillas de diseño Streamlit.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/layouts.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/layouts.py
     :language: python
     :linenos:
     :lines: 1-52
@@ -454,7 +454,7 @@ Módulo de plantillas de diseño Streamlit.
 
 Archivo de `requirements.txt`_ de la herramienta de gestión de paquetes `pip`_.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/requirements.txt
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/requirements.txt
     :language: text
     :linenos:
     :lines: 1-7
@@ -463,7 +463,7 @@ Archivo de `requirements.txt`_ de la herramienta de gestión de paquetes `pip`_.
 
 Módulo de configuración de "Simple Blog"
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/settings.py
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/settings.py
     :language: python
     :linenos:
     :lines: 1-65
@@ -478,7 +478,7 @@ cuidar la creación de los datos iniciales.
 
 Archivo de configuración de proyecto Streamlit.
 
-.. literalinclude:: ../../recursos/leccion5/sqlite_crud/.streamlit/config.toml
+.. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/.streamlit/config.toml
     :language: python
     :linenos:
     :lines: 1-19
