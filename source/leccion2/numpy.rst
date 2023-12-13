@@ -95,28 +95,29 @@ Creación de arrays
 
 Para crear un array se utiliza la siguiente función de ``NumPy``
 
--  ``np.array(lista)`` : Crea un array a partir de la lista o tupla
+-  ``np.array(lista)`` : Crea un array a partir de la :ref:`lista <python_list>` o tupla
    ``lista`` y devuelve una referencia a él. El número de dimensiones
    del array dependerá de las listas o tuplas anidadas en ``lista``:
 
--  Para una lista de valores se crea un array de una dimensión,
+-  Para una :ref:`lista <python_list>` de valores se crea un array de una dimensión,
    también conocido como **vector**.
 
--  Para una lista de listas de valores se crea un array de dos
+-  Para una :ref:`lista <python_list>` de listas de valores se crea un array de dos
    dimensiones, también conocido como **matriz**.
 
--  Para una lista de listas de listas de valores se crea un array
+-  Para una :ref:`lista <python_list>` de listas de listas de valores se crea un array
    de tres dimensiones, también conocido como **cubo**.
 
 -  Y así sucesivamente. No hay límite en el número de dimensiones del
    array más allá de la memoria disponible en el sistema.
 
-Los elementos de la lista o tupla deben ser del mismo tipo.
+Los elementos de la :ref:`lista <python_list>` o tupla deben ser del mismo tipo.
 
 .. code-block:: pycon
     :linenos:
 
     >>> # Array de una dimensión
+    >>> import numpy as np
     >>> a1 = np.array([1, 2, 3])
     >>> print(a1)
     [1 2 3]
@@ -169,6 +170,7 @@ Otras funciones útiles que permiten generar arrays son:
 .. code-block:: pycon
     :linenos:
 
+    >>> import numpy as np
     >>> print(np.zeros(3, 2))
     [[0. 0. 0.]
     [0. 0. 0.]]
@@ -216,6 +218,7 @@ por comas.
 .. code-block:: pycon
     :linenos:
 
+    >>> import numpy as np
     >>> a = np.array([[1, 2, 3], [4, 5, 6]])
     >>> print(a[1, 0])  # Acceso al elemento de la fila 1 columna 0
     4
@@ -235,17 +238,18 @@ Una característica muy útil de los arrays es que es
 muy fácil obtener otro array con los elementos que
 cumplen una condición.
 
--  ``a[condicion]`` : Devuelve una lista con los elementos del array ``a``
+-  ``a[condicion]`` : Devuelve una :ref:`lista <python_list>` con los elementos del array ``a``
    que cumplen la condición ``condicion``.
 
    .. code-block:: pycon
        :linenos:
 
+       >>> import numpy as np
        >>> a = np.array([[1, 2, 3], [4, 5, 6]])
        >>> print(a[(a % 2 == 0)])
        [2 4 6]
        >>> print(a[(a % 2 == 0) & (a > 2)])
-       [2 4]
+       [4 6]
 
 
 .. _python_pkg_numpy_obj_array_oper_math:
@@ -261,24 +265,27 @@ la misma posición en dos arrays.
 Se necesitan, por tanto, dos arrays con las mismas dimensiones y el
 resultado es una array de la misma dimensión.
 
-Los operadores matemáticos ``+``, ``-``, ``*``, ``/``, ``%``, ``**``
+Los operadores matemáticos :ref:`+ <python_opers_arit_suma>`, :ref:`- <python_opers_arit_resta>`, 
+:ref:`* <python_opers_arit_multi>`, :ref:`/ <python_opers_arit_div>`,
+:ref:`% <python_opers_arit_mod>`, :ref:`** <python_opers_arit_expo>`
 se utilizan para la realizar suma, resta, producto, cociente, resto y
 potencia a nivel de elemento.
 
 .. code-block:: pycon
     :linenos:
 
+    >>> import numpy as np
     >>> a = np.array([[1, 2, 3], [4, 5, 6]])
     >>> b = np.array([[1, 1, 1], [2, 2, 2]])
     >>> print(a + b)
     [[2 3 4]
-    [6 7 8]]
+     [6 7 8]]
     >>> print(a / b)
     [[1.  2.  3. ]
-    [2.  2.5 3. ]]
+     [2.  2.5 3. ]]
     >>> print(a**2)
     [[ 1  4  9]
-    [16 25 36]]
+     [16 25 36]]
 
 .. _python_pkg_numpy_obj_array_algebra-matricial:
 
@@ -286,7 +293,7 @@ potencia a nivel de elemento.
 -----------------
 
 ``NumPy`` incorpora funciones para realizar las principales operaciones
-algebraicas con vectores y  matrices. La mayoría de los métodos algebraicos
+algebraicas con vectores y matrices. La mayoría de los métodos algebraicos
 se agrupan en el submódulo ``linalg``.
 
 
@@ -295,8 +302,25 @@ se agrupan en el submódulo ``linalg``.
 Producto escalar de dos vectores
 --------------------------------
 
-Para realizar el producto escalar de dos vectores se utiliza el operador ``@`` o
-el siguiente método:
+Para realizar el producto escalar de dos vectores se utiliza el operador ``@`` con el
+siguiente código fuente:
+
+.. tip::
+   En Python 3.5 puedes sobrecargar ``@`` como operador. Se llama ``__matmul__``
+   porque está diseñado para realizar multiplicaciones de matrices, pero puede
+   ser cualquier cosa que desee. Consulte `PEP465 <http://www.python.org/dev/peps/pep-0465/>`_
+   para más detalles.
+
+.. code-block:: pycon
+      :linenos:
+
+      >>> import numpy as np
+      >>> a = np.array([1, 2, 3])
+      >>> b = np.array([1, 0, 1])
+      >>> print(a @ b)
+      4
+
+También puede realizar el producto escalar de dos vectores con el siguiente método:
 
 -  ``u.dot(v)``: Devuelve el producto escalar de los vectores ``u`` y ``v``.
 
@@ -306,8 +330,6 @@ el siguiente método:
        >>> import numpy as np
        >>> a = np.array([1, 2, 3])
        >>> b = np.array([1, 0, 1])
-       >>> print(a @ b)
-       4
        >>> print(a.dot(b))
        4
 
@@ -316,7 +338,7 @@ el siguiente método:
 Módulo de un vector
 -------------------
 
-Para calcular el módulo de un vector se utiliza el siguiente método:
+Para calcular el :ref:`módulo <python_opers_arit_mod>` de un vector se utiliza el siguiente método:
 
 -  ``norm(v)``: Devuelve el módulo del vector ``v``.
 
@@ -334,8 +356,26 @@ Para calcular el módulo de un vector se utiliza el siguiente método:
 Producto de dos matrices
 ------------------------
 
-Para realizar el producto matricial se utiliza el  mismo operador ``@``
-y método que para el producto escalar de vectores:
+Para realizar el producto matricial se utiliza el  mismo operador ``@`` con el
+siguiente código fuente:
+
+.. tip::
+   En Python 3.5 puedes sobrecargar ``@`` como operador. Se llama ``__matmul__``
+   porque está diseñado para realizar multiplicaciones de matrices, pero puede
+   ser cualquier cosa que desee. Consulte `PEP465 <http://www.python.org/dev/peps/pep-0465/>`_
+   para más detalles.
+
+.. code-block:: pycon
+      :linenos:
+
+      >>> import numpy as np
+      >>> a = np.array([[1, 2, 3], [4, 5, 6]])
+      >>> b = np.array([[1, 1], [2, 2], [3, 3]])
+      >>> print(a @ b)
+      [[14 14]
+       [32 32]]
+
+También puede realizar el producto matricial con el siguiente método:
 
 -  ``a.dot(b)`` : Devuelve el producto matricial de las matrices ``a`` y ``b``
    siempre y cuando sus dimensiones sean compatibles.
@@ -346,12 +386,9 @@ y método que para el producto escalar de vectores:
        >>> import numpy as np
        >>> a = np.array([[1, 2, 3], [4, 5, 6]])
        >>> b = np.array([[1, 1], [2, 2], [3, 3]])
-       >>> print(a @ b)
-       [[14 14]
-       [32 32]]
        >>> print(a.dot(b))
-       [14 14]
-       [32 32]]
+       [[14 14]
+        [32 32]]
 
 
 .. _python_pkg_numpy_obj_array_matriz_traspuesta:
@@ -370,8 +407,8 @@ Para trasponer una matriz se utiliza el método
        >>> a = np.array([[1, 2, 3], [4, 5, 6]])
        >>> print(a.T)
        [[1 4]
-       [2 5]
-       [3 6]]
+        [2 5]
+        [3 6]]
 
 
 .. _python_pkg_numpy_obj_array_traza_matriz:
