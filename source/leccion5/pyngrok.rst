@@ -1,6 +1,6 @@
 .. _python_pkg_pyngrok:
 
-PyNgrok
+pyngrok
 =======
 
 .. note::
@@ -8,7 +8,7 @@ PyNgrok
     conexiones seguras desde URL públicas a computador local, hacer demostraciones
     desde su propia máquina y más.
 
-`PyNgrok`_ es una librería externa de Python que permite usar `Ngrok`_ desde un código Python.
+`pyngrok`_ es una librería externa de Python que permite usar `Ngrok`_ desde un código Python.
 
 Ngrok es una herramienta que crea túneles seguros desde URLs públicas a localhost, ideal
 para exponer servidores web locales, construir integraciones con webhooks, habilitar acceso
@@ -20,7 +20,7 @@ SSH, probar chatbots, hacer demostraciones desde tu propia máquina y más.
 Instalación
 -----------
 
-Para instalar el paquete `PyNgrok`_ ejecute el siguiente comando, el cual
+Para instalar el paquete `pyngrok`_ ejecute el siguiente comando, el cual
 a continuación se presentan el correspondiente comando de tu sistema operativo:
 
 .. tabs::
@@ -68,7 +68,7 @@ instalada la paquete. Con esto, ya tiene todo listo para continuar.
 Práctica - Hello
 ----------------
 
-En particular, usaremos ``PyNgrok`` para exponer una simple aplicación :ref:`streamlit <python_pkg_streamlit>`.
+En particular, usaremos ``pyngrok`` para exponer una simple aplicación :ref:`streamlit <python_pkg_streamlit>`.
 
 
 .. code-block:: python
@@ -86,21 +86,22 @@ En particular, usaremos ``PyNgrok`` para exponer una simple aplicación :ref:`st
     def hola():
         return "Hola, mundo!"
 
+
     # Iniciar el servidor web en el puerto 5000
     app.run(port=5000)
 
-    # Abrir un túnel HTTP con PyNgrok en el mismo puerto
+    # Abrir un túnel HTTP con pyngrok en el mismo puerto
     http_tunnel = ngrok.connect(5000)
 
     # Imprimir la URL pública del túnel
     print(http_tunnel.public_url)
 
 Este código crea un servidor web local que responde con ``Hola, mundo!`` cuando se accede a la ruta ``/``.
-Luego, usa PyNgrok para abrir un túnel HTTP en el puerto 5000, que es el mismo que usa el servidor web.
+Luego, usa ``pyngrok`` para abrir un túnel HTTP en el puerto 5000, que es el mismo que usa el servidor web.
 Finalmente, imprime la URL pública del túnel, que se puede usar para acceder al servidor web desde
 cualquier navegador.
 
-Espero que este ejemplo te haya ayudado a entender el funcionamiento de PyNgrok. Si quieres saber más sobre
+Espero que este ejemplo te haya ayudado a entender el funcionamiento de ``pyngrok``. Si quieres saber más sobre
 esta librería, puedes consultar su documentación oficial en 3.
 
 .. todo::
@@ -120,5 +121,5 @@ esta librería, puedes consultar su documentación oficial en 3.
 .. disqus::
 
 
-.. _`PyNgrok`: https://pypi.org/project/pyngrok
+.. _`pyngrok`: https://pypi.org/project/pyngrok
 .. _`Ngrok`: https://ngrok.com/
