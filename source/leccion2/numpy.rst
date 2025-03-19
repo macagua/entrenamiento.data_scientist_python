@@ -1,7 +1,7 @@
 .. _python_pkg_numpy:
 
-NumPy
-=====
+Librería NumPy
+==============
 
 .. note::
     **Propósito:** es una libraría usada para el cálculo numérico y el
@@ -41,13 +41,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install numpy
+          pip3 install numpy
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install numpy
+          pip install numpy
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -59,13 +59,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import numpy ; print(numpy.__version__)"
+          python3 -c "import numpy ; print(numpy.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import numpy ; print(numpy.__version__)"
+          python -c "import numpy ; print(numpy.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``numpy``, tiene
@@ -308,7 +308,7 @@ siguiente código fuente:
 .. tip::
    En Python 3.5 puedes sobrecargar ``@`` como operador. Se llama ``__matmul__``
    porque está diseñado para realizar multiplicaciones de matrices, pero puede
-   ser cualquier cosa que desee. Consulte `PEP465 <http://www.python.org/dev/peps/pep-0465/>`_
+   ser cualquier cosa que desee. Consulte `PEP465 <https://peps.python.org/pep-0465/>`_
    para más detalles.
 
 .. code-block:: pycon
@@ -362,7 +362,7 @@ siguiente código fuente:
 .. tip::
    En Python 3.5 puedes sobrecargar ``@`` como operador. Se llama ``__matmul__``
    porque está diseñado para realizar multiplicaciones de matrices, pero puede
-   ser cualquier cosa que desee. Consulte `PEP465 <http://www.python.org/dev/peps/pep-0465/>`_
+   ser cualquier cosa que desee. Consulte `PEP465 <https://peps.python.org/pep-0465/>`_
    para más detalles.
 
 .. code-block:: pycon
