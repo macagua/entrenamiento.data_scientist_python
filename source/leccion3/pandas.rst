@@ -1792,6 +1792,7 @@ El tipo de mezcla puede ser
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 .. _`pandas`: https://pypi.org/project/pandas/

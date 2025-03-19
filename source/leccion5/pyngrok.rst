@@ -118,7 +118,8 @@ esta librería, puedes consultar su documentación oficial en 3.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 
 .. _`pyngrok`: https://pypi.org/project/pyngrok

@@ -731,7 +731,8 @@ una base de datos SQLite y usado la librería Streamlit.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 
 .. _`streamlit`: https://pypi.org/project/streamlit/

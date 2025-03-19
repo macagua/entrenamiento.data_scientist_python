@@ -78,7 +78,8 @@ correctamente instalada la paquete. Con esto, ya tiene todo listo para continuar
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 
 .. _`plotly`: https://pypi.org/project/plotly/

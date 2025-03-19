@@ -542,8 +542,7 @@ Para resolver un sistema de ecuaciones lineales se utiliza la función siguiente
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
-
-
+..
+   .. disqus::
 
 .. _`numpy`: https://pypi.org/project/numpy/

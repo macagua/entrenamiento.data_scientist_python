@@ -867,6 +867,7 @@ Las columnas no numéricas se ignoran.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 .. _`matplotlib`: https://pypi.org/project/matplotlib/
