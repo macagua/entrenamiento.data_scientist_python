@@ -265,7 +265,7 @@ la misma posición en dos arrays.
 Se necesitan, por tanto, dos arrays con las mismas dimensiones y el
 resultado es una array de la misma dimensión.
 
-Los operadores matemáticos :ref:`+ <python_opers_arit_suma>`, :ref:`- <python_opers_arit_resta>`, 
+Los operadores matemáticos :ref:`+ <python_opers_arit_suma>`, :ref:`- <python_opers_arit_resta>`,
 :ref:`* <python_opers_arit_multi>`, :ref:`/ <python_opers_arit_div>`,
 :ref:`% <python_opers_arit_mod>`, :ref:`** <python_opers_arit_expo>`
 se utilizan para la realizar suma, resta, producto, cociente, resto y

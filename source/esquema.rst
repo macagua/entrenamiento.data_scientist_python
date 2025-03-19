@@ -31,7 +31,7 @@ el editor :ref:`Spyder <python_anaconda_spider>` y crear de entornos virtuales e
 Lección 2 - Computación Científico
 ----------------------------------
 
-**Descripción:** Comprender el uso del módulo ``numpy`` de la librería adicional
+**Descripción:** Comprender el uso del módulo :ref:`numpy <python_pkg_numpy>` de la librería adicional
 de Python para el computo científico y algebra lineal de forma rápida y fácil de usar.
 
 **Práctica:** Uso del módulo ``numpy`` como sus estructuradas de tipos de datos, funciones

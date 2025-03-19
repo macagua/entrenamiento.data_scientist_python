@@ -25,6 +25,7 @@ A continuación el temario de esta lección:
 
 ----
 
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion2>`
@@ -34,4 +35,6 @@ A continuación el temario de esta lección:
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+
+..
+  .. disqus::
