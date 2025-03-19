@@ -69,7 +69,7 @@ e interactivos con Python, hacer demostraciones desde su propia máquina y más.
 Lección 5 - Reportes y Dashboard
 --------------------------------
 
-**Descripción:** Comprender el uso de los módulos ``streamlit``, ``plotly`` y ``pyngrok`` para la
+**Descripción:** Comprender el uso de los módulos :ref:`streamlit <python_pkg_streamlit>`, :ref:`plotly <python_pkg_plotly>` y :ref:`pyngrok <python_pkg_pyngrok>` para la
 creación de Dashboard interactivos con Python.
 
 **Práctica:** Uso de los módulos ``streamlit`` y ``plotly`` para la creación de Dashboard interactivos
