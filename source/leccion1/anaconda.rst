@@ -162,6 +162,10 @@ el siguiente comando:
 De esta forma verifico que tiene instalado correctamente
 instalado la distribución Anaconda.
 
+
+----
+
+
 .. _python_anaconda_conda:
 
 Conda
@@ -226,6 +230,9 @@ continuación:
     Interfaz de *Anaconda Navigator* corriendo
 
 Este mostrar la Interfaz de `Anaconda Navigator`_ ejecutándose correctamente.
+
+
+----
 
 
 Aplicaciones en Anaconda
