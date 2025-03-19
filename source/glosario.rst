@@ -96,10 +96,12 @@ A continuación una serie de términos usados en las tecnologías Python.
     plantilla
         1) Una clase Python la cual controla la generación de un esqueleto. Las
         plantillas contiene una lista de variables para obtener la respuesta de un
-        usuario. Las plantillas son ejecutadas con el comando ``copier`` suministrando
-        el nombre de la plantilla como un argumento, como :
+        usuario. Las plantillas son ejecutadas con el comando :command:`copier` suministrando
+        el nombre de la plantilla como un argumento, como:
 
-        ``copier copy gh:Tecnativa/doodba-copier-template ~/path/to/your/subproject``.
+        .. code-block:: console
+
+            copier copy gh:Tecnativa/doodba-copier-template ~/path/to/your/subproject
 
         2) Los archivos y carpetas proveídas un paquete ``copier`` como contenido a ser
         generado. Las respuestas proporcionadas por un usuario en respuesta a las variables
@@ -141,12 +143,12 @@ A continuación una serie de términos usados en las tecnologías Python.
         Diminutivo en plural del termino :term:`variable`.
 
     variable
-        1) Una pregunta que debe ser respondida por el usuario cuando esta generando una
+        3) Una pregunta que debe ser respondida por el usuario cuando esta generando una
         estructura de esqueleto de proyecto usando el sistema de plantilla ``copier``. En este
         caso una variable (var) es una descripción de la información requerida, texto de
         ayuda y reglas de validación para garantizar la entrada de usuario correcta.
 
-        2) Una declarativa cuyo valor puede ser variable o constante dentro de un programa
+        4) Una declarativa cuyo valor puede ser variable o constante dentro de un programa
         Python o en el sistema operativo.
 
     variables
