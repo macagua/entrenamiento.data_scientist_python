@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _esquema_entrenamiento:
 
 Esquema del entrenamiento
@@ -44,7 +41,7 @@ en un paquete Python en el sistema de archivos.
 Lección 3 - Manipulación y análisis de datos
 --------------------------------------------
 
-**Descripción:** Comprender el uso del módulo ``pandas`` de las librerías adicionales
+**Descripción:** Comprender el uso del módulo :ref:`pandas <python_pkg_pandas>` de las librerías adicionales
 de Python para la manipulación y análisis de datos de forma rápida y fácil de usar.
 
 **Práctica:** Uso de los módulos ``pandas`` como su estructurada de tipos de datos, funciones
@@ -75,3 +72,13 @@ creación de Dashboard interactivos con Python.
 **Práctica:** Uso de los módulos ``streamlit`` y ``plotly`` para la creación de Dashboard interactivos
 y el uso del módulo ``pyngrok`` para usar un proxy inverso que abre conexiones seguras desde URL públicas
 a computador local, hacer demostraciones desde su propia máquina y más.
+
+
+----
+
+
+.. raw:: html
+   :file: _templates/partials/soporte_profesional.html
+
+..
+  .. disqus::
