@@ -1,7 +1,7 @@
 {
  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
- "name": "Aprende Python 3 desde 0",
- "short_name": "Aprende Python 3",
+ "name": "Aprende Data Scientist en Python 3",
+ "short_name": "Data Scientist en Python",
  "start_url": "https://entrenamiento-data-scientist-python.readthedocs.io.readthedocs.io/es/latest/",
  "display": "standalone",
  "theme_color": "#dfdfdf",
