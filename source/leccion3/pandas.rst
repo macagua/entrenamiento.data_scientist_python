@@ -1597,10 +1597,10 @@ Dos o más DataFrames pueden combinarse en otro DataFrame. La combinación
 puede ser de varias formas:
 
 -  **Concatenación**: Combinación de varios DataFrames
-    concatenando sus filas o columnas.
+   concatenando sus filas o columnas.
 
 -  **Mezcla**: Combinación de varios DataFrames usando
-    columnas o índices comunes.
+   columnas o índices comunes.
 
 .. _python_pkg_pandas_dataframe_concatenacion:
 
@@ -1608,15 +1608,15 @@ Concatenación de DataFrames
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  **Concatenación de filas**. Las filas de los DataFrames se
-    concatenan unas a continuación de las otras para formar el
-    nuevo DataFrame. Para ello es necesario que los DataFrames
-    que se combinen tengan el mismo índice de columnas.
+   concatenan unas a continuación de las otras para formar el
+   nuevo DataFrame. Para ello es necesario que los DataFrames
+   que se combinen tengan el mismo índice de columnas.
 
-    .. figure:: ../_static/images/pandas_dataframe_concatenacion_filas.png
-        :align: center
-        :width: 60%
+   .. figure:: ../_static/images/pandas_dataframe_concatenacion_filas.png
+       :align: center
+       :width: 60%
 
-        Concatenación de DataFrames por filas
+       Concatenación de DataFrames por filas
 
 
 -  **Concatenación de columnas**. Las columnas de los DataFrames se
@@ -1624,11 +1624,11 @@ Concatenación de DataFrames
    DataFrame. Para ello es necesario que los DataFrames que se combinen
    tengan el mismo índice de filas.
 
-    .. figure:: ../_static/images/pandas_dataframe_concatenacion_columnas.png
-        :align: center
-        :width: 60%
+   .. figure:: ../_static/images/pandas_dataframe_concatenacion_columnas.png
+       :align: center
+       :width: 60%
 
-        Concatenación de DataFrames por columnas
+       Concatenación de DataFrames por columnas
 
 
 Para concatenar dos o más DataFrames se utiliza el siguiente método:
