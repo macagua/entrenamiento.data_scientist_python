@@ -1,7 +1,7 @@
 .. _python_pkg_pandas:
 
-Pandas
-======
+Librería Pandas
+===============
 
 .. note::
     **Propósito:** es una libraría usada en el manejo y análisis de
@@ -47,13 +47,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install pandas
+          pip3 install pandas
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install pandas
+          pip install pandas
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -65,13 +65,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import pandas ; print(pandas.__version__)"
+          python3 -c "import pandas ; print(pandas.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import pandas ; print(pandas.__version__)"
+          python -c "import pandas ; print(pandas.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``pandas``, tiene correctamente
