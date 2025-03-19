@@ -1,7 +1,7 @@
 .. _python_pkg_pyngrok:
 
-pyngrok
-=======
+Librería pyngrok
+================
 
 .. note::
     **Propósito:** es una libraría permite usar un proxy inverso que abre
@@ -29,13 +29,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install pyngrok
+          pip3 install pyngrok
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install pyngrok
+          pip install pyngrok
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -47,13 +47,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import pyngrok ; print(pyngrok.__package__)"
+          python3 -c "import pyngrok ; print(pyngrok.__package__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import pyngrok ; print(pyngrok.__package__)"
+          python -c "import pyngrok ; print(pyngrok.__package__)"
 
 
 Si muestra el nombre del paquete como ``pyngrok``, tiene correctamente
@@ -68,7 +68,7 @@ instalada la paquete. Con esto, ya tiene todo listo para continuar.
 Práctica - Hello
 ----------------
 
-En particular, usaremos ``pyngrok`` para exponer una simple aplicación :ref:`streamlit <python_pkg_streamlit>`.
+En particular, usaremos ``pyngrok`` para exponer una simple aplicación :ref:`Flask <python_flask_introduccion>`.
 
 
 .. code-block:: python

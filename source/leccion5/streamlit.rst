@@ -1,7 +1,7 @@
 .. _python_pkg_streamlit:
 
-Streamlit
-=========
+Librería Streamlit
+==================
 
 .. note::
     **Propósito:** es una libraría permite la creación de Dashboard interactivos.
@@ -50,13 +50,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install streamlit
+          pip3 install streamlit
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install streamlit
+          pip install streamlit
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -68,13 +68,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import streamlit ; print(streamlit.__version__)"
+          python3 -c "import streamlit ; print(streamlit.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import streamlit ; print(streamlit.__version__)"
+          python -c "import streamlit ; print(streamlit.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``streamlit``, tiene
@@ -97,13 +97,13 @@ ejecutando el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ streamlit hello
+          streamlit hello
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > streamlit hello
+          streamlit hello
 
 
 El anterior comando al ejecutar debe mostrar el siguiente mensaje:
@@ -228,15 +228,15 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install -r hello_word/requirements.txt
-          $ streamlit run hello_word/app.py
+          pip3 install -r hello_word/requirements.txt
+          streamlit run hello_word/app.py
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install -r hello_word/requirements.txt
-          > streamlit run hello_word/app.py
+          pip install -r hello_word/requirements.txt
+          streamlit run hello_word/app.py
 
 
 El anterior comando al ejecutar debe mostrar el siguiente mensaje:
@@ -338,15 +338,21 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install -r dashboard/requirements.txt
-          $ streamlit run dashboard/app.py
+          pip3 install -r dashboard/requirements.txt
+
+      .. code-block:: console
+
+          streamlit run dashboard/app.py
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install -r dashboard/requirements.txt
-          > streamlit run dashboard/app.py
+          pip install -r dashboard/requirements.txt
+
+      .. code-block:: console
+
+          streamlit run dashboard/app.py
 
 
 El anterior comando al ejecutar debe mostrar el siguiente mensaje:
@@ -502,14 +508,13 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install -r requirements.txt
+          pip3 install -r requirements.txt
 
       Ademas debe instalar y editar el archivo :file:`.env`, con el siguiente comando:
 
       .. code-block:: console
 
-          $ cp .env.example .env
-          $ nano .env
+          cp .env.example .env && nano .env
 
       .. tip::
         El archivo :file:`.env` se definen las configuraciones de conexión a la base de datos,
@@ -522,7 +527,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python db_initial.py
+          python3 db_initial.py
 
       El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -543,7 +548,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ streamlit run app.py
+          treamlit run app.py
 
       El anterior comando al ejecutar debe mostrar el siguiente mensaje:
 
@@ -560,14 +565,17 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          > pip install -r requirements.txt
+          pip install -r requirements.txt
 
       Ademas debe instalar y editar el archivo :file:`.env` con el siguiente comando:
 
       .. code-block:: console
 
-          > COPY .env.example .env
-          > notepad.exe .env
+          COPY .env.example .env
+
+      .. code-block:: console
+
+          notepad.exe .env
 
       .. tip::
         El archivo :file:`.env` se definen las configuraciones de conexión a la base de datos,
@@ -580,7 +588,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          > python db_initial.py
+          python db_initial.py
 
       El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -601,7 +609,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          > streamlit run app.py
+          streamlit run app.py
 
       El anterior comando al ejecutar debe mostrar el siguiente mensaje:
 
