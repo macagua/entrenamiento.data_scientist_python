@@ -97,24 +97,22 @@ seguir los siguientes pasos:
 #. Importar el módulo ``pyplot``.
 
 #. Definir la figura que contendrá el gráfico, que es
-    la region (ventana o página) donde se dibujará y
-    los ejes sobre los que se dibujarán los datos. Para
-    ello se utiliza la función ``subplots()``.
+   la region (ventana o página) donde se dibujará y
+   los ejes sobre los que se dibujarán los datos. Para
+   ello se utiliza la función ``subplots()``.
 
 #. Dibujar los datos sobre los ejes. Para ello se
-    utilizan distintas funciones dependiendo del tipo
-    de gráfico que se quiera.
+   utilizan distintas funciones dependiendo del tipo
+   de gráfico que se quiera.
 
 #. Personalizar el gráfico. Para ello existen multitud
-    de funciones que permiten añadir un título, una
-    leyenda, una rejilla, cambiar colores o
-    personalizar los ejes.
+   de funciones que permiten añadir un título, una
+   leyenda, una rejilla, cambiar colores o
+   personalizar los ejes.
 
-#. Guardar el gráfico. Para ello se utiliza la función
-    ``savefig()``.
+#. Guardar el gráfico. Para ello se utiliza la función ``savefig()``.
 
-#. Mostrar el gráfico. Para ello se utiliza la función
-    ``show()``.
+#. Mostrar el gráfico. Para ello se utiliza la función ``show()``.
 
 .. code-block:: pycon
     :linenos:
