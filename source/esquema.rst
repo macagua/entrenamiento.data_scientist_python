@@ -21,9 +21,9 @@ casos de éxitos, recrear el ambiente de desarrollo.
 
 **Práctica:** Exponer los fundamentos sobre el lenguaje Python, comentar sobre usos e
 implementaciones exitosas, las tendencias actuales en innovación y transformación digital
-dentro de las organizaciones con el uso del Machine Learning, la Big Data y la Data Science.
-Instalar el interprete del lenguaje, Anaconda como entorno de desarrollo, el editor Spyder y
-crear de entornos virtuales en Python.
+dentro de las organizaciones con el uso del *Machine Learning*, la *Big Data* y la *Data Science*.
+Instalar el interprete del lenguaje, :ref:`Anaconda <python_anaconda>` como entorno de desarrollo,
+el editor :ref:`Spyder <python_anaconda_spider>` y crear de entornos virtuales en Python.
 
 
 .. _esquema_entrenamiento_leccion2:

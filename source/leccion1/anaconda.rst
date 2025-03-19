@@ -176,6 +176,7 @@ el siguiente comando:
 De esta forma verifico que tiene instalado correctamente
 instalado la distribución Anaconda.
 
+.. _python_anaconda_conda:
 
 Conda
 .....
@@ -257,6 +258,7 @@ La distribución de Anaconda incorpora varias aplicaciones
 para el uso de la ciencia computacional, a continuación
 describo las aplicaciones de principal uso cotidiano:
 
+.. _python_anaconda_spider:
 
 Spyder
 ......
