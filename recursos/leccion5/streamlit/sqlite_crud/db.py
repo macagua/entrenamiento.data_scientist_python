@@ -69,7 +69,9 @@ def create_table(db_connection, sql_script):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for create database table was closed successfully!")
+            logging.info(
+                "The cursor for create database table was closed successfully!"
+            )
     #     if db_connection:
     #         db_connection.close()
     #         logging.info("The database connection was closed successfully!")

@@ -32,17 +32,15 @@ from wordcloud import WordCloud
 logging.basicConfig(level=logging.INFO)
 
 # Streamlit
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_page_config(
-    page_title=APP_TITLE, page_icon=":page_facing_up:", layout="wide"
-)
+st.set_option("deprecation.showPyplotGlobalUse", False)
+st.set_page_config(page_title=APP_TITLE, page_icon=":page_facing_up:", layout="wide")
 st.markdown(
-    '''<style type="text/css">
+    """<style type="text/css">
     #MainMenu{visibility: hidden;}
     footer{visibility: hidden;}
     /*#root>div:nth-child(1)>div>div>div>div>section>div{padding-top: 0rem;}*/
-    </style>''',
-    unsafe_allow_html=True
+    </style>""",
+    unsafe_allow_html=True,
 )
 
 # Functions
@@ -100,7 +98,9 @@ def view_all_articles(db_connection, sql_script):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for view all Blog articles was closed successfully!")
+            logging.info(
+                "The cursor for view all Blog articles was closed successfully!"
+            )
     return records
 
 
@@ -126,7 +126,9 @@ def view_all_article_titles(db_connection, sql_script):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for view all titles Blog articles was closed successfully!")
+            logging.info(
+                "The cursor for view all titles Blog articles was closed successfully!"
+            )
     return records
 
 
@@ -152,7 +154,9 @@ def get_blog_by_title(db_connection, title):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for get the title of Blog article was closed successfully!")
+            logging.info(
+                "The cursor for get the title of Blog article was closed successfully!"
+            )
     return records
 
 
@@ -178,7 +182,9 @@ def get_blog_by_author(db_connection, author):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for get all Blog articles by author was closed successfully!")
+            logging.info(
+                "The cursor for get all Blog articles by author was closed successfully!"
+            )
     return records
 
 
@@ -213,19 +219,24 @@ def delete_data(db_connection, title):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for delete the blog article was closed successfully!")
+            logging.info(
+                "The cursor for delete the blog article was closed successfully!"
+            )
 
 
 def render_about(*_) -> None:
-    """Show App info
-    """
+    """Show App info"""
 
-    st.write("""\
+    st.write(
+        """\
 # Streamlit App Demo - {app_title}
 Howdy :wave:!
 Welcome to my Streamlit Full Stack App exploration.
 This started as the {app_title} Fullstack App with just Streamlit + SQLite.
-""".format(app_title=APP_TITLE))
+""".format(
+            app_title=APP_TITLE
+        )
+    )
 
 
 def main(db_connection):
@@ -239,9 +250,9 @@ def main(db_connection):
         BLOG_HEADER_HTML_TPL.format(
             div_bg_color=SECONDARY_BACKGROUND_COLOR,
             h1_color=TEXT_COLOR,
-            app_title=APP_TITLE
+            app_title=APP_TITLE,
         ),
-        unsafe_allow_html=True
+        unsafe_allow_html=True,
     )
 
     menu = [
@@ -251,12 +262,11 @@ def main(db_connection):
         # "Update Posts",
         "Search...",
         "Manage Blog",
-        "About"
+        "About",
     ]
 
     choice = st.sidebar.selectbox(
-        "Menu", menu,
-        help="Select a choice from the select list!"
+        "Menu", menu, help="Select a choice from the select list!"
     )
 
     if choice == "Home":
@@ -264,10 +274,7 @@ def main(db_connection):
         result = view_all_articles(db_connection, SELECT_SQL_SCRIPTS)
 
         if len(result) == 0:
-            st.markdown(
-                NOTFOUND_ENTRY_MSG_HTML_TPL,
-                unsafe_allow_html=True
-            )
+            st.markdown(NOTFOUND_ENTRY_MSG_HTML_TPL, unsafe_allow_html=True)
         else:
             for article in result:
                 post_author = article[0]
@@ -280,7 +287,7 @@ def main(db_connection):
                         title=post_title,
                         author=post_author,
                         date=post_date,
-                        content=post_content
+                        content=post_content,
                     ),
                     unsafe_allow_html=True,
                 )
@@ -288,21 +295,18 @@ def main(db_connection):
     elif choice == "View Posts":
         st.subheader("View Articles")
         all_titles = [
-            article[0] for article in view_all_article_titles(
+            article[0]
+            for article in view_all_article_titles(
                 db_connection, SELECT_DISTINCT_SQL_SCRIPTS
             )
         ]
         post_list = st.sidebar.selectbox(
-            "View Posts", all_titles,
-            help="Select a choice from the select list!"
+            "View Posts", all_titles, help="Select a choice from the select list!"
         )
         post_result = get_blog_by_title(db_connection, post_list)
 
         if len(all_titles) == 0:
-            st.markdown(
-                NOTFOUND_ENTRY_MSG_HTML_TPL,
-                unsafe_allow_html=True
-            )
+            st.markdown(NOTFOUND_ENTRY_MSG_HTML_TPL, unsafe_allow_html=True)
         else:
             for article in post_result:
                 post_author = article[0]
@@ -315,15 +319,13 @@ def main(db_connection):
                         div_bg_color=PRIMARY_COLOR,
                         title=post_title,
                         author=post_author,
-                        date=post_date
+                        date=post_date,
                     ),
                     unsafe_allow_html=True,
                 )
                 st.markdown(
-                    ENTRY_CONTENT_MSG_HTML_TPL.format(
-                        content=post_content
-                    ),
-                    unsafe_allow_html=True
+                    ENTRY_CONTENT_MSG_HTML_TPL.format(content=post_content),
+                    unsafe_allow_html=True,
                 )
 
     elif choice == "Add Posts":
@@ -332,7 +334,7 @@ def main(db_connection):
             label="Enter Author Name",
             help="Please, enter the Author Name",
             placeholder="Example, Leonardo Caballero",
-            max_chars=50
+            max_chars=50,
         )
         blog_title = st.text_input(
             label="Enter Post Title",
@@ -340,20 +342,27 @@ def main(db_connection):
             placeholder="Example, Data science for Python",
         )
         blog_content = st_quill(
-            #value='',
-            placeholder='Example, Python is very great option for Data science today!',
+            # value='',
+            placeholder="Example, Python is very great option for Data science today!",
             html=True,
         )
         blog_post_date = st.date_input(
             label="Pick publication date",
             help="Please, pick the publication date",
-            value=datetime.date.today()
+            value=datetime.date.today(),
         )
         if st.button(
             label="Add entry post",
             help="Here you safe a new entry post!",
         ):
-            add_data(db_connection, INSERT_SQL_SCRIPTS, blog_author, blog_title, blog_content, blog_post_date)
+            add_data(
+                db_connection,
+                INSERT_SQL_SCRIPTS,
+                blog_author,
+                blog_title,
+                blog_content,
+                blog_post_date,
+            )
             st.success(f"Post: {blog_title} saved")
 
     # elif choice == "Update Posts":
@@ -400,7 +409,7 @@ def main(db_connection):
                     NOTFOUND_SEARCH_MSG_HTML_TPL.format(
                         div_bg_color=PRIMARY_COLOR,
                     ),
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
             else:
                 for article in article_result:
@@ -414,15 +423,13 @@ def main(db_connection):
                             div_bg_color=PRIMARY_COLOR,
                             title=post_title,
                             author=post_author,
-                            date=post_date
+                            date=post_date,
                         ),
                         unsafe_allow_html=True,
                     )
                     st.markdown(
-                        ENTRY_CONTENT_MSG_HTML_TPL.format(
-                            content=post_content
-                        ),
-                        unsafe_allow_html=True
+                        ENTRY_CONTENT_MSG_HTML_TPL.format(content=post_content),
+                        unsafe_allow_html=True,
                     )
 
     elif choice == "Manage Blog":
@@ -435,7 +442,7 @@ def main(db_connection):
                 NOTFOUND_ENTRY_MSG_HTML_TPL.format(
                     div_bg_color=PRIMARY_COLOR,
                 ),
-                unsafe_allow_html=True
+                unsafe_allow_html=True,
             )
         else:
             clean_db = pd.DataFrame(
@@ -444,7 +451,8 @@ def main(db_connection):
             st.dataframe(clean_db)
 
             unique_titles = [
-                article[0] for article in view_all_article_titles(
+                article[0]
+                for article in view_all_article_titles(
                     db_connection, SELECT_DISTINCT_SQL_SCRIPTS
                 )
             ]
@@ -452,8 +460,9 @@ def main(db_connection):
             st.subheader("Delete Article")
             st.markdown("Select a article to delete on the follow select list")
             delete_blog_by_title = st.selectbox(
-                "Unique Title", unique_titles,
-                help="Select a choice from the select list!"
+                "Unique Title",
+                unique_titles,
+                help="Select a choice from the select list!",
             )
             new_df = clean_db
             if st.button(

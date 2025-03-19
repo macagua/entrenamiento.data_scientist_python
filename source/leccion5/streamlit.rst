@@ -412,7 +412,7 @@ Módulo de principal del programa.
 .. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/app.py
     :language: python
     :linenos:
-    :lines: 1-516
+    :lines: 1-525
 
 *Archivo db_initial.py*
 
@@ -421,7 +421,7 @@ Módulo que agregar datos iniciales de la publicación de la entrada del blog.
 .. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/db_initial.py
     :language: python
     :linenos:
-    :lines: 1-87
+    :lines: 1-88
 
 *Archivo db.py*
 
@@ -430,7 +430,7 @@ Módulo de funciones de la base de datos SQLite.
 .. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/db.py
     :language: python
     :linenos:
-    :lines: 1-75
+    :lines: 1-77
 
 *Archivo .env.example*
 
@@ -504,7 +504,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
           $ pip install -r requirements.txt
 
-      Ademas debe instalar y editar el archivo ``.env``, con el siguiente comando:
+      Ademas debe instalar y editar el archivo :file:`.env`, con el siguiente comando:
 
       .. code-block:: console
 
@@ -512,11 +512,11 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
           $ nano .env
 
       .. tip::
-        El archivo ``.env`` se definen las configuraciones de conexión a la base de datos,
+        El archivo :file:`.env` se definen las configuraciones de conexión a la base de datos,
         puede modificarlo cambiar valores de la conexión.
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar primero al modulo :file:`db_initial.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar primero al módulo :file:`db_initial.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
@@ -537,7 +537,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
           INFO:root:Disconnect to database 'simple_blog.sqlite3' was closed successfully!
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar al modulo :file:`app.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar al módulo :file:`app.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
@@ -562,7 +562,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
           > pip install -r requirements.txt
 
-      Ademas debe instalar y editar el archivo ``.env``, con el siguiente comando:
+      Ademas debe instalar y editar el archivo :file:`.env` con el siguiente comando:
 
       .. code-block:: console
 
@@ -570,11 +570,11 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
           > notepad.exe .env
 
       .. tip::
-        El archivo ``.env`` se definen las configuraciones de conexión a la base de datos,
+        El archivo :file:`.env` se definen las configuraciones de conexión a la base de datos,
         puede modificarlo cambiar valores de la conexión.
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar primero al modulo :file:`db_initial.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar primero al módulo :file:`db_initial.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
@@ -595,7 +595,7 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
           INFO:root:Disconnect to database 'simple_blog.sqlite3' was closed successfully!
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar al modulo :file:`app.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar al módulo :file:`app.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
