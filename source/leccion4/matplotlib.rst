@@ -1,7 +1,7 @@
 .. _python_pkg_matplotlib:
 
-Matplotlib
-==========
+Librería Matplotlib
+===================
 
 .. note::
     **Propósito:** es una librería de Python especializada en la creación de
@@ -31,7 +31,7 @@ Permite crear y personalizar los tipos de gráficos más comunes, entre ellos:
 
 y combinaciones de todos ellos.
 
-En la siguiente `galería de gráficos <https://matplotlib.org/gallery/index.html>`_
+En la siguiente `galería de gráficos <https://matplotlib.org/stable/gallery/index.html>`_
 pueden apreciarse todos los tipos de gráficos que pueden crearse con esta librería.
 
 .. figure:: ../_static/images/matplotlib_logo.png
@@ -55,13 +55,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install matplotlib
+          pip3 install matplotlib
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install matplotlib
+          pip install matplotlib
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -73,13 +73,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import matplotlib ; print(matplotlib.__version__)"
+          python3 -c "import matplotlib ; print(matplotlib.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import matplotlib ; print(matplotlib.__version__)"
+          python -c "import matplotlib ; print(matplotlib.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``matplotlib``, tiene

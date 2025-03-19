@@ -1,7 +1,7 @@
 .. _python_pkg_plotly:
 
-Plotly
-======
+Librería Plotly
+===============
 
 .. note::
     **Propósito:** es una libraría permite la creación de gráficos Plotly para Python
@@ -33,13 +33,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install plotly
+          pip3 install plotly
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install plotly
+          pip install plotly
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -51,13 +51,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import plotly ; print(plotly.__version__)"
+          python3 -c "import plotly ; print(plotly.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import plotly ; print(plotly.__version__)"
+          python -c "import plotly ; print(plotly.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``plotly``, tiene
