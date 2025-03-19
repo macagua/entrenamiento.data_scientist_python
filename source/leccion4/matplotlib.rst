@@ -147,7 +147,7 @@ Diagramas de dispersión o puntos
    de la lista ``x`` en el eje X y las coordenadas de la lista ``y`` en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.scatter <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html>`_.
 
 .. code-block:: pycon
@@ -176,7 +176,7 @@ Diagramas de líneas
    lista ``y`` en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.plot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html>`_.
 
 .. code-block:: pycon
@@ -205,7 +205,7 @@ Diagramas de areas
    de la lista ``y`` en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.fill_between <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill_between.html>`_.
 
 .. code-block:: pycon
@@ -234,7 +234,7 @@ Diagramas de barras verticales
    una lista con la altura de las barras en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.bar <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_.
 
 .. code-block:: pycon
@@ -263,7 +263,7 @@ Diagramas de barras horizontales
    lista con la longitud de las barras en el eje X.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.barh <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html>`_.
 
 .. code-block:: pycon
@@ -292,7 +292,7 @@ Histogramas
    lista ``bins``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.hist <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_.
 
 .. code-block:: pycon
@@ -321,7 +321,7 @@ Diagramas de sectores
 -  ``pie(x)``: Dibuja un diagrama de sectores con las frecuencias de la lista ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.pie <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html>`_.
 
 .. code-block:: pycon
@@ -348,7 +348,7 @@ Diagramas de caja y bigotes
 -  ``boxplot(x)``: Dibuja un diagrama de caja y bigotes con los datos de la lista ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.boxplot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_.
 
 .. code-block:: pycon
@@ -376,7 +376,7 @@ Diagramas de violín
    de la lista ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.violinplot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.violinplot.html>`_.
 
 .. code-block:: pycon
@@ -405,7 +405,7 @@ Diagramas de contorno
    las listas ``x``, ``y`` y ``z`` en los ejes X, Y y Z respectivamente.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.contourf <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html>`_.
 
 .. code-block:: pycon
@@ -437,7 +437,7 @@ Mapas de color
    (array bidimensiona) ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.imshow <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html>`_.
 
 .. code-block:: pycon
@@ -463,7 +463,7 @@ Mapas de color
    e ``y``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.hist2d <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist2d.html>`_.
 
 .. code-block:: pycon

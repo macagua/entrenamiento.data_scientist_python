@@ -57,7 +57,7 @@ y ``requests``, explorando el resultado en un paquete Python en el sistema de ar
 Lección 4 - Generación de gráficos
 ----------------------------------
 
-**Descripción:** Comprender el uso de los módulos ``matplotlib`` y ``plotly`` para la
+**Descripción:** Comprender el uso de los módulos :ref:`matplotlib <python_pkg_matplotlib>` y :ref:`plotly <python_pkg_plotly>` para la
 generación de gráficos estáticos e interactivos con Python.
 
 **Práctica:** Uso de los módulos ``matplotlib`` y ``plotly`` para la generación de gráficos estáticos
