@@ -11,10 +11,11 @@ app = Flask(__name__)
 def hola():
     return "Hola, mundo!"
 
+
 # Iniciar el servidor web en el puerto 5000
 app.run(port=5000)
 
-# Abrir un túnel HTTP con PyNgrok en el mismo puerto
+# Abrir un túnel HTTP con pyngrok en el mismo puerto
 http_tunnel = ngrok.connect(5000)
 
 # Imprimir la URL pública del túnel

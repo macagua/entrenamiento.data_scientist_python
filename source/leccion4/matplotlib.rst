@@ -1,7 +1,7 @@
 .. _python_pkg_matplotlib:
 
-Matplotlib
-==========
+Librería Matplotlib
+===================
 
 .. note::
     **Propósito:** es una librería de Python especializada en la creación de
@@ -31,7 +31,7 @@ Permite crear y personalizar los tipos de gráficos más comunes, entre ellos:
 
 y combinaciones de todos ellos.
 
-En la siguiente `galería de gráficos <https://matplotlib.org/gallery/index.html>`_
+En la siguiente `galería de gráficos <https://matplotlib.org/stable/gallery/index.html>`_
 pueden apreciarse todos los tipos de gráficos que pueden crearse con esta librería.
 
 .. figure:: ../_static/images/matplotlib_logo.png
@@ -55,13 +55,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install matplotlib
+          pip3 install matplotlib
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install matplotlib
+          pip install matplotlib
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -73,13 +73,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import matplotlib ; print(matplotlib.__version__)"
+          python3 -c "import matplotlib ; print(matplotlib.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import matplotlib ; print(matplotlib.__version__)"
+          python -c "import matplotlib ; print(matplotlib.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``matplotlib``, tiene
@@ -97,24 +97,22 @@ seguir los siguientes pasos:
 #. Importar el módulo ``pyplot``.
 
 #. Definir la figura que contendrá el gráfico, que es
-    la region (ventana o página) donde se dibujará y
-    los ejes sobre los que se dibujarán los datos. Para
-    ello se utiliza la función ``subplots()``.
+   la region (ventana o página) donde se dibujará y
+   los ejes sobre los que se dibujarán los datos. Para
+   ello se utiliza la función ``subplots()``.
 
 #. Dibujar los datos sobre los ejes. Para ello se
-    utilizan distintas funciones dependiendo del tipo
-    de gráfico que se quiera.
+   utilizan distintas funciones dependiendo del tipo
+   de gráfico que se quiera.
 
 #. Personalizar el gráfico. Para ello existen multitud
-    de funciones que permiten añadir un título, una
-    leyenda, una rejilla, cambiar colores o
-    personalizar los ejes.
+   de funciones que permiten añadir un título, una
+   leyenda, una rejilla, cambiar colores o
+   personalizar los ejes.
 
-#. Guardar el gráfico. Para ello se utiliza la función
-    ``savefig()``.
+#. Guardar el gráfico. Para ello se utiliza la función ``savefig()``.
 
-#. Mostrar el gráfico. Para ello se utiliza la función
-    ``show()``.
+#. Mostrar el gráfico. Para ello se utiliza la función ``show()``.
 
 .. code-block:: pycon
     :linenos:
@@ -147,7 +145,7 @@ Diagramas de dispersión o puntos
    de la lista ``x`` en el eje X y las coordenadas de la lista ``y`` en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.scatter <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html>`_.
 
 .. code-block:: pycon
@@ -176,7 +174,7 @@ Diagramas de líneas
    lista ``y`` en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.plot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html>`_.
 
 .. code-block:: pycon
@@ -205,7 +203,7 @@ Diagramas de areas
    de la lista ``y`` en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.fill_between <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill_between.html>`_.
 
 .. code-block:: pycon
@@ -234,7 +232,7 @@ Diagramas de barras verticales
    una lista con la altura de las barras en el eje Y.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.bar <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_.
 
 .. code-block:: pycon
@@ -263,7 +261,7 @@ Diagramas de barras horizontales
    lista con la longitud de las barras en el eje X.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.barh <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html>`_.
 
 .. code-block:: pycon
@@ -292,7 +290,7 @@ Histogramas
    lista ``bins``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.hist <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_.
 
 .. code-block:: pycon
@@ -321,7 +319,7 @@ Diagramas de sectores
 -  ``pie(x)``: Dibuja un diagrama de sectores con las frecuencias de la lista ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.pie <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html>`_.
 
 .. code-block:: pycon
@@ -348,7 +346,7 @@ Diagramas de caja y bigotes
 -  ``boxplot(x)``: Dibuja un diagrama de caja y bigotes con los datos de la lista ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.boxplot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_.
 
 .. code-block:: pycon
@@ -376,7 +374,7 @@ Diagramas de violín
    de la lista ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.violinplot <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.violinplot.html>`_.
 
 .. code-block:: pycon
@@ -405,7 +403,7 @@ Diagramas de contorno
    las listas ``x``, ``y`` y ``z`` en los ejes X, Y y Z respectivamente.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.contourf <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html>`_.
 
 .. code-block:: pycon
@@ -437,7 +435,7 @@ Mapas de color
    (array bidimensiona) ``x``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.imshow <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html>`_.
 
 .. code-block:: pycon
@@ -463,7 +461,7 @@ Mapas de color
    e ``y``.
 
    .. tip::
-    Para más información consulte la documentación oficial de 
+    Para más información consulte la documentación oficial de
     `matplotlib.pyplot.hist2d <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist2d.html>`_.
 
 .. code-block:: pycon
@@ -867,6 +865,7 @@ Las columnas no numéricas se ignoran.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 .. _`matplotlib`: https://pypi.org/project/matplotlib/

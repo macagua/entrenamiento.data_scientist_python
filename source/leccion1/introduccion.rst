@@ -31,4 +31,5 @@ Algunas de las características de la Ciencia de datos son:
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::

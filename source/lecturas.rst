@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _lecturas_extras_entrenamiento:
 
 Lecturas suplementarias del entrenamiento
@@ -44,9 +41,9 @@ Anaconda
 
 - `Anaconda Distribution <https://www.anaconda.com/download>`_.
 
-- `Anaconda Distribution — Anaconda documentation <https://docs.anaconda.com/free/anaconda/>`_.
+- `Anaconda Distribution — Anaconda documentation <https://www.anaconda.com/docs/tools/working-with-conda/main>`_.
 
-- `Herramienta Conda <https://conda.io/projects/conda/en/latest/index.html>`_.
+- `Herramienta Conda <https://docs.conda.io/projects/conda/en/latest/index.html>`_.
 
 - `Anaconda Cloud <https://anaconda.org/account/login>`_.
 
@@ -62,7 +59,7 @@ Librería Numpy
 
 - `NumPy <https://numpy.org/>`_.
 
-- `Tutorial de NumPy en Español <https://deepnote.com/@anthonymanotoa/Tutorial-de-NumPy-en-Espanol-180f7d51-b297-4aea-b61e-34ef867ca6fb>`_.
+- `Tutorial de NumPy en Español <https://deepnote.com/app/anthonymanotoa/Tutorial-de-NumPy-en-Espanol-180f7d51-b297-4aea-b61e-34ef867ca6fb>`_.
 
 - `La guía definitiva del paquete NumPy para computación científica en Python <https://www.freecodecamp.org/espanol/news/la-guia-definitiva-del-paquete-numpy-para-computacion-cientifica-en-python/>`_.
 
@@ -108,13 +105,13 @@ Librería plotly
 
 - `Plotly Tutorial for Beginners <https://www.kaggle.com/code/kanncaa1/plotly-tutorial-for-beginners>`_.
 
-- `Leap from Matplotlib to Plotly: A Hands-On Tutorial for Beginners <https://towardsdatascience.com/leap-from-matplotlib-to-plotly-a-hands-on-tutorial-for-beginners-d208cd9e6522>`_.
+- `Leap from Matplotlib to Plotly - A Hands-On Tutorial for Beginners <https://towardsdatascience.com/leap-from-matplotlib-to-plotly-a-hands-on-tutorial-for-beginners-d208cd9e6522/>`_.
 
 - `Plotly Python Graphing Tutorial <https://pythonbasics.org/plotly/>`_.
 
 - `Plotly Tutorial <https://www.tutorialspoint.com/plotly/index.htm>`_.
 
-- `st.plotly_chart - Streamlit Docs <https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart>`_.
+- `st.plotly_chart - Streamlit Docs <https://docs.streamlit.io/develop/api-reference/charts/st.plotly_chart>`_.
 
 
 .. _lecturas_extras_leccion5:
@@ -140,7 +137,14 @@ Librería pyngrok
 
 - `How to create and launch a Streamlit app directly from Google Colab <https://faun.pub/how-to-launch-a-streamlit-app-directly-from-google-colab-8014165e0267>`_.
 
-- `Deploying your ML model using Streamlit and Ngrok <https://towardsdatascience.com/deploying-your-ml-model-using-streamlit-and-ngrok-c2eea3fd9763>`_.
+- `Deploying your ML model using Streamlit and Ngrok <hhttps://towardsdatascience.com/deploying-your-ml-model-using-streamlit-and-ngrok-c2eea3fd9763/>`_.
 
 
-.. disqus::
+----
+
+
+.. raw:: html
+   :file: _templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

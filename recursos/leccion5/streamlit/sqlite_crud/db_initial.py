@@ -31,12 +31,12 @@ def generate_data_fake(faker):
         article = (
             faker.name(),
             faker.sentence(),
-            str(faker.texts()
-            ).replace("['", ""
-            ).replace("']", ""
-            ).replace("\\n", "<br/>"
-            ).replace(".', '", ". "),
-            faker.past_date()
+            str(faker.texts())
+            .replace("['", "")
+            .replace("']", "")
+            .replace("\\n", "<br/>")
+            .replace(".', '", ". "),
+            faker.past_date(),
         )
         articles.append(article)
     return articles
@@ -56,10 +56,7 @@ def add_data_initial(db_connection, sql_script, sql_script_values):
 
     try:
         cursor = db_connection.cursor()
-        cursor.executemany(
-            sql_script,
-            sql_script_values
-        )
+        cursor.executemany(sql_script, sql_script_values)
         db_connection.commit()
         logging.info(
             "¡{} record(s) was(were) successfully added to the table!".format(
@@ -71,10 +68,14 @@ def add_data_initial(db_connection, sql_script, sql_script_values):
     finally:
         if cursor:
             cursor.close()
-            logging.info("The cursor for data initial of blog entry posts was closed successfully!")
+            logging.info(
+                "The cursor for data initial of blog entry posts was closed successfully!"
+            )
         if db_connection:
             db_connection.close()
-            logging.info("Disconnect to database 'simple_blog.sqlite3' was closed successfully!")
+            logging.info(
+                "Disconnect to database 'simple_blog.sqlite3' was closed successfully!"
+            )
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 .. _python_pkg_streamlit:
 
-Streamlit
-=========
+Librería Streamlit
+==================
 
 .. note::
     **Propósito:** es una libraría permite la creación de Dashboard interactivos.
@@ -50,13 +50,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install streamlit
+          pip3 install streamlit
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install streamlit
+          pip install streamlit
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -68,13 +68,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import streamlit ; print(streamlit.__version__)"
+          python3 -c "import streamlit ; print(streamlit.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import streamlit ; print(streamlit.__version__)"
+          python -c "import streamlit ; print(streamlit.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``streamlit``, tiene
@@ -97,13 +97,13 @@ ejecutando el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ streamlit hello
+          streamlit hello
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > streamlit hello
+          streamlit hello
 
 
 El anterior comando al ejecutar debe mostrar el siguiente mensaje:
@@ -228,15 +228,15 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install -r hello_word/requirements.txt
-          $ streamlit run hello_word/app.py
+          pip3 install -r hello_word/requirements.txt
+          streamlit run hello_word/app.py
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install -r hello_word/requirements.txt
-          > streamlit run hello_word/app.py
+          pip install -r hello_word/requirements.txt
+          streamlit run hello_word/app.py
 
 
 El anterior comando al ejecutar debe mostrar el siguiente mensaje:
@@ -338,15 +338,21 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install -r dashboard/requirements.txt
-          $ streamlit run dashboard/app.py
+          pip3 install -r dashboard/requirements.txt
+
+      .. code-block:: console
+
+          streamlit run dashboard/app.py
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install -r dashboard/requirements.txt
-          > streamlit run dashboard/app.py
+          pip install -r dashboard/requirements.txt
+
+      .. code-block:: console
+
+          streamlit run dashboard/app.py
 
 
 El anterior comando al ejecutar debe mostrar el siguiente mensaje:
@@ -412,7 +418,7 @@ Módulo de principal del programa.
 .. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/app.py
     :language: python
     :linenos:
-    :lines: 1-516
+    :lines: 1-525
 
 *Archivo db_initial.py*
 
@@ -421,7 +427,7 @@ Módulo que agregar datos iniciales de la publicación de la entrada del blog.
 .. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/db_initial.py
     :language: python
     :linenos:
-    :lines: 1-87
+    :lines: 1-88
 
 *Archivo db.py*
 
@@ -430,7 +436,7 @@ Módulo de funciones de la base de datos SQLite.
 .. literalinclude:: ../../recursos/leccion5/streamlit/sqlite_crud/db.py
     :language: python
     :linenos:
-    :lines: 1-75
+    :lines: 1-77
 
 *Archivo .env.example*
 
@@ -502,27 +508,26 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install -r requirements.txt
+          pip3 install -r requirements.txt
 
-      Ademas debe instalar y editar el archivo ``.env``, con el siguiente comando:
+      Ademas debe instalar y editar el archivo :file:`.env`, con el siguiente comando:
 
       .. code-block:: console
 
-          $ cp .env.example .env
-          $ nano .env
+          cp .env.example .env && nano .env
 
       .. tip::
-        El archivo ``.env`` se definen las configuraciones de conexión a la base de datos,
+        El archivo :file:`.env` se definen las configuraciones de conexión a la base de datos,
         puede modificarlo cambiar valores de la conexión.
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar primero al modulo :file:`db_initial.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar primero al módulo :file:`db_initial.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
       .. code-block:: console
 
-          $ python db_initial.py
+          python3 db_initial.py
 
       El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -537,13 +542,13 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
           INFO:root:Disconnect to database 'simple_blog.sqlite3' was closed successfully!
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar al modulo :file:`app.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar al módulo :file:`app.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
       .. code-block:: console
 
-          $ streamlit run app.py
+          treamlit run app.py
 
       El anterior comando al ejecutar debe mostrar el siguiente mensaje:
 
@@ -560,27 +565,30 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          > pip install -r requirements.txt
+          pip install -r requirements.txt
 
-      Ademas debe instalar y editar el archivo ``.env``, con el siguiente comando:
+      Ademas debe instalar y editar el archivo :file:`.env` con el siguiente comando:
 
       .. code-block:: console
 
-          > COPY .env.example .env
-          > notepad.exe .env
+          COPY .env.example .env
+
+      .. code-block:: console
+
+          notepad.exe .env
 
       .. tip::
-        El archivo ``.env`` se definen las configuraciones de conexión a la base de datos,
+        El archivo :file:`.env` se definen las configuraciones de conexión a la base de datos,
         puede modificarlo cambiar valores de la conexión.
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar primero al modulo :file:`db_initial.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar primero al módulo :file:`db_initial.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
       .. code-block:: console
 
-          > python db_initial.py
+          python db_initial.py
 
       El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -595,13 +603,13 @@ ejecutando los siguientes comandos correspondiente a tu sistema operativo:
           INFO:root:Disconnect to database 'simple_blog.sqlite3' was closed successfully!
 
       .. tip::
-        Para ejecutar el código fuente de esta practica debe invocar al modulo :file:`app.py`,
+        Para ejecutar el código fuente de esta práctica debe invocar al módulo :file:`app.py`,
         abra una consola de comando, acceda al directorio donde se encuentra la estructura previa
         y ejecute el siguiente comando:
 
       .. code-block:: console
 
-          > streamlit run app.py
+          streamlit run app.py
 
       El anterior comando al ejecutar debe mostrar el siguiente mensaje:
 
@@ -731,7 +739,8 @@ una base de datos SQLite y usado la librería Streamlit.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 
 .. _`streamlit`: https://pypi.org/project/streamlit/

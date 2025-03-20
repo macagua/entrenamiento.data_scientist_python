@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _esquema_entrenamiento:
 
 Esquema del entrenamiento
@@ -21,9 +18,9 @@ casos de éxitos, recrear el ambiente de desarrollo.
 
 **Práctica:** Exponer los fundamentos sobre el lenguaje Python, comentar sobre usos e
 implementaciones exitosas, las tendencias actuales en innovación y transformación digital
-dentro de las organizaciones con el uso del Machine Learning, la Big Data y la Data Science.
-Instalar el interprete del lenguaje, Anaconda como entorno de desarrollo, el editor Spyder y
-crear de entornos virtuales en Python.
+dentro de las organizaciones con el uso del *Machine Learning*, la *Big Data* y la *Data Science*.
+Instalar el interprete del lenguaje, :ref:`Anaconda <python_anaconda>` como entorno de desarrollo,
+el editor :ref:`Spyder <python_anaconda_spider>` y crear de entornos virtuales en Python.
 
 
 .. _esquema_entrenamiento_leccion2:
@@ -31,7 +28,7 @@ crear de entornos virtuales en Python.
 Lección 2 - Computación Científico
 ----------------------------------
 
-**Descripción:** Comprender el uso del módulo ``numpy`` de la librería adicional
+**Descripción:** Comprender el uso del módulo :ref:`numpy <python_pkg_numpy>` de la librería adicional
 de Python para el computo científico y algebra lineal de forma rápida y fácil de usar.
 
 **Práctica:** Uso del módulo ``numpy`` como sus estructuradas de tipos de datos, funciones
@@ -44,7 +41,7 @@ en un paquete Python en el sistema de archivos.
 Lección 3 - Manipulación y análisis de datos
 --------------------------------------------
 
-**Descripción:** Comprender el uso del módulo ``pandas`` de las librerías adicionales
+**Descripción:** Comprender el uso del módulo :ref:`pandas <python_pkg_pandas>` de las librerías adicionales
 de Python para la manipulación y análisis de datos de forma rápida y fácil de usar.
 
 **Práctica:** Uso de los módulos ``pandas`` como su estructurada de tipos de datos, funciones
@@ -57,7 +54,7 @@ y ``requests``, explorando el resultado en un paquete Python en el sistema de ar
 Lección 4 - Generación de gráficos
 ----------------------------------
 
-**Descripción:** Comprender el uso de los módulos ``matplotlib`` y ``plotly`` para la
+**Descripción:** Comprender el uso de los módulos :ref:`matplotlib <python_pkg_matplotlib>` y :ref:`plotly <python_pkg_plotly>` para la
 generación de gráficos estáticos e interactivos con Python.
 
 **Práctica:** Uso de los módulos ``matplotlib`` y ``plotly`` para la generación de gráficos estáticos
@@ -69,9 +66,19 @@ e interactivos con Python, hacer demostraciones desde su propia máquina y más.
 Lección 5 - Reportes y Dashboard
 --------------------------------
 
-**Descripción:** Comprender el uso de los módulos ``streamlit``, ``plotly`` y ``pyngrok`` para la
+**Descripción:** Comprender el uso de los módulos :ref:`Streamlit <python_pkg_streamlit>`, :ref:`plotly <python_pkg_plotly>` y :ref:`pyngrok <python_pkg_pyngrok>` para la
 creación de Dashboard interactivos con Python.
 
 **Práctica:** Uso de los módulos ``streamlit`` y ``plotly`` para la creación de Dashboard interactivos
 y el uso del módulo ``pyngrok`` para usar un proxy inverso que abre conexiones seguras desde URL públicas
 a computador local, hacer demostraciones desde su propia máquina y más.
+
+
+----
+
+
+.. raw:: html
+   :file: _templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

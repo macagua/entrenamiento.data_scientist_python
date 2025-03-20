@@ -1,7 +1,7 @@
 .. _python_pkg_numpy:
 
-NumPy
-=====
+Librería NumPy
+==============
 
 .. note::
     **Propósito:** es una libraría usada para el cálculo numérico y el
@@ -41,13 +41,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install numpy
+          pip3 install numpy
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install numpy
+          pip install numpy
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -59,13 +59,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import numpy ; print(numpy.__version__)"
+          python3 -c "import numpy ; print(numpy.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import numpy ; print(numpy.__version__)"
+          python -c "import numpy ; print(numpy.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``numpy``, tiene
@@ -265,7 +265,7 @@ la misma posición en dos arrays.
 Se necesitan, por tanto, dos arrays con las mismas dimensiones y el
 resultado es una array de la misma dimensión.
 
-Los operadores matemáticos :ref:`+ <python_opers_arit_suma>`, :ref:`- <python_opers_arit_resta>`, 
+Los operadores matemáticos :ref:`+ <python_opers_arit_suma>`, :ref:`- <python_opers_arit_resta>`,
 :ref:`* <python_opers_arit_multi>`, :ref:`/ <python_opers_arit_div>`,
 :ref:`% <python_opers_arit_mod>`, :ref:`** <python_opers_arit_expo>`
 se utilizan para la realizar suma, resta, producto, cociente, resto y
@@ -308,7 +308,7 @@ siguiente código fuente:
 .. tip::
    En Python 3.5 puedes sobrecargar ``@`` como operador. Se llama ``__matmul__``
    porque está diseñado para realizar multiplicaciones de matrices, pero puede
-   ser cualquier cosa que desee. Consulte `PEP465 <http://www.python.org/dev/peps/pep-0465/>`_
+   ser cualquier cosa que desee. Consulte `PEP465 <https://peps.python.org/pep-0465/>`_
    para más detalles.
 
 .. code-block:: pycon
@@ -362,7 +362,7 @@ siguiente código fuente:
 .. tip::
    En Python 3.5 puedes sobrecargar ``@`` como operador. Se llama ``__matmul__``
    porque está diseñado para realizar multiplicaciones de matrices, pero puede
-   ser cualquier cosa que desee. Consulte `PEP465 <http://www.python.org/dev/peps/pep-0465/>`_
+   ser cualquier cosa que desee. Consulte `PEP465 <https://peps.python.org/pep-0465/>`_
    para más detalles.
 
 .. code-block:: pycon
@@ -542,8 +542,7 @@ Para resolver un sistema de ecuaciones lineales se utiliza la función siguiente
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
-
-
+..
+   .. disqus::
 
 .. _`numpy`: https://pypi.org/project/numpy/

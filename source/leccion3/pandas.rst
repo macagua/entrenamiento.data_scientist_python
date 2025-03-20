@@ -1,7 +1,7 @@
 .. _python_pkg_pandas:
 
-Pandas
-======
+Librería Pandas
+===============
 
 .. note::
     **Propósito:** es una libraría usada en el manejo y análisis de
@@ -47,13 +47,13 @@ a continuación se presentan el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install pandas
+          pip3 install pandas
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install pandas
+          pip install pandas
 
 
 Puede probar si la instalación se realizo correctamente, ejecutando
@@ -65,13 +65,13 @@ el siguiente comando correspondiente a tu sistema operativo:
 
       .. code-block:: console
 
-          $ python -c "import pandas ; print(pandas.__version__)"
+          python3 -c "import pandas ; print(pandas.__version__)"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > python -c "import pandas ; print(pandas.__version__)"
+          python -c "import pandas ; print(pandas.__version__)"
 
 
 Si muestra el numero de la versión instalada de ``pandas``, tiene correctamente
@@ -720,14 +720,14 @@ Exportación de ficheros
 También existen funciones para exportar un DataFrame a un fichero con
 diferentes formatos.
 
--  ``df.to_csv(fichero.csv, sep=separador, columns=booleano, index=booleano)``: 
+-  ``df.to_csv(fichero.csv, sep=separador, columns=booleano, index=booleano)``:
    Exporta el DataFrame ``df`` al fichero ``fichero.csv`` en formato CSV usando
    como separador de los datos la cadena ``separador``. Si se pasa ``True`` al
    parámetro ``columns`` se exporta también la fila con los nombres de columnas
    y si se pasa ``True`` al parámetro ``index`` se exporta también la columna
    con los nombres de las filas.
 
--  ``df.to_excel(fichero.xlsx, sheet_name = hoja, columns=booleano, index=booleano)``: 
+-  ``df.to_excel(fichero.xlsx, sheet_name = hoja, columns=booleano, index=booleano)``:
    Exporta el DataFrame ``df`` a la hoja de cálculo ``hoja`` del fichero
    ``fichero.xlsx`` en formato Excel. Si se pasa ``True`` al parámetro
    ``columns`` se exporta también la fila con los nombres de columnas
@@ -1096,7 +1096,7 @@ método:
    del tipo ``datetime`` con el formado especificado en ``formato``.
 
     .. tip::
-        Para más información consulte la documentación oficial de 
+        Para más información consulte la documentación oficial de
         `datetime <https://docs.python.org/es/3.7/library/datetime.html>`_.
 
 .. code-block:: pycon
@@ -1597,10 +1597,10 @@ Dos o más DataFrames pueden combinarse en otro DataFrame. La combinación
 puede ser de varias formas:
 
 -  **Concatenación**: Combinación de varios DataFrames
-    concatenando sus filas o columnas.
+   concatenando sus filas o columnas.
 
 -  **Mezcla**: Combinación de varios DataFrames usando
-    columnas o índices comunes.
+   columnas o índices comunes.
 
 .. _python_pkg_pandas_dataframe_concatenacion:
 
@@ -1608,15 +1608,15 @@ Concatenación de DataFrames
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  **Concatenación de filas**. Las filas de los DataFrames se
-    concatenan unas a continuación de las otras para formar el
-    nuevo DataFrame. Para ello es necesario que los DataFrames
-    que se combinen tengan el mismo índice de columnas.
+   concatenan unas a continuación de las otras para formar el
+   nuevo DataFrame. Para ello es necesario que los DataFrames
+   que se combinen tengan el mismo índice de columnas.
 
-    .. figure:: ../_static/images/pandas_dataframe_concatenacion_filas.png
-        :align: center
-        :width: 60%
+   .. figure:: ../_static/images/pandas_dataframe_concatenacion_filas.png
+       :align: center
+       :width: 60%
 
-        Concatenación de DataFrames por filas
+       Concatenación de DataFrames por filas
 
 
 -  **Concatenación de columnas**. Las columnas de los DataFrames se
@@ -1624,11 +1624,11 @@ Concatenación de DataFrames
    DataFrame. Para ello es necesario que los DataFrames que se combinen
    tengan el mismo índice de filas.
 
-    .. figure:: ../_static/images/pandas_dataframe_concatenacion_columnas.png
-        :align: center
-        :width: 60%
+   .. figure:: ../_static/images/pandas_dataframe_concatenacion_columnas.png
+       :align: center
+       :width: 60%
 
-        Concatenación de DataFrames por columnas
+       Concatenación de DataFrames por columnas
 
 
 Para concatenar dos o más DataFrames se utiliza el siguiente método:
@@ -1792,6 +1792,7 @@ El tipo de mezcla puede ser
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+   .. disqus::
 
 .. _`pandas`: https://pypi.org/project/pandas/
