@@ -7,7 +7,7 @@ Entorno de desarrollo Anaconda
 ------------------------------
 
 Este articulo es un tutorial con las instrucciones para instalar la distribución
-Anaconda con el instalador para distribuciones Windows 11/Debian GNU/Linux y Python.
+Anaconda con el instalador para distribuciones Windows 11, Debian GNU/Linux y Python.
 
 Introducción
 ............
@@ -132,35 +132,36 @@ Linux, después elija cualquiera de los siguientes métodos:
    mostrar una lista de los paquetes instalados y sus
    versiones, introduzca el siguiente comando:
 
-.. code-block:: console
+   .. code-block:: console
 
-    conda list
+      conda list
 
 -  Ejecutar el shell de Python, ejecutando el siguiente
    comando:
 
-.. code-block:: console
+   .. code-block:: console
 
-   python3
+      python3
 
-.. code-block:: console
+   Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
-   Python 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)] on win32
-   Type "help", "copyright", "credits" or "license" for more information.
-   >>>
+   .. code-block:: console
 
-Si Anaconda está instalado y funcionando, la información de
-la versión que muestra cuando se inicia incluirá «Anaconda».
+      Python 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)] on win32
+      Type "help", "copyright", "credits" or "license" for more information.
+      >>>
 
-Para salir del shell interactivo Python/Anaconda, ejecutando
-el siguiente comando:
+Si Anaconda está instalado y funcionando, la información de la versión
+que muestra cuando se inicia incluirá «Anaconda».
+
+Para salir del shell interactivo Python/Anaconda, ejecutando el siguiente
+comando:
 
 .. code-block:: pycon
 
     >>> quit()
 
-De esta forma verifico que tiene instalado correctamente
-instalado la distribución Anaconda.
+De esta forma verifico que tiene instalado correctamente instalado la distribución Anaconda.
 
 
 ----
@@ -197,10 +198,9 @@ Es un sistema de gestión de paquetes de código abierto el cual le permite:
 -  Crea, guarda, carga y cambia fácilmente entre los
    entornos de su computadora local.
 
-Fue creado para los programas de Python, pero puede
-empaquetar y distribuir software para cualquier lenguaje de
-programación. Para más información sobre la herramienta
-consulte la `documentación disponible`_.
+Fue creado para los programas de Python, pero puede empaquetar y distribuir
+software para cualquier lenguaje de programación. Para más información sobre
+la herramienta consulte la `documentación disponible`_.
 
 `Anaconda Navigator`_, es una interfaz gráfica de usuario (GUI) de escritorio
 incluida en la distribución de Anaconda® que le permite iniciar aplicaciones y
@@ -264,6 +264,9 @@ continuación:
     Interfaz de *Spyder* corriendo
 
 Este mostrar la Interfaz de *Spyder* ejecutándose correctamente.
+
+
+.. _python_anaconda_jupyter_notebook:
 
 Jupyter Notebook
 ................
